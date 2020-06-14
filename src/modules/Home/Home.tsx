@@ -1,20 +1,30 @@
-import React, { Fragment, FunctionComponent, ReactElement } from 'react'
-import { Navigation } from '../../common/components'
+import React, { FunctionComponent, ReactElement, useEffect } from 'react'
 import { RouteComponentProps } from '@reach/router'
+import ViewMyWorkButton from './ViewMyWorkButton'
+import { executeTitleTypeAnimation } from './helpers'
 import profilePicture from '../../../public/assets/images/profile.jpg'
 import './styles.css'
 
 const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
+  useEffect((): void => {
+    executeTitleTypeAnimation()
+  })
+
   return (
-    <Fragment>
-      <Navigation />
+    <>
       <section id='main-section'>
-        <img id='profile-picture' src={profilePicture} />
-        <h1>Deejay Geroso</h1>
-        <div>Software Engineer</div>
-        <h1>One Screen, All Apps</h1>
+        <div>
+          <img id='profile-picture' src={profilePicture} />
+          <p id='demo'></p>
+          <h1 id='title1'></h1>
+          <h1 id='title2'></h1>
+          <ViewMyWorkButton />
+        </div>
       </section>
-    </Fragment>
+      <section>
+        <h1>My latest work</h1>
+      </section>
+    </>
   )
 }
 

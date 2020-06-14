@@ -4,10 +4,8 @@ html,
 body,
 #app {
   background-color: var(--background-color);
-  background-color: white;
-  /* color: var(--font-color); */
   color: #d2f5ff;
-  font-family: var(--font-family-monospace);
+  font-family: var(--font-family);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -20,6 +18,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+button {
   color: var(--font-color);
+  font-family: var(--font-family);
 }

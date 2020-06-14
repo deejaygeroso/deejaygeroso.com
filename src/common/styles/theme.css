@@ -1,12 +1,17 @@
 :root {
   --nav-background-color: #171a1c;
   --background-color: #181b1e;
-  --font-family-monospace: Monaco, Menlo, Consolas, 'Courier New', monospace;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --font-color-a: white;
-  --font-color-b: #d2f5ff;
+  --font-family: Montserrat, tahoma, verdana, sans-serif;
+
+  --font-color: #d2f5ff;
+  /* --font-color: white; */
+
+  --font-size-sm: 12px;
+  --font-size-m: 14px;
+  --font-size-l: 17px;
+  --font-size-xl: 21px;
+  --font-size-title: 36px;
 
   --spacing-size-a: 5px;
   --spacing-size-b: 10px;
