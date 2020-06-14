@@ -14,11 +14,6 @@ const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
         <div>Software Engineer</div>
         <h1>One Screen, All Apps</h1>
       </section>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
-      <h1>hello world</h1>
     </Fragment>
   )
 }

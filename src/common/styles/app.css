@@ -21,6 +21,5 @@ h2,
 h3,
 h4,
 h5 {
-  /* color: var(--font-color); */
-  color: red;
+  color: var(--font-color);
 }
