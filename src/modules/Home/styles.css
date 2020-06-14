@@ -1,0 +1,17 @@
+#profile-picture {
+  --profile-picture-width: 210px;
+  border-radius: var(--profile-picture-width);
+  height: var(--profile-picture-width);
+  width: var(--profile-picture-width);
+}
+
+#main-section {
+  background-color: var(--background-color);
+  height: 92vh;
+  padding: var(--spacing-size-e);
+  text-align: center;
+}
+
+#main-section > h1 {
+  margin: 0px;
+}

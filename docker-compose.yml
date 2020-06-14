@@ -11,5 +11,5 @@ services:
       - '8000:8000'
     restart: on-failure
     volumes:
-      - /adally-client/node_modules
-      - .:/adally-client
+      - /app/node_modules
+      - .:/app

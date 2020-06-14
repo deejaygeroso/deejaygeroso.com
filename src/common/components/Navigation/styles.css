@@ -1,0 +1,13 @@
+nav {
+  background-color: var(--nav-background-color);
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+}
