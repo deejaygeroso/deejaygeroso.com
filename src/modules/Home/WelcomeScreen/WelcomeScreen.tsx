@@ -1,9 +1,14 @@
-import React, { FunctionComponent, ReactElement } from 'react'
+import React, { FunctionComponent, ReactElement, useEffect } from 'react'
 import ViewMyWorkButton from '../ViewMyWorkButton'
+import { executeTitleTypeAnimation } from './helpers'
 import profilePicture from '../../../../public/assets/images/profile.jpg'
 import './styles.css'
 
 const WelcomeScreen: FunctionComponent = (): ReactElement => {
+  useEffect((): void => {
+    executeTitleTypeAnimation()
+  }, [])
+
   return (
     <section id='main-section'>
       <div>
