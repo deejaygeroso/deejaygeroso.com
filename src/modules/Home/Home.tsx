@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement, useEffect } from 'react'
+import React, { FunctionComponent, ReactElement } from 'react'
 import Projects from './Projects'
 import { RouteComponentProps } from '@reach/router'
 import WelcomeScreen from './WelcomeScreen'

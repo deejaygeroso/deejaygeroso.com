@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/no-var-requires */
 const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const dotenv = require('dotenv')
@@ -79,7 +77,9 @@ module.exports = () => {
     },
 
     plugins: [
-      new CopyPlugin([{ from: 'public/robots.txt', to: 'robots.txt' }]),
+      new CopyPlugin({
+        patterns: [{ from: 'public/robots.txt', to: 'robots.txt' }],
+      }),
       new HtmlWebPackPlugin({
         favicon: './public/assets/images/favicon.ico',
         filename: './index.html',
