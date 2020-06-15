@@ -12,38 +12,84 @@
   color: var(--background-color);
 }
 
+#projects > h1 {
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+#projects > div {
+  width: 100%;
+}
+
 #projects .project-container {
+  align-items: center;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: var(--spacing-size-e) 0;
+  width: 100%;
 }
 
-#projects .project-info {
+#projects .project-container > .project-info {
   padding: 0 var(--spacing-size-e);
-  width: 650px;
+  width: var(--project-info);
 }
 
-#projects .project-title > span {
+#projects .project-container > .project-info > .project-title > span {
   font-size: var(--font-size-sm);
 }
 
-#projects .project-title > span > a {
+#projects .project-container > .project-info > .project-title > span > a {
   color: var(--color-success);
   padding: 0 var(--spacing-size-a);
 }
 
-#projects .project-images {
-  --project-images-width: 450px;
+#projects .project-container > .project-images {
+  box-sizing: border-box;
   cursor: pointer;
   height: 100%;
   width: var(--project-images-width);
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: var(--spacing-size-b);
-  transition: 0.3s;
+/* ----------- Desktop Screens ----------- */
+@media screen and (min-width: 1200px) {
+  :root {
+    --project-images-width: 450px;
+    --project-info: 650px;
+  }
+  #projects .project-container > .title-on-mobile {
+    display: none;
+  }
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+/* ----------- Tablet Screens ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    --project-images-width: 350px;
+    --project-info: 450px;
+  }
+  #projects .project-container > .title-on-mobile {
+    display: none;
+  }
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  :root {
+    --project-images-width: 100%;
+    --project-info: 250px;
+  }
+  #projects .project-container {
+    flex-direction: column;
+    padding: 0 var(--spacing-size-e);
+  }
+  #projects .project-container > .title-on-mobile {
+    display: block;
+    margin: 0 0 var(--spacing-size-a) 0;
+    text-align: center;
+  }
+  #projects .project-container > .project-info {
+    display: none;
+  }
 }

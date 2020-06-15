@@ -15,6 +15,7 @@ const Projects: FunctionComponent = (): ReactElement => {
       <h1>Here are the list of some of my work:</h1>
       <ScrollAnimation id='project-adally' fadeInDirection={fadeInDirection.right}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Adally</h1>
           <img className='card project-images' src={adally} />
           <div className='project-info'>
             <h2 className='project-title'>
@@ -29,18 +30,19 @@ const Projects: FunctionComponent = (): ReactElement => {
               An application that runs real-time homepage and fullpage scan to find out if your webstie is ADA
               (Americans with Disabilities Act Standards for Accessible) compliant.
             </p>
-            <h4>
+            <p>
               Position: Acting Team Lead (Sprint Planning, Designing and implementing Application Architecture, Devops,
               Back-end, Front-end, Quality Assurance, UI/UX)
-            </h4>
-            <h4>
+            </p>
+            <p>
               Technology: <span className='warning'>Cannot disclose publicly!</span>
-            </h4>
+            </p>
           </div>
         </div>
       </ScrollAnimation>
       <ScrollAnimation id='project-databased' fadeInDirection={fadeInDirection.left}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Databased</h1>
           <div className='project-info'>
             <h2 className='project-title'>
               Databased
@@ -53,16 +55,17 @@ const Projects: FunctionComponent = (): ReactElement => {
             <p>
               {`A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`}
             </p>
-            <h4>Position: Full-stack Javascript Developer</h4>
-            <h4>
+            <p>Position: Full-stack Javascript Developer</p>
+            <p>
               Technology: <span className='warning'>Cannot disclose publicly!</span>
-            </h4>
+            </p>
           </div>
           <img className='card project-images' src={databased} />
         </div>
       </ScrollAnimation>
       <ScrollAnimation id='project-crypto-asset-management' fadeInDirection={fadeInDirection.right}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Crypto Asset Management</h1>
           <img className='card project-images' src={crypto} />
           <div className='project-info'>
             <h2 className='project-title'>Crypto Asset Management</h2>
@@ -71,8 +74,8 @@ const Projects: FunctionComponent = (): ReactElement => {
               profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App
               also has charts and graphs for historical data of cryptocurrencies.
             </p>
-            <h4>Position: Full-stack Javascript Developer</h4>
-            <h4>Technology:</h4>
+            <p>Position: Full-stack Javascript Developer</p>
+            <p>Technology:</p>
             <ul>
               <li>React JS</li>
               <li>Redux</li>
@@ -86,6 +89,7 @@ const Projects: FunctionComponent = (): ReactElement => {
       </ScrollAnimation>
       <ScrollAnimation id='project-meegle' fadeInDirection={fadeInDirection.left}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Meegle</h1>
           <div className='project-info'>
             <h2 className='project-title'>
               Meegle
@@ -108,8 +112,8 @@ const Projects: FunctionComponent = (): ReactElement => {
               A system that helps business owners manage their own website, online social engagements all in one single
               application.
             </p>
-            <h4>Position: Mobile Developer (ios & android)</h4>
-            <h4>Technology:</h4>
+            <p>Position: Mobile Developer (ios & android)</p>
+            <p>Technology:</p>
             <ul>
               <li>React Native (ios & android)</li>
               <li>Redux-observable</li>
@@ -125,12 +129,13 @@ const Projects: FunctionComponent = (): ReactElement => {
       </ScrollAnimation>
       <ScrollAnimation id='project-meegle-monitoring' fadeInDirection={fadeInDirection.right}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Meegle Monitoring</h1>
           <img className='card project-images' src={monitoring} />
           <div className='project-info'>
             <h2 className='project-title'>Meegle Monitoring</h2>
             <p>An application that monitors servers, domains and websites.</p>
-            <h4>Position: Mobile Developer (ios & android)</h4>
-            <h4>Technology:</h4>
+            <p>Position: Mobile Developer (ios & android)</p>
+            <p>Technology:</p>
             <ul>
               <li>React Native (ios & android)</li>
               <li>Redux</li>
@@ -141,14 +146,15 @@ const Projects: FunctionComponent = (): ReactElement => {
       </ScrollAnimation>
       <ScrollAnimation id='project-helpbert' fadeInDirection={fadeInDirection.left}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Helpbert</h1>
           <div className='project-info'>
             <h2 className='project-title'>Helpbert</h2>
             <p>
               {`An online support system used internally by our company which allows live chat and receive and reply to
             our client's emails and tickets.`}
             </p>
-            <h4>Position: Mobile Developer (ios & android)</h4>
-            <h4>Technology:</h4>
+            <p>Position: Mobile Developer (ios & android)</p>
+            <p>Technology:</p>
             <ul>
               <li>React Native (ios & android)</li>
               <li>Redux</li>
@@ -161,15 +167,15 @@ const Projects: FunctionComponent = (): ReactElement => {
       </ScrollAnimation>
       <ScrollAnimation id='project-dejablog' fadeInDirection={fadeInDirection.right}>
         <div className='project-container'>
+          <h1 className='title-on-mobile'>Dejablog (CMS)</h1>
           <img className='card project-images' src={dejablog} />
           <div className='project-info'>
             <h2 className='project-title'>Dejablog (Content Management System)</h2>
             <p>An application that can create and manage the multiple blogs, posts and user comments.</p>
-            <h4>Position: Front-end Developer with semi Back-end Role</h4>
-            <h4>Technology:</h4>
+            <p>Position: Front-end Developer with semi Back-end Role</p>
+            <p>Technology:</p>
             <ul>
               <li>React JS</li>
-              <li>Handlebars</li>
               <li>Meteor JS</li>
               <li>Express JS</li>
               <li>Mongo DB</li>

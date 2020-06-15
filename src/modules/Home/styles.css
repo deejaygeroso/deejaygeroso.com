@@ -37,6 +37,14 @@
   padding: var(--spacing-size-a) 0;
 }
 
-#main-section > div > h1 > span.author {
+#main-section > div > h1 > span#title1-author-name {
   color: var(--author-name-color);
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  #main-section > div > h1 {
+    --title-default-height: 28px;
+    height: var(--title-default-height);
+  }
 }

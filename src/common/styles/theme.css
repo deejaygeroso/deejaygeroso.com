@@ -8,19 +8,44 @@
   --color-warning: orange;
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
-
   --font-color: #d2f5ff;
-  /* --font-color: white; */
-
-  --font-size-sm: 12px;
-  --font-size-m: 14px;
-  --font-size-l: 17px;
-  --font-size-xl: 21px;
-  --font-size-title: 36px;
 
   --spacing-size-a: 5px;
   --spacing-size-b: 10px;
   --spacing-size-c: 15px;
   --spacing-size-d: 20px;
   --spacing-size-e: 30px;
+}
+
+/* ----------- Desktop Screens ----------- */
+@media screen and (min-width: 1200px) {
+  :root {
+    --font-size-sm: 12px;
+    --font-size-m: 14px;
+    --font-size-l: 17px;
+    --font-size-xl: 30px;
+    --font-size-title: 36px;
+  }
+}
+
+/* ----------- Tablet Screens ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    --font-size-sm: 10px;
+    --font-size-m: 12px;
+    --font-size-l: 14px;
+    --font-size-xl: 28px;
+    --font-size-title: 28px;
+  }
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size-sm: 10px;
+    --font-size-m: 12px;
+    --font-size-l: 14px;
+    --font-size-xl: 18px;
+    --font-size-title: 22px;
+  }
 }
