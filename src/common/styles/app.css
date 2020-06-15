@@ -26,7 +26,15 @@ button {
   font-family: var(--font-family);
 }
 
-p {
+p,
+a,
+ul,
+li,
+button {
+  font-size: var(--font-size-m);
+}
+
+h1 {
   font-size: var(--font-size-l);
 }
 

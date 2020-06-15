@@ -22,8 +22,8 @@
 @media screen and (min-width: 1200px) {
   :root {
     --font-size-sm: 12px;
-    --font-size-m: 14px;
-    --font-size-l: 17px;
+    --font-size-m: 17px;
+    --font-size-l: 21px;
     --font-size-xl: 30px;
     --font-size-title: 36px;
   }
@@ -33,8 +33,8 @@
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   :root {
     --font-size-sm: 10px;
-    --font-size-m: 12px;
-    --font-size-l: 14px;
+    --font-size-m: 14px;
+    --font-size-l: 19px;
     --font-size-xl: 28px;
     --font-size-title: 28px;
   }
@@ -45,8 +45,8 @@
   :root {
     --font-size-sm: 10px;
     --font-size-m: 12px;
-    --font-size-l: 14px;
-    --font-size-xl: 18px;
+    --font-size-l: 17px;
+    --font-size-xl: 17px;
     --font-size-title: 22px;
   }
 }

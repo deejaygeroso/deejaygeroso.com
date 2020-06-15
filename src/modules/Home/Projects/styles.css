@@ -74,6 +74,7 @@
   }
   #projects .project-container {
     flex-direction: column;
+    margin: 0 0 var(--spacing-size-e) 0;
     padding: 0 var(--spacing-size-e);
   }
   #projects .project-container > .title-on-mobile {
