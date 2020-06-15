@@ -23,3 +23,7 @@ button {
   color: var(--font-color);
   font-family: var(--font-family);
 }
+
+.warning {
+  color: var(--color-warning);
+}

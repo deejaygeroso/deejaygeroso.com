@@ -2,6 +2,11 @@
   --nav-background-color: #171a1c;
   --background-color: #181b1e;
 
+  --color-info: blue;
+  --color-success: green;
+  --color-danger: red;
+  --color-warning: orange;
+
   --font-family: Montserrat, tahoma, verdana, sans-serif;
 
   --font-color: #d2f5ff;

@@ -1,0 +1,49 @@
+#projects {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects h1,
+#projects h2,
+#projects h4,
+#projects ul,
+#projects p {
+  color: var(--background-color);
+}
+
+#projects .project-container {
+  display: flex;
+  margin: var(--spacing-size-e) 0;
+}
+
+#projects .project-info {
+  padding: 0 var(--spacing-size-e);
+  width: 650px;
+}
+
+#projects .project-title > span {
+  font-size: var(--font-size-sm);
+}
+
+#projects .project-title > span > a {
+  color: var(--color-success);
+  padding: 0 var(--spacing-size-a);
+}
+
+#projects .project-images {
+  --project-images-width: 450px;
+  cursor: pointer;
+  height: 100%;
+  width: var(--project-images-width);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: var(--spacing-size-b);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

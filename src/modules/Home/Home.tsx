@@ -1,4 +1,5 @@
 import React, { FunctionComponent, ReactElement, useEffect } from 'react'
+import Projects from './Projects'
 import { RouteComponentProps } from '@reach/router'
 import ViewMyWorkButton from './ViewMyWorkButton'
 import { executeTitleTypeAnimation } from './helpers'
@@ -21,9 +22,7 @@ const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
           <ViewMyWorkButton />
         </div>
       </section>
-      <section>
-        <h1>My latest work</h1>
-      </section>
+      <Projects />
     </>
   )
 }

@@ -8,7 +8,9 @@ const typeAnimation = (elementId: string, text: string, cb?: () => void): void =
       counter++
       setTimeout(typeWriter, speedInMilliSeconds)
     } else {
-      cb()
+      if (cb) {
+        cb()
+      }
     }
   }
   typeWriter()
