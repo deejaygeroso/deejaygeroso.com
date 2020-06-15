@@ -1,9 +1,8 @@
 import React, { FunctionComponent, ReactElement, useEffect } from 'react'
 import Projects from './Projects'
 import { RouteComponentProps } from '@reach/router'
-import ViewMyWorkButton from './ViewMyWorkButton'
+import WelcomeScreen from './WelcomeScreen'
 import { executeTitleTypeAnimation } from './helpers'
-import profilePicture from '../../../public/assets/images/profile.jpg'
 import './styles.css'
 
 const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
@@ -13,15 +12,7 @@ const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
 
   return (
     <>
-      <section id='main-section'>
-        <div>
-          <img id='profile-picture' src={profilePicture} />
-          <p id='demo'></p>
-          <h1 id='title1'></h1>
-          <h1 id='title2'></h1>
-          <ViewMyWorkButton />
-        </div>
-      </section>
+      <WelcomeScreen />
       <Projects />
     </>
   )

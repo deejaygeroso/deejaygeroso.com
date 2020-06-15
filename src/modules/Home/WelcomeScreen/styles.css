@@ -1,0 +1,50 @@
+#profile-picture {
+  --profile-picture-width: 210px;
+  --profile-picture-border: 12px solid;
+  border: var(--profile-picture-border);
+  border-radius: var(--profile-picture-width);
+  height: var(--profile-picture-width);
+  width: var(--profile-picture-width);
+}
+
+#main-section {
+  --author-name-color: #e31b6d;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  background-image: url('../../../../public/assets/images/main-wallpaper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+#main-section > div {
+  align-items: center;
+  background: #171a1cf2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main-section > div > h1 {
+  font-size: var(--font-size-title);
+  margin: 0px;
+  padding: var(--spacing-size-a) 0;
+}
+
+#main-section > div > h1 > span#title1-author-name {
+  color: var(--author-name-color);
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  #main-section > div > h1 {
+    --title-default-height: 28px;
+    height: var(--title-default-height);
+  }
+}
