@@ -1,7 +1,7 @@
 .view-my-work-button {
   background-color: var(--background-color);
-  border: 2px solid var(--font-color);
-  color: var(--font-color);
+  border: 2px solid var(--title-color);
+  color: var(--title-color);
   cursor: pointer;
   font-size: var(--font-size-l);
   padding: var(--spacing-size-b) var(--spacing-size-d);

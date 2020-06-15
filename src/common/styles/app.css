@@ -19,8 +19,10 @@ h2,
 h3,
 h4,
 h5,
+ul,
+li,
 button {
-  color: var(--font-color);
+  color: var(--background-color);
   font-family: var(--font-family);
 }
 

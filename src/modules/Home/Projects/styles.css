@@ -4,14 +4,6 @@
   flex-direction: column;
 }
 
-#projects h1,
-#projects h2,
-#projects h4,
-#projects ul,
-#projects p {
-  color: var(--background-color);
-}
-
 #projects > h1 {
   font-size: var(--font-size-xl);
   text-align: center;

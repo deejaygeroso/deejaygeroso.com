@@ -8,13 +8,14 @@
   --color-warning: orange;
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
-  --font-color: #d2f5ff;
 
   --spacing-size-a: 5px;
   --spacing-size-b: 10px;
   --spacing-size-c: 15px;
   --spacing-size-d: 20px;
   --spacing-size-e: 30px;
+
+  --title-color: #d2f5ff;
 }
 
 /* ----------- Desktop Screens ----------- */
