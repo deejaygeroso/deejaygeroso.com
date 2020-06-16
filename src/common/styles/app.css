@@ -3,7 +3,7 @@
 html,
 body,
 #app {
-  background-color: var(--background-color);
+  background-color: white;
   color: #d2f5ff;
   font-family: var(--font-family);
   height: 100%;
