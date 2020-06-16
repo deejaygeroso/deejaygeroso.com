@@ -4,11 +4,6 @@
   flex-direction: column;
 }
 
-#projects > h1 {
-  font-size: var(--font-size-xl);
-  text-align: center;
-}
-
 #projects > div {
   width: 100%;
 }

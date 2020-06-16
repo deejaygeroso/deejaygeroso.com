@@ -12,7 +12,7 @@ import './styles.css'
 const Projects: FunctionComponent = (): ReactElement => {
   return (
     <section id='projects'>
-      <h1>Here are the list of some of my work:</h1>
+      <h1>PROJECTS</h1>
       <ScrollAnimation id='project-adally' fadeInDirection={fadeInDirection.right}>
         <div className='project-container'>
           <h1 className='title-on-mobile'>Adally</h1>

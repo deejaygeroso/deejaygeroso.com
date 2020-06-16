@@ -24,8 +24,8 @@
     --font-size-sm: 12px;
     --font-size-m: 17px;
     --font-size-l: 21px;
-    --font-size-xl: 30px;
     --font-size-title: 36px;
+    --section-title-size: 38px;
   }
 }
 
@@ -35,8 +35,8 @@
     --font-size-sm: 10px;
     --font-size-m: 14px;
     --font-size-l: 19px;
-    --font-size-xl: 28px;
     --font-size-title: 28px;
+    --section-title-size: 32px;
   }
 }
 
@@ -46,7 +46,7 @@
     --font-size-sm: 10px;
     --font-size-m: 12px;
     --font-size-l: 17px;
-    --font-size-xl: 17px;
     --font-size-title: 22px;
+    --section-title-size: 23px;
   }
 }

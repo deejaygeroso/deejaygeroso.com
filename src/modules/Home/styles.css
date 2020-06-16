@@ -1,0 +1,4 @@
+section > h1 {
+  font-size: var(--section-title-size);
+  text-align: center;
+}
