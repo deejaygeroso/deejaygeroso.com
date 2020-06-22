@@ -1,11 +1,9 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import dustin from '../../../../public/assets/images/testimonials/dustin-watkins.png'
-import vanessa from '../../../../public/assets/images/testimonials/vanessa-faith-abordo.png'
+import dustin from '../../../../../public/assets/images/testimonials/dustin-watkins.png'
+import vanessa from '../../../../../public/assets/images/testimonials/vanessa-faith-abordo.png'
 import './styles.css'
 
-interface IProps {}
-
-const Testimonials: FunctionComponent<IProps> = (props: IProps): ReactElement => {
+const Testimonials: FunctionComponent = (): ReactElement => {
   return (
     <section id='testimonials'>
       <h1>Testimonials</h1>

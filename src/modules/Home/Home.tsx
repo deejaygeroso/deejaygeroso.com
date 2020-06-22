@@ -1,9 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import Projects from './Projects'
 import { RouteComponentProps } from '@reach/router'
-import WelcomeScreen from './WelcomeScreen'
-import Testimonials from './Testimonials/Testimonials'
-import Footer from './Footer/Footer'
+import { Footer, Projects, Testimonials, WelcomeScreen } from './Sections'
 import './styles.css'
 
 const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {

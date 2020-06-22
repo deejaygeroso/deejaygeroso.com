@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactElement, useEffect } from 'react'
-import ViewMyWorkButton from '../ViewMyWorkButton'
+import ViewMyWorkButton from '../../ViewMyWorkButton'
 import { executeTitleTypeAnimation } from './helpers'
-import profilePicture from '../../../../public/assets/images/profile.jpg'
+import profilePicture from '../../../../../public/assets/images/profile.jpg'
 import './styles.css'
 
 const WelcomeScreen: FunctionComponent = (): ReactElement => {
