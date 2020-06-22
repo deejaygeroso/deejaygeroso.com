@@ -31,8 +31,8 @@ const Projects: FunctionComponent = (): ReactElement => {
               (Americans with Disabilities Act Standards for Accessible) compliant.
             </p>
             <p>
-              Position: Acting Team Lead (Sprint Planning, Designing and implementing Application Architecture, Devops,
-              Back-end, Front-end, Quality Assurance, UI/UX)
+              Position: Lead Developer (Sprint Planning, Designing and implementing Application Architecture, Devops,
+              Back-end, Front-end, Quality Assurance and UI/UX)
             </p>
             <p>
               Technology: <span className='warning'>Cannot disclose publicly!</span>
