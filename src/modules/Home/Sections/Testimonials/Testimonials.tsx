@@ -1,6 +1,5 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import dustin from '../../../../../public/assets/images/testimonials/dustin-watkins.png'
-import vanessa from '../../../../../public/assets/images/testimonials/vanessa-faith-abordo.png'
+import { dustin, vanessa } from '../../../../common/images'
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {
