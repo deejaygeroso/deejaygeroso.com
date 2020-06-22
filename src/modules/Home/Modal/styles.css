@@ -1,0 +1,23 @@
+.modal {
+  align-items: center;
+  background-color: var(--modal-overlay-color);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--modal-zIndex);
+}
+
+.modal > .modal-content {
+  --modal-content-height: 450px;
+  --modal-content-width: 650px;
+  background-color: var(--background-color-light);
+  height: var(--modal-content-height);
+  padding: var(--spacing-size-b) var(--spacing-size-e);
+  width: var(--modal-content-width);
+}

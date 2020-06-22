@@ -1,5 +1,5 @@
 .view-my-work-button {
-  background-color: var(--background-color);
+  background-color: var(--background-color-dark);
   border: 2px solid var(--title-color);
   color: var(--title-color);
   cursor: pointer;

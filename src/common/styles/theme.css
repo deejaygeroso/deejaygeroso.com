@@ -1,6 +1,6 @@
 :root {
-  --nav-background-color: #171a1c;
-  --background-color: #181b1e;
+  --background-color-dark: #181b1e;
+  --background-color-light: white;
 
   --color-info: blue;
   --color-success: green;
@@ -8,6 +8,11 @@
   --color-warning: orange;
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
+
+  --modal-overlay-color: #7373739c;
+  --modal-zIndex: 99;
+
+  --nav-background-color: #171a1c;
 
   --spacing-size-a: 5px;
   --spacing-size-b: 10px;
