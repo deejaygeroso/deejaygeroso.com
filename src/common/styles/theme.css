@@ -2,6 +2,8 @@
   --background-color-dark: #181b1e;
   --background-color-light: white;
 
+  --border-grey-line: 1px solid #c2c2c2;
+
   --color-info: blue;
   --color-success: green;
   --color-danger: red;
@@ -9,7 +11,7 @@
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
 
-  --modal-overlay-color: #7373739c;
+  --modal-overlay-color: #0000004a;
   --modal-zIndex: 99;
 
   --nav-background-color: #171a1c;
