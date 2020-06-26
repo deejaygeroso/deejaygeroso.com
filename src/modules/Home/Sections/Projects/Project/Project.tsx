@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 import ScrollAnimation, { fadeInDirection } from '../ScrollAnimation/ScrollAnimation'
 import { IProject } from '../Projects'
+import './styles.css'
 
 interface IProps {
   fadeInDirection: fadeInDirection.left | fadeInDirection.right
