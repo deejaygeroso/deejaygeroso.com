@@ -1,5 +1,5 @@
 import { IProject } from './Projects'
-import { adally1, adally2, crypto, databased, dejablog, helpbert, meegle, monitoring } from '../../../../common/images'
+import { adally1, adally2, crypto1, crypto2, crypto3, databased, dejablog, helpbert, meegle, monitoring } from '../../../../common/images'
 
 const projects: IProject[] = [
   {
@@ -49,7 +49,13 @@ const projects: IProject[] = [
     name: 'Crypto Asset Management',
     photos: [
       {
-        name: crypto,
+        name: crypto1,
+      },
+      {
+        name: crypto2,
+      },
+      {
+        name: crypto3,
       },
     ],
     position:

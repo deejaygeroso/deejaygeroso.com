@@ -21,28 +21,50 @@ export interface IProject {
 }
 
 const Projects: FunctionComponent = (): ReactElement => {
+  const [projectIndex, setProjedtIndex] = useState(0)
   const [isModalVisible, toggleModal] = useState(false)
+  const [currentIndexOfImage, setImageIndex] = useState(0)
 
-  const showModal = (): void => {
+  const showModal = (selectedProjectIndex: number): void => {
     toggleModal(true)
+    setProjedtIndex(selectedProjectIndex)
   }
 
   const hideModal = (): void => {
     toggleModal(false)
   }
 
+  const viewPrevImage = (): void => {
+    setImageIndex(0)
+  }
+  const viewNextImage = (): void => {
+    setImageIndex(1)
+  }
+
   return (
     <section id='projects'>
       <h1>PROJECTS</h1>
-      <ProjectModal isVisible={isModalVisible} hideModal={hideModal} modalId='1'>
+      <ProjectModal
+        isVisible={isModalVisible}
+        hideModal={hideModal}
+        modalId='1'
+        viewNextImage={viewNextImage}
+        viewPrevImage={viewPrevImage}>
         <div className='image-container'>
-          <img className='project-images' src={projectsData[0].photos[0].name} />
+          <img className='project-images' src={projectsData[projectIndex].photos[currentIndexOfImage].name} />
         </div>
       </ProjectModal>
       {projects.map(
         (project: IProject, key: number): ReactElement => {
           const fadeInDirectionInput = key % 2 === 0 ? fadeInDirection.right : fadeInDirection.left
-          return <Project fadeInDirection={fadeInDirectionInput} key={key} project={project} showModal={showModal} />
+          return (
+            <Project
+              fadeInDirection={fadeInDirectionInput}
+              key={key}
+              project={project}
+              showModal={(): void => showModal(key)}
+            />
+          )
         },
       )}
     </section>

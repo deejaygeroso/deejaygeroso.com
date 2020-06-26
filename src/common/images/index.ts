@@ -8,7 +8,9 @@ import vanessa from '../../../public/assets/images/testimonials/vanessa-faith-ab
 // Projects Images
 import adally1 from '../../../public/assets/images/projects/adally/adally-1.png'
 import adally2 from '../../../public/assets/images/projects/adally/adally-2.png'
-import crypto from '../../../public/assets/images/projects/crypto/volume_overview.png'
+import crypto1 from '../../../public/assets/images/projects/crypto/volume_overview.png'
+import crypto2 from '../../../public/assets/images/projects/crypto/profitability.png'
+import crypto3 from '../../../public/assets/images/projects/crypto/other_stats.png'
 import databased from '../../../public/assets/images/projects/databased/databased.png'
 import dejablog from '../../../public/assets/images/projects/dejablog/dejablog.jpg'
 import helpbert from '../../../public/assets/images/projects/helpbert/helpbert.png'
@@ -18,7 +20,9 @@ import monitoring from '../../../public/assets/images/projects/monitoring/monito
 export {
   adally1,
   adally2,
-  crypto,
+  crypto1,
+  crypto2,
+  crypto3,
   dustin,
   databased,
   dejablog,
