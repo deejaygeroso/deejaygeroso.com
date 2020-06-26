@@ -1,5 +1,5 @@
 import React, { FunctionComponent, ReactElement, useEffect } from 'react'
-import ViewMyWorkButton from '../../ViewMyWorkButton'
+import ViewMyWorkButton from './ViewMyWorkButton'
 import { executeTitleTypeAnimation } from './helpers'
 import { profilePicture } from '../../../../common/images'
 import './styles.css'
