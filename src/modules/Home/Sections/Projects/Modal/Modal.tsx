@@ -16,10 +16,21 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const [currentIndexOfImage, setImageIndex] = useState(0)
 
   const viewPrevImage = (): void => {
-    setImageIndex(0)
+    const projectImageMaxIndex = project.photos.length - 1
+    if (currentIndexOfImage === 0) {
+      setImageIndex(projectImageMaxIndex)
+    } else {
+      setImageIndex(currentIndexOfImage - 1)
+    }
   }
+
   const viewNextImage = (): void => {
-    setImageIndex(1)
+    const projectImageMaxIndex = project.photos.length - 1
+    if (currentIndexOfImage >= projectImageMaxIndex) {
+      setImageIndex(0)
+    } else {
+      setImageIndex(currentIndexOfImage + 1)
+    }
   }
 
   return (
