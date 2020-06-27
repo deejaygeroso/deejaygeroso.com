@@ -1,5 +1,5 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react'
-import { FaWindowClose } from 'react-icons/fa'
+import { FaUserCircle, MdClose } from 'react-icons/all'
 import { IProject } from '../Projects'
 import './styles.css'
 
@@ -34,15 +34,38 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
 
   return (
     <div id='project-modal' className={modalNameForVisibility}>
+      <div className='modal-close-icon' onClick={hideModal}>
+        <MdClose />
+      </div>
       <div className='modal-container'>
         <div className='modal-image'>
           <img src={project.photos[currentIndexOfImage].name} />
         </div>
         <div className='modal-team'>
-          <div>Hello World</div>
-          <div>Hello World</div>
-          <div>Hello World</div>
-          <div>Hello World</div>
+          <div className='modal-member'>
+            <h1>Team Members</h1>
+          </div>
+          <div className='modal-member'>
+            <FaUserCircle />
+            <div className='modal-member-info'>
+              <h1>Deejay Geroso</h1>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+          <div className='modal-member'>
+            <FaUserCircle />
+            <div className='modal-member-info'>
+              <h1>Deejay Geroso</h1>
+              <p>Software Engineer</p>
+            </div>
+          </div>
+          <div className='modal-member'>
+            <FaUserCircle />
+            <div className='modal-member-info'>
+              <h1>Deejay Geroso</h1>
+              <p>Software Engineer</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

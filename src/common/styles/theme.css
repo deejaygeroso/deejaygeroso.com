@@ -2,7 +2,7 @@
   --background-color-dark: #181b1e;
   --background-color-light: white;
 
-  --border-grey-line: 1px solid #c2c2c2;
+  --border-grey-line: 1px solid #efefef;
 
   --color-info: blue;
   --color-success: green;
@@ -11,8 +11,12 @@
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
 
+  --modal-close-icon-size: 35px;
+  --modal-container-width: 350px;
+  --modal-icon-size: 50px;
   --modal-overlay-color: #0000004a;
-  --modal-zIndex: 99;
+  --modal-padding: 100px;
+  --modal-zIndex: 90;
 
   --nav-background-color: #171a1c;
 
