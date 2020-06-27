@@ -1,19 +1,26 @@
-import React, { FunctionComponent, ReactElement, ReactNode } from 'react'
+import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { FaWindowClose } from 'react-icons/fa'
+import { IProject } from '../Projects'
 import './styles.css'
 
 interface IProps {
-  children: ReactNode
   hideModal(): void
   isVisible: boolean
   modalId: string
-  viewNextImage(): void
-  viewPrevImage(): void
+  project: IProject
 }
 
-const ProjectModal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
-  const { children, hideModal, isVisible, modalId, viewNextImage, viewPrevImage } = props
+const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
+  const { hideModal, isVisible, modalId, project } = props
   const modalNameForVisibility = isVisible ? 'modal' : 'modal modal-display-none'
+  const [currentIndexOfImage, setImageIndex] = useState(0)
+
+  const viewPrevImage = (): void => {
+    setImageIndex(0)
+  }
+  const viewNextImage = (): void => {
+    setImageIndex(1)
+  }
 
   return (
     <div className={modalNameForVisibility} id={`modal-${modalId}`}>
@@ -29,10 +36,14 @@ const ProjectModal: FunctionComponent<IProps> = (props: IProps): ReactElement =>
             <FaWindowClose />
           </div>
         </div>
-        <div className='modal-content'>{children}</div>
+        <div className='modal-content'>
+          <div className='modal-image-container'>
+            <img className='project-images' src={project.photos[currentIndexOfImage].name} />
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
-export default ProjectModal
+export default Modal

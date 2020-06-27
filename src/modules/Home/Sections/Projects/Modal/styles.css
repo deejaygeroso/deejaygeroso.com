@@ -69,12 +69,12 @@
   width: 100%;
 }
 
-.modal > .modal-container > .modal-content > .image-container {
+.modal > .modal-container > .modal-content > .modal-image-container {
   height: 100%;
   width: 100%;
 }
 
-.modal > .modal-container > .modal-content > .image-container > img {
+.modal > .modal-container > .modal-content > .modal-image-container > img {
   box-sizing: border-box;
   height: 100%;
   object-fit: cover;
