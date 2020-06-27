@@ -6,13 +6,12 @@ import './styles.css'
 interface IProps {
   hideModal(): void
   isVisible: boolean
-  modalId: string
   project: IProject
 }
 
 const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
-  const { hideModal, isVisible, modalId, project } = props
-  const modalNameForVisibility = isVisible ? 'modal' : 'modal modal-display-none'
+  const { hideModal, isVisible, project } = props
+  const modalNameForVisibility = isVisible ? '' : 'modal-display-none'
   const [currentIndexOfImage, setImageIndex] = useState(0)
 
   const viewPrevImage = (): void => {
@@ -34,23 +33,16 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   }
 
   return (
-    <div className={modalNameForVisibility} id={`modal-${modalId}`}>
+    <div id='project-modal' className={modalNameForVisibility}>
       <div className='modal-container'>
-        <div className='modal-tabs'>
-          <h1>Screenshots</h1>
-          <h1>Description</h1>
-          <h1>Team Members</h1>
-          {/* TODO: next and prev are temporary only */}
-          <h1 onClick={viewPrevImage}>Prev</h1>
-          <h1 onClick={viewNextImage}>Next</h1>
-          <div className='modal-close' onClick={hideModal}>
-            <FaWindowClose />
-          </div>
+        <div className='modal-image'>
+          <img src={project.photos[currentIndexOfImage].name} />
         </div>
-        <div className='modal-content'>
-          <div className='modal-image-container'>
-            <img className='project-images' src={project.photos[currentIndexOfImage].name} />
-          </div>
+        <div className='modal-team'>
+          <div>Hello World</div>
+          <div>Hello World</div>
+          <div>Hello World</div>
+          <div>Hello World</div>
         </div>
       </div>
     </div>

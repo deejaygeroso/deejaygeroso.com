@@ -36,7 +36,7 @@ const Projects: FunctionComponent = (): ReactElement => {
   return (
     <section id='projects'>
       <h1>PROJECTS</h1>
-      <Modal isVisible={isModalVisible} hideModal={hideModal} modalId='1' project={projectsData[projectIndex]} />
+      <Modal isVisible={isModalVisible} hideModal={hideModal} project={projectsData[projectIndex]} />
       {projects.map(
         (project: IProject, key: number): ReactElement => {
           const fadeInDirectionInput = key % 2 === 0 ? fadeInDirection.right : fadeInDirection.left
