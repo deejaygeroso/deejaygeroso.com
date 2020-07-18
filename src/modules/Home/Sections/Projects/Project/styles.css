@@ -1,10 +1,10 @@
 #projects .project-container {
-  align-items: center;
+  align-items: flex-start;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: var(--spacing-size-e) 0;
+  margin: var(--project-margin);
   width: 100%;
 }
 
@@ -26,6 +26,7 @@
   box-sizing: border-box;
   cursor: pointer;
   height: 100%;
+  margin: var(--spacing-size-d) 0 0 0;
   width: var(--project-images-width);
 }
 
@@ -34,6 +35,7 @@
   :root {
     --project-images-width: 450px;
     --project-info: 650px;
+    --project-margin: 0 0 var(--spacing-size-e) 0;
   }
   #projects .project-container > .title-on-mobile {
     display: none;
@@ -45,6 +47,7 @@
   :root {
     --project-images-width: 350px;
     --project-info: 450px;
+    --project-margin: 0 0 var(--spacing-size-e) 0;
   }
   #projects .project-container > .title-on-mobile {
     display: none;
@@ -56,11 +59,15 @@
   :root {
     --project-images-width: 100%;
     --project-info: 250px;
+    --project-margin: 0 0 var(--spacing-size-e) 0;
   }
   #projects .project-container {
+    align-items: center;
     flex-direction: column;
-    margin: 0 0 var(--spacing-size-e) 0;
-    padding: 0 var(--spacing-size-e);
+    padding: 0 var(--spacing-size-b);
+  }
+  #projects .project-container > .project-images {
+    margin: 0;
   }
   #projects .project-container > .title-on-mobile {
     display: block;
@@ -69,5 +76,11 @@
   }
   #projects .project-container > .project-info {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  :root {
+    --project-margin: 0 0 var(--spacing-size-c) 0;
   }
 }
