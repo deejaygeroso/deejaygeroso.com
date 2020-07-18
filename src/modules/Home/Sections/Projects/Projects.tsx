@@ -1,17 +1,19 @@
-import Modal from './Modal'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
+import Modal from './Modal'
 import Project from './Project'
-import projectsData from './projectsData'
-import projects from './projectsData'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'
+import projects from './projectsData'
+import projectsData from './projectsData'
 import './styles.css'
+
+export interface IDomain {
+  name: string
+  url: string
+}
 
 export interface IProject {
   description: string
-  domains: {
-    name: string
-    url: string
-  }[]
+  domains: IDomain[]
   name: string
   photos: {
     name: string

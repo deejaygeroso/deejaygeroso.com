@@ -1,6 +1,6 @@
+import { IDomain, IProject } from '../Projects'
 import React, { FunctionComponent, ReactElement } from 'react'
 import ScrollAnimation, { fadeInDirection } from '../ScrollAnimation/ScrollAnimation'
-import { IProject } from '../Projects'
 import './styles.css'
 
 interface IProps {
@@ -26,7 +26,7 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
             {project.domains.length !== 0 && (
               <span>
                 {project.domains.map(
-                  (domain: any, key: number): ReactElement => (
+                  (domain: IDomain, key: number): ReactElement => (
                     <a href={domain.url} key={key} target='_blank' rel='noopener noreferrer'>
                       {domain.name}
                     </a>
