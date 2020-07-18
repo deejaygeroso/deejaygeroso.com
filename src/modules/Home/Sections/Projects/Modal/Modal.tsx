@@ -1,6 +1,6 @@
-import { FaUserCircle, MdClose } from 'react-icons/all'
+import { FaLinkedin, FaUserCircle, MdClose } from 'react-icons/all'
+import { IMember, IProject } from '../Projects'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
-import { IProject } from '../Projects'
 import './styles.css'
 
 interface IProps {
@@ -45,27 +45,21 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
           <div className='modal-member'>
             <h1>Team Members</h1>
           </div>
-          <div className='modal-member'>
-            <FaUserCircle />
-            <div className='modal-member-info'>
-              <h1>Deejay Geroso</h1>
-              <p>Software Engineer</p>
-            </div>
-          </div>
-          <div className='modal-member'>
-            <FaUserCircle />
-            <div className='modal-member-info'>
-              <h1>Deejay Geroso</h1>
-              <p>Software Engineer</p>
-            </div>
-          </div>
-          <div className='modal-member'>
-            <FaUserCircle />
-            <div className='modal-member-info'>
-              <h1>Deejay Geroso</h1>
-              <p>Software Engineer</p>
-            </div>
-          </div>
+          {project.members.map(
+            (member: IMember, key: number): ReactElement => (
+              <div className='modal-member' key={key}>
+                {member.image ? <img src={member.image} /> : <FaUserCircle />}
+                <div className='modal-member-info'>
+                  <h1>{member.name}</h1>
+                  <p>{member.position}</p>
+                  <p className='linked-in-link'>
+                    <span>Linked</span>
+                    <FaLinkedin />
+                  </p>
+                </div>
+              </div>
+            ),
+          )}
         </div>
       </div>
     </div>
