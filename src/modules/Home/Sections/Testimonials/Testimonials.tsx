@@ -10,7 +10,8 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         <img src={denmark} />
         <div>
           <h1>Denmark Tabiolo</h1>
-          <p>ReactJS Developer when he was working @ Adally</p>
+          <p>ReactJS Developer @ Adally</p>
+          <p>June 29, 2020</p>
           <p>
             {`Based on my experience as a developer, Deejay was the best teammate that I had ever worked with. He is
             really knowledgeable and passionate with his craft. He is a hardworking person and a good leader.`}
@@ -31,6 +32,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         <div>
           <h1>Dustin Watkins</h1>
           <p>Co-Founder and Head of Engineering of Databased</p>
+          <p>January 4, 2020</p>
           <p>Having worked with Deejay for almost a year, I learned a few things about him:</p>
           <ul>
             <li>He is a hard worker</li>
@@ -47,6 +49,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         <div>
           <h1>Vanessa Faith Abordo</h1>
           <p>Web Developer (Previous Teammate @ Snapzio Inc.)</p>
+          <p>March 2, 2019</p>
           <p>
             Deejay is a proficient React Native developer and a great team player. He is knowledgeable not only on
             frontend, but on backend and devops roles as well. He can do full stack development but more focus on
