@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const dotenv = require('dotenv')
@@ -64,7 +65,7 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png|svg|jpg|gif|ico)$/,
+          test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
           use: ['file-loader'],
         },
       ],
