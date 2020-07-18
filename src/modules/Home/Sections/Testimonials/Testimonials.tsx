@@ -10,7 +10,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         <img src={denmark} />
         <div>
           <h1>Denmark Tabiolo</h1>
-          <p>ReactJS Developer during Adally</p>
+          <p>ReactJS Developer when he was working @ Adally</p>
           <p>
             {`Based on my experience as a developer, Deejay was the best teammate that I had ever worked with. He is
             really knowledgeable and passionate with his craft. He is a hardworking person and a good leader.`}
