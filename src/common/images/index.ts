@@ -1,7 +1,9 @@
+/* eslint-disable sort-imports */
 // My Profile Picture
 import profilePicture from '../../../public/assets/images/profile.jpg'
 
 // Persons
+import denmark from '../../../public/assets/images/testimonials/denmark-tabiolo.png'
 import dustin from '../../../public/assets/images/testimonials/dustin-watkins.png'
 import vanessa from '../../../public/assets/images/testimonials/vanessa-faith-abordo.png'
 
@@ -23,6 +25,7 @@ export {
   crypto1,
   crypto2,
   crypto3,
+  denmark,
   dustin,
   databased,
   dejablog,

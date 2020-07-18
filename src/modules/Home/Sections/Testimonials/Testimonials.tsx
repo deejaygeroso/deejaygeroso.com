@@ -1,11 +1,31 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import { dustin, vanessa } from '../../../../common/images'
+import { denmark, dustin, vanessa } from '../../../../common/images'
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {
   return (
     <section id='testimonials'>
       <h1>Testimonials</h1>
+      <div className='profile'>
+        <img src={denmark} />
+        <div>
+          <h1>Denmark Tabiolo</h1>
+          <p>ReactJS Developer during Adally</p>
+          <p>
+            {`Based on my experience as a developer, Deejay was the best teammate that I had ever worked with. He is
+            really knowledgeable and passionate with his craft. He is a hardworking person and a good leader.`}
+          </p>
+          <p>
+            {`He's
+            pretty much flexible that he can do Frontend Development, Backend Development, Database Management and even
+            Dev Ops with ease.`}
+          </p>
+          <p>
+            {`As a leader, he is also considerate and open to fresh ideas giving his teammates the
+            opportunity to shine. No doubt, I highly recommend this guy.`}
+          </p>
+        </div>
+      </div>
       <div className='profile'>
         <img src={dustin} />
         <div>
