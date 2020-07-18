@@ -5,7 +5,9 @@ import {
   crypto2,
   crypto3,
   databased,
+  deejay,
   dejablog,
+  denmark,
   helpbert,
   meegle,
   monitoring,
@@ -20,6 +22,23 @@ const projects: IProject[] = [
       {
         name: 'adally.com',
         url: 'https://www.adally.com',
+      },
+    ],
+    members: [
+      {
+        image: null,
+        name: 'Micah Uyeharam',
+        position: 'Project Supervisor',
+      },
+      {
+        image: deejay,
+        name: 'Deejay Geroso',
+        position: 'Lead Developer',
+      },
+      {
+        image: denmark,
+        name: 'Denmark Tabiolo',
+        position: 'ReactJS Developer',
       },
     ],
     name: 'Adally',
@@ -43,6 +62,28 @@ const projects: IProject[] = [
         url: 'https://www.databased.com',
       },
     ],
+    members: [
+      {
+        image: null,
+        name: 'Dustin Watkins',
+        position: 'Co-Founder and Head of Engineering',
+      },
+      {
+        image: null,
+        name: 'Christopher Bradshaw',
+        position: 'Front-end Team Lead',
+      },
+      {
+        image: null,
+        name: 'Justin Behnke',
+        position: 'Founding Engineer',
+      },
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Software Engineer',
+      },
+    ],
     name: 'Databased',
     photos: [
       {
@@ -56,6 +97,18 @@ const projects: IProject[] = [
     description:
       'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
     domains: [],
+    members: [
+      {
+        image: null,
+        name: 'Richard Salem',
+        position: 'Project Owner',
+      },
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Software Engineer',
+      },
+    ],
     name: 'Crypto Asset Management',
     photos: [
       {
@@ -84,6 +137,73 @@ const projects: IProject[] = [
         url: 'https://play.google.com/store/apps/details?id=com.snapzio.meegle&hl=en',
       },
     ],
+    members: [
+      {
+        image: null,
+        name: 'Faith Hall',
+        position: 'Senior Manager',
+      },
+      {
+        image: null,
+        name: 'Casan Jr Mala',
+        position: 'Senior Front-end Developer',
+      },
+      {
+        image: null,
+        name: 'Roderick Gohetia',
+        position: 'Senior Back-end Developer',
+      },
+      {
+        image: null,
+        name: 'Vanessa Faith Abordo',
+        position: 'Back-end Developer',
+      },
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Mobile Developer',
+      },
+      {
+        image: null,
+        name: 'Aryen Jim Bejagan',
+        position: 'Front-end Developer',
+      },
+      {
+        image: null,
+        name: 'Jason Abella',
+        position: 'Front-end Developer',
+      },
+      {
+        image: null,
+        name: 'Marco Budiongan',
+        position: 'DevOps Engineer',
+      },
+      {
+        image: null,
+        name: 'Jon Cesar Tagsip',
+        position: 'Quality Assurance',
+      },
+      {
+        image: null,
+        name: 'Hazel Ko Lumactod',
+        position: 'Quality Assurance',
+      },
+      {
+        image: null,
+        name: 'Sheryl Picante',
+        position: 'Quality Assurance',
+      },
+      {
+        image: null,
+        name: 'Portia Linao',
+        position: 'Marketing Specialist',
+      },
+      {
+        image: null,
+        name: 'Angela Doloricon',
+        position: 'Marketing Specialist',
+      },
+    ],
     name: 'Meegle',
     photos: [
       {
@@ -104,6 +224,28 @@ const projects: IProject[] = [
   {
     description: 'An application that monitors servers, domains and websites.',
     domains: [],
+    members: [
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Mobile Developer',
+      },
+      {
+        image: null,
+        name: 'Vanessa Faith Abordo',
+        position: 'Back-end Developer',
+      },
+      {
+        image: null,
+        name: 'John Crisostomo',
+        position: 'Back-end Developer',
+      },
+      {
+        image: null,
+        name: 'John Erick Madduma',
+        position: 'Front-end Developer',
+      },
+    ],
     name: 'Meegle Monitoring',
     photos: [
       {
@@ -116,6 +258,23 @@ const projects: IProject[] = [
   {
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
+    members: [
+      {
+        image: null,
+        name: 'Casan Jr Mala',
+        position: 'Full-stack Developer',
+      },
+      {
+        image: null,
+        name: 'Vanessa Faith Abordo',
+        position: 'Back-end Developer',
+      },
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Mobile Developer',
+      },
+    ],
     name: 'Helpbert',
     photos: [
       {
@@ -133,6 +292,18 @@ const projects: IProject[] = [
   {
     description: `An application that can create and manage the multiple blogs, posts and user comments.`,
     domains: [],
+    members: [
+      {
+        image: null,
+        name: 'Jalil Laguindab',
+        position: 'Full-stack Developer',
+      },
+      {
+        image: null,
+        name: 'Deejay Geroso',
+        position: 'Full-stack Developer',
+      },
+    ],
     name: 'Dejablog (CMS)',
     photos: [
       {

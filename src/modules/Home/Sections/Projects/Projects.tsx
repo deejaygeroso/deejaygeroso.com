@@ -11,9 +11,16 @@ export interface IDomain {
   url: string
 }
 
+export interface IMember {
+  image: string
+  name: string
+  position: string
+}
+
 export interface IProject {
   description: string
   domains: IDomain[]
+  members: IMember[]
   name: string
   photos: {
     name: string

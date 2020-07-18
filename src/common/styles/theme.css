@@ -11,10 +11,15 @@
 
   --font-family: Montserrat, tahoma, verdana, sans-serif;
 
+  --linked-in: #0077b5;
+
   --modal-close-icon-size: 35px;
   --modal-container-width: 350px;
   --modal-icon-size: 50px;
   --modal-overlay-color: #0000004a;
+  --modal-member-image-size: 50px;
+  --modal-member-info-name-size: 15px;
+  --modal-member-info-title-size: 12px;
   --modal-padding: 100px;
   --modal-zIndex: 90;
 
