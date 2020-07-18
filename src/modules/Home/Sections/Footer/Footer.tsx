@@ -1,5 +1,5 @@
-import React, { FunctionComponent, ReactElement } from 'react'
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
+import React, { FunctionComponent, ReactElement } from 'react'
 import './styles.css'
 
 const Footer: FunctionComponent = (): ReactElement => {

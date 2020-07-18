@@ -1,5 +1,5 @@
-import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { FaUserCircle, MdClose } from 'react-icons/all'
+import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { IProject } from '../Projects'
 import './styles.css'
 

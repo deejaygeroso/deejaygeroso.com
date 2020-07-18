@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import { RouteComponentProps } from '@reach/router'
 import { Navigation } from '../../common/components'
+import { RouteComponentProps } from '@reach/router'
 import './styles.css'
 
 const Blog: FunctionComponent<RouteComponentProps> = (): ReactElement => {

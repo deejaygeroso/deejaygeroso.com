@@ -1,5 +1,16 @@
+import {
+  adally1,
+  adally2,
+  crypto1,
+  crypto2,
+  crypto3,
+  databased,
+  dejablog,
+  helpbert,
+  meegle,
+  monitoring,
+} from '../../../../common/images'
 import { IProject } from './Projects'
-import { adally1, adally2, crypto1, crypto2, crypto3, databased, dejablog, helpbert, meegle, monitoring } from '../../../../common/images'
 
 const projects: IProject[] = [
   {
@@ -9,7 +20,7 @@ const projects: IProject[] = [
       {
         name: 'adally.com',
         url: 'https://www.adally.com',
-      }
+      },
     ],
     name: 'Adally',
     photos: [
@@ -25,13 +36,12 @@ const projects: IProject[] = [
     technology: [],
   },
   {
-    description:
-      `A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`,
+    description: `A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`,
     domains: [
       {
         name: 'databased.com',
         url: 'https://www.databased.com',
-      }
+      },
     ],
     name: 'Databased',
     photos: [
@@ -39,12 +49,12 @@ const projects: IProject[] = [
         name: databased,
       },
     ],
-    position:
-      'Full-stack Javascript Developer',
+    position: 'Full-stack Typescript Developer',
     technology: [],
   },
   {
-    description: 'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
+    description:
+      'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
     domains: [],
     name: 'Crypto Asset Management',
     photos: [
@@ -58,12 +68,12 @@ const projects: IProject[] = [
         name: crypto3,
       },
     ],
-    position:
-      'Full-stack Javascript Developer',
+    position: 'Full-stack Javascript Developer',
     technology: ['ReactJS', 'Redux', 'NextJS', 'ExpressJS', 'MongoDB', 'CoinMarketCap API version 1'],
   },
   {
-    description: 'A system that helps business owners manage their own website, online social engagements all in one single application.',
+    description:
+      'A system that helps business owners manage their own website, online social engagements all in one single application.',
     domains: [
       {
         name: 'meegle-ios',
@@ -72,7 +82,7 @@ const projects: IProject[] = [
       {
         name: 'meegle-android',
         url: 'https://play.google.com/store/apps/details?id=com.snapzio.meegle&hl=en',
-      }
+      },
     ],
     name: 'Meegle',
     photos: [
@@ -80,9 +90,16 @@ const projects: IProject[] = [
         name: meegle,
       },
     ],
-    position:
-      'Mobile Developer (ios & android)',
-    technology: ['React Native (ios & android)', 'Redux-observable', 'Feathers JS (Client)', 'FacebookSDK', 'GoogleSDK', 'FirebaseSDK (Crashlytics & Cloud Messaging)', 'OneSignalSDK (Notification Upgrade)'],
+    position: 'Mobile Developer (ios & android)',
+    technology: [
+      'React Native (ios & android)',
+      'Redux-observable',
+      'Feathers JS (Client)',
+      'FacebookSDK',
+      'GoogleSDK',
+      'FirebaseSDK (Crashlytics & Cloud Messaging)',
+      'OneSignalSDK (Notification Upgrade)',
+    ],
   },
   {
     description: 'An application that monitors servers, domains and websites.',
@@ -93,8 +110,7 @@ const projects: IProject[] = [
         name: monitoring,
       },
     ],
-    position:
-      'Mobile Developer (ios & android)',
+    position: 'Mobile Developer (ios & android)',
     technology: ['React Native (ios & android)', 'Redux', 'Feathers JS (Client)'],
   },
   {
@@ -106,9 +122,13 @@ const projects: IProject[] = [
         name: helpbert,
       },
     ],
-    position:
-      'Mobile Developer (ios & android)',
-    technology: ['React Native (ios & android)', 'Redux', 'Feathers JS (Client)', 'FirebaseSDK (Crashlytics & Cloud Messaging)'],
+    position: 'Mobile Developer (ios & android)',
+    technology: [
+      'React Native (ios & android)',
+      'Redux',
+      'Feathers JS (Client)',
+      'FirebaseSDK (Crashlytics & Cloud Messaging)',
+    ],
   },
   {
     description: `An application that can create and manage the multiple blogs, posts and user comments.`,
@@ -119,8 +139,7 @@ const projects: IProject[] = [
         name: dejablog,
       },
     ],
-    position:
-      'Front-end Web Developer with semi Back-end Role',
+    position: 'Front-end Web Developer with semi Back-end Role',
     technology: ['ReactJS', 'MeteorJS', 'ExpressJS', 'MongoDB'],
   },
 ]
