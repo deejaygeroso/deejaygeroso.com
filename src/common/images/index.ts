@@ -5,16 +5,17 @@ import profilePicture from '../../../public/assets/images/profile.jpg'
 // Persons
 import angela from '../../../public/assets/images/persons/angela-doloricon.jpeg'
 import aryen from '../../../public/assets/images/persons/aryen-jim-bejagan.jpg'
-import junski from '../../../public/assets/images/persons/casan-jr-mala.jpeg'
 import chris from '../../../public/assets/images/persons/christopher-bradshaw.png'
 import deejay from '../../../public/assets/images/persons/deejay-geroso.jpg'
 import denmark from '../../../public/assets/images/persons/denmark-tabiolo.png'
 import dustin from '../../../public/assets/images/persons/dustin-watkins.png'
+import erick from '../../../public/assets/images/persons/john-erick-madduma.jpeg'
+import giovanni from '../../../public/assets/images/persons/giovanni-lobitos.jpg'
 import hazel from '../../../public/assets/images/persons/hazel-ko-lumactod.jpg'
 import jalil from '../../../public/assets/images/persons/jalil-laguindab.jpeg'
 import jason from '../../../public/assets/images/persons/jason-abella.jpeg'
-import erick from '../../../public/assets/images/persons/john-erick-madduma.jpeg'
 import jonCesar from '../../../public/assets/images/persons/jon-cesar-tagsip.jpeg'
+import junski from '../../../public/assets/images/persons/casan-jr-mala.jpeg'
 import justin from '../../../public/assets/images/persons/justin-behnke.png'
 import marcoPaps from '../../../public/assets/images/persons/marco-budiongan.jpeg'
 import papaRods from '../../../public/assets/images/persons/roderick-gohetia.jpeg'
@@ -50,6 +51,7 @@ export {
   databased,
   dejablog,
   erick,
+  giovanni,
   hazel,
   helpbert,
   jalil,

@@ -1,3 +1,4 @@
+import { IMember, IProject } from './Projects'
 import {
   adally1,
   adally2,
@@ -13,6 +14,7 @@ import {
   denmark,
   dustin,
   erick,
+  giovanni,
   hazel,
   helpbert,
   jalil,
@@ -29,26 +31,28 @@ import {
   sheryl,
   vanessa,
 } from '../../../../common/images'
-import { IProject } from './Projects'
 
 const deejayGerosoLinkedIn = 'https://www.linkedin.com/in/deejaygeroso'
 const memberDeejayGeroso = {
   image: deejay,
   linkedIn: deejayGerosoLinkedIn,
   name: 'Deejay Geroso',
-  position: 'Lead Developer',
+  position: '',
 }
 const memberVanessaFaithAbordo = {
   image: vanessa,
   linkedIn: 'https://www.linkedin.com/in/vanessa-faith-abordo-24a673131',
   name: 'Vanessa Faith Abordo',
-  position: 'Back-end Developer',
+  position: '',
 }
 const memberJunski = {
   image: junski,
   linkedIn: 'https://www.linkedin.com/in/casan-jr-mala-58b796a7',
   name: 'Casan Jr Mala',
-  position: 'Senior Front-end Developer',
+  position: '',
+}
+const setMemberPosition = (member: IMember, position: string): IMember => {
+  return Object.assign({}, member, { position })
 }
 
 const projects: IProject[] = [
@@ -68,7 +72,7 @@ const projects: IProject[] = [
         name: 'Micah Uyeharam',
         position: 'Project Supervisor',
       },
-      memberDeejayGeroso,
+      setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
       {
         image: denmark,
         linkedIn: 'https://www.linkedin.com/in/denmark-tabiolo-b45839a9',
@@ -116,7 +120,7 @@ const projects: IProject[] = [
         name: 'Justin Lee Behnke',
         position: 'Founding Engineer',
       },
-      memberDeejayGeroso,
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Developer'),
     ],
     name: 'Databased',
     photos: [
@@ -138,7 +142,7 @@ const projects: IProject[] = [
         name: 'Richard Paul Salem',
         position: 'Project Owner',
       },
-      memberDeejayGeroso,
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
     ],
     name: 'Crypto Asset Management',
     photos: [
@@ -175,26 +179,32 @@ const projects: IProject[] = [
         name: 'Faith Hall',
         position: 'Senior Manager',
       },
-      memberJunski,
+      setMemberPosition(memberJunski, 'Senior Front-end Developer'),
       {
         image: papaRods,
         linkedIn: 'https://www.linkedin.com/in/roderick-gohetia',
         name: 'Roderick Gohetia',
         position: 'Senior Back-end Developer',
       },
-      memberVanessaFaithAbordo,
-      memberDeejayGeroso,
+      setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
+      {
+        image: giovanni,
+        linkedIn: null,
+        name: 'Giovanni Lobitos',
+        position: 'Front-end Developer',
+      },
       {
         image: aryen,
         linkedIn: null,
         name: 'Aryen Jim Bejagan',
-        position: 'Front-end Developer',
+        position: 'Website Designer',
       },
       {
         image: jason,
         linkedIn: 'https://www.linkedin.com/in/jason-abella-b4837215a',
         name: 'Jason Abella',
-        position: 'Front-end Developer',
+        position: 'Website Designer',
       },
       {
         image: marcoPaps,
@@ -254,8 +264,8 @@ const projects: IProject[] = [
     description: 'An application that monitors servers, domains and websites.',
     domains: [],
     members: [
-      memberDeejayGeroso,
-      memberVanessaFaithAbordo,
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
+      setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
       {
         image: null,
         linkedIn: null,
@@ -281,7 +291,11 @@ const projects: IProject[] = [
   {
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
-    members: [memberJunski, memberVanessaFaithAbordo, memberDeejayGeroso],
+    members: [
+      setMemberPosition(memberJunski, 'Full-stack Developer'),
+      setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
+    ],
     name: 'Helpbert',
     photos: [
       {
@@ -304,9 +318,9 @@ const projects: IProject[] = [
         image: jalil,
         linkedIn: 'https://www.linkedin.com/in/jalil-laguindab',
         name: 'Jalil Laguindab',
-        position: 'Full-stack Developer',
+        position: 'Back-end Developer',
       },
-      memberDeejayGeroso,
+      setMemberPosition(memberDeejayGeroso, 'Front-end Developer'),
     ],
     name: 'Dejablog (CMS)',
     photos: [
