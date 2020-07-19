@@ -1,6 +1,7 @@
 import { FaLinkedin, FaUserCircle, MdClose } from 'react-icons/all'
 import { IMember, IProject } from '../Projects'
-import React, { FunctionComponent, ReactElement, useState } from 'react'
+import React, { FunctionComponent, ReactElement, useRef, useState } from 'react'
+import useOutsideAlerter from './outsideAlerter'
 import './styles.css'
 
 interface IProps {
@@ -13,6 +14,9 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { hideModal, isVisible, project } = props
   const modalNameForVisibility = isVisible ? '' : 'modal-display-none'
   const [currentIndexOfImage, setImageIndex] = useState(0)
+
+  const wrapperRef = useRef(null)
+  useOutsideAlerter(wrapperRef, hideModal)
 
   const viewPrevImage = (): void => {
     const projectImageMaxIndex = project.photos.length - 1
@@ -42,7 +46,7 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
       <div className='modal-close-icon' onClick={hideModal}>
         <MdClose />
       </div>
-      <div className='modal-container'>
+      <div ref={wrapperRef} className='modal-container'>
         <div className='modal-image'>
           <img src={project.photos[currentIndexOfImage].name} />
         </div>
