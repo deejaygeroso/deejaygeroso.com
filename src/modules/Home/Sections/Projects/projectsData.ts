@@ -1,6 +1,9 @@
 import {
   adally1,
   adally2,
+  angela,
+  aryen,
+  chris,
   crypto1,
   crypto2,
   crypto3,
@@ -8,11 +11,45 @@ import {
   deejay,
   dejablog,
   denmark,
+  dustin,
+  erick,
+  hazel,
   helpbert,
+  jalil,
+  jason,
+  jonCesar,
+  junski,
+  justin,
+  marcoPaps,
   meegle,
   monitoring,
+  papaRods,
+  portia,
+  richard,
+  sheryl,
+  vanessa,
 } from '../../../../common/images'
 import { IProject } from './Projects'
+
+const deejayGerosoLinkedIn = 'https://www.linkedin.com/in/deejaygeroso'
+const memberDeejayGeroso = {
+  image: deejay,
+  linkedIn: deejayGerosoLinkedIn,
+  name: 'Deejay Geroso',
+  position: 'Lead Developer',
+}
+const memberVanessaFaithAbordo = {
+  image: vanessa,
+  linkedIn: 'https://www.linkedin.com/in/vanessa-faith-abordo-24a673131',
+  name: 'Vanessa Faith Abordo',
+  position: 'Back-end Developer',
+}
+const memberJunski = {
+  image: junski,
+  linkedIn: 'https://www.linkedin.com/in/casan-jr-mala-58b796a7',
+  name: 'Casan Jr Mala',
+  position: 'Senior Front-end Developer',
+}
 
 const projects: IProject[] = [
   {
@@ -27,16 +64,14 @@ const projects: IProject[] = [
     members: [
       {
         image: null,
+        linkedIn: null,
         name: 'Micah Uyeharam',
         position: 'Project Supervisor',
       },
-      {
-        image: deejay,
-        name: 'Deejay Geroso',
-        position: 'Lead Developer',
-      },
+      memberDeejayGeroso,
       {
         image: denmark,
+        linkedIn: 'https://www.linkedin.com/in/denmark-tabiolo-b45839a9',
         name: 'Denmark Tabiolo',
         position: 'ReactJS Developer',
       },
@@ -64,25 +99,24 @@ const projects: IProject[] = [
     ],
     members: [
       {
-        image: null,
+        image: dustin,
+        linkedIn: 'https://www.linkedin.com/in/dustintwatkins',
         name: 'Dustin Watkins',
         position: 'Co-Founder and Head of Engineering',
       },
       {
-        image: null,
+        image: chris,
+        linkedIn: 'https://www.linkedin.com/in/christophergbradshaw',
         name: 'Christopher Bradshaw',
         position: 'Front-end Team Lead',
       },
       {
-        image: null,
-        name: 'Justin Behnke',
+        image: justin,
+        linkedIn: 'https://www.linkedin.com/in/justin-lee-behnke-a9956b8a',
+        name: 'Justin Lee Behnke',
         position: 'Founding Engineer',
       },
-      {
-        image: null,
-        name: 'Deejay Geroso',
-        position: 'Software Engineer',
-      },
+      memberDeejayGeroso,
     ],
     name: 'Databased',
     photos: [
@@ -99,15 +133,12 @@ const projects: IProject[] = [
     domains: [],
     members: [
       {
-        image: null,
-        name: 'Richard Salem',
+        image: richard,
+        linkedIn: 'https://www.linkedin.com/in/richardsalem',
+        name: 'Richard Paul Salem',
         position: 'Project Owner',
       },
-      {
-        image: null,
-        name: 'Deejay Geroso',
-        position: 'Software Engineer',
-      },
+      memberDeejayGeroso,
     ],
     name: 'Crypto Asset Management',
     photos: [
@@ -140,66 +171,64 @@ const projects: IProject[] = [
     members: [
       {
         image: null,
+        linkedIn: 'https://www.linkedin.com/in/faith-hall-3096584',
         name: 'Faith Hall',
         position: 'Senior Manager',
       },
+      memberJunski,
       {
-        image: null,
-        name: 'Casan Jr Mala',
-        position: 'Senior Front-end Developer',
-      },
-      {
-        image: null,
+        image: papaRods,
+        linkedIn: 'https://www.linkedin.com/in/roderick-gohetia',
         name: 'Roderick Gohetia',
         position: 'Senior Back-end Developer',
       },
+      memberVanessaFaithAbordo,
+      memberDeejayGeroso,
       {
-        image: null,
-        name: 'Vanessa Faith Abordo',
-        position: 'Back-end Developer',
-      },
-      {
-        image: null,
-        name: 'Deejay Geroso',
-        position: 'Mobile Developer',
-      },
-      {
-        image: null,
+        image: aryen,
+        linkedIn: null,
         name: 'Aryen Jim Bejagan',
         position: 'Front-end Developer',
       },
       {
-        image: null,
+        image: jason,
+        linkedIn: 'https://www.linkedin.com/in/jason-abella-b4837215a',
         name: 'Jason Abella',
         position: 'Front-end Developer',
       },
       {
-        image: null,
+        image: marcoPaps,
+        linkedIn: 'https://www.linkedin.com/in/marcopaps',
         name: 'Marco Budiongan',
         position: 'DevOps Engineer',
       },
       {
-        image: null,
+        image: jonCesar,
+        linkedIn: 'https://www.linkedin.com/in/jon-cesar-tagsip-1129ab15b',
         name: 'Jon Cesar Tagsip',
         position: 'Quality Assurance',
       },
       {
-        image: null,
+        image: hazel,
+        linkedIn: null,
         name: 'Hazel Ko Lumactod',
         position: 'Quality Assurance',
       },
       {
-        image: null,
+        image: sheryl,
+        linkedIn: 'https://www.linkedin.com/in/sheryl-picante-865089176',
         name: 'Sheryl Picante',
         position: 'Quality Assurance',
       },
       {
-        image: null,
+        image: portia,
+        linkedIn: 'https://www.linkedin.com/in/portia-linao',
         name: 'Portia Linao',
         position: 'Marketing Specialist',
       },
       {
-        image: null,
+        image: angela,
+        linkedIn: 'https://www.linkedin.com/in/angeladoloricon',
         name: 'Angela Doloricon',
         position: 'Marketing Specialist',
       },
@@ -225,23 +254,17 @@ const projects: IProject[] = [
     description: 'An application that monitors servers, domains and websites.',
     domains: [],
     members: [
+      memberDeejayGeroso,
+      memberVanessaFaithAbordo,
       {
         image: null,
-        name: 'Deejay Geroso',
-        position: 'Mobile Developer',
-      },
-      {
-        image: null,
-        name: 'Vanessa Faith Abordo',
-        position: 'Back-end Developer',
-      },
-      {
-        image: null,
+        linkedIn: null,
         name: 'John Crisostomo',
         position: 'Back-end Developer',
       },
       {
-        image: null,
+        image: erick,
+        linkedIn: 'https://www.linkedin.com/in/john-erick-madduma-300083113',
         name: 'John Erick Madduma',
         position: 'Front-end Developer',
       },
@@ -258,23 +281,7 @@ const projects: IProject[] = [
   {
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
-    members: [
-      {
-        image: null,
-        name: 'Casan Jr Mala',
-        position: 'Full-stack Developer',
-      },
-      {
-        image: null,
-        name: 'Vanessa Faith Abordo',
-        position: 'Back-end Developer',
-      },
-      {
-        image: null,
-        name: 'Deejay Geroso',
-        position: 'Mobile Developer',
-      },
-    ],
+    members: [memberJunski, memberVanessaFaithAbordo, memberDeejayGeroso],
     name: 'Helpbert',
     photos: [
       {
@@ -294,15 +301,12 @@ const projects: IProject[] = [
     domains: [],
     members: [
       {
-        image: null,
+        image: jalil,
+        linkedIn: 'https://www.linkedin.com/in/jalil-laguindab',
         name: 'Jalil Laguindab',
         position: 'Full-stack Developer',
       },
-      {
-        image: null,
-        name: 'Deejay Geroso',
-        position: 'Full-stack Developer',
-      },
+      memberDeejayGeroso,
     ],
     name: 'Dejablog (CMS)',
     photos: [

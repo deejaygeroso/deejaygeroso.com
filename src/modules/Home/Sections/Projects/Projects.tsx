@@ -13,6 +13,7 @@ export interface IDomain {
 
 export interface IMember {
   image: string
+  linkedIn: string
   name: string
   position: string
 }

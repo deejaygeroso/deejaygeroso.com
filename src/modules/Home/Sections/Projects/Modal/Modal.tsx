@@ -48,14 +48,18 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
           {project.members.map(
             (member: IMember, key: number): ReactElement => (
               <div className='modal-member' key={key}>
-                {member.image ? <img src={member.image} /> : <FaUserCircle />}
+                <div className='modal-member-profile-icon'>
+                  {member.image ? <img src={member.image} /> : <FaUserCircle />}
+                </div>
                 <div className='modal-member-info'>
                   <h1>{member.name}</h1>
                   <p>{member.position}</p>
-                  <p className='linked-in-link'>
-                    <span>Linked</span>
-                    <FaLinkedin />
-                  </p>
+                  {member.linkedIn && (
+                    <p className='linked-in-link'>
+                      <span>Linked</span>
+                      <FaLinkedin />
+                    </p>
+                  )}
                 </div>
               </div>
             ),

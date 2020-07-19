@@ -53,18 +53,24 @@
 #project-modal > .modal-container > .modal-team {
   display: flex;
   flex-direction: column;
+  overflow: auto;
   width: var(--modal-container-width);
 }
 
 #project-modal > .modal-container > .modal-team > .modal-member {
+  align-items: center;
   border-bottom: var(--border-grey-line);
   display: flex;
   flex-direction: row;
   font-size: var(--modal-icon-size);
   padding: var(--spacing-size-b);
 }
+#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon {
+  align-items: center;
+  display: flex;
+}
 
-#project-modal > .modal-container > .modal-team > .modal-member > img {
+#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon > img {
   border-radius: calc(var(--modal-member-image-size) / 2);
   width: var(--modal-member-image-size);
 }
@@ -99,4 +105,8 @@
   margin: var(--linked-in-icon-distance) 0 0 0;
   padding: 0 var(--linked-in-icon-distance);
   width: var(--linked-in-icon-wrapper-width);
+}
+
+#project-modal .modal-member-profile-icon {
+  font-size: var(--linked-in-icon-wrapper-width);
 }
