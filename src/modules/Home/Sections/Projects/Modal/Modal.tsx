@@ -43,8 +43,12 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     win.focus()
   }
 
-  document.onkeydown = (): void => {
-    hideModal()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  document.onkeydown = (evtInput: any): void => {
+    const evt = evtInput || window.event
+    if (evt.keyCode == 27) {
+      hideModal()
+    }
   }
 
   return (
