@@ -85,6 +85,7 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
                   {member.linkedIn && (
                     <p className='linked-in-link' onClick={(): void => openLinkedIn(member.linkedIn)}>
                       <span>View Linked</span>
+                      &nbsp;
                       <FaLinkedin />
                     </p>
                   )}

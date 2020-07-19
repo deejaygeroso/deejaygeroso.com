@@ -124,13 +124,14 @@
 
 #project-modal .linked-in-link {
   --linked-in-icon-distance: 2px;
-  --linked-in-icon-wrapper-width: 85px;
+  --linked-in-icon-wrapper-width: 90px;
   align-items: center;
   border: 1px solid var(--linked-in);
   border-radius: var(--linked-in-icon-distance);
   color: var(--linked-in);
   cursor: pointer;
   display: flex;
+  justify-content: center;
   margin: var(--linked-in-icon-distance) 0 0 0;
   padding: 0 var(--linked-in-icon-distance);
   width: var(--linked-in-icon-wrapper-width);
