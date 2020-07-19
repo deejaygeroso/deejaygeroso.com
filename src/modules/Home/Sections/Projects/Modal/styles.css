@@ -24,6 +24,25 @@
   top: 10px;
 }
 
+#project-modal .modal-right-arrow {
+  color: white;
+  position: fixed;
+  right: var(--modal-arrow-horizontal-position);
+  top: var(--modal-arrow-top-position);
+}
+
+#project-modal .modal-left-arrow > svg,
+#project-modal .modal-right-arrow > svg {
+  cursor: pointer;
+}
+
+#project-modal .modal-left-arrow {
+  color: white;
+  position: fixed;
+  left: var(--modal-arrow-horizontal-position);
+  top: var(--modal-arrow-top-position);
+}
+
 #project-modal.modal-display-none {
   display: none;
 }

@@ -1,6 +1,14 @@
-import { FaLinkedin, FaUserCircle, MdClose } from 'react-icons/all'
+import {
+  FaLinkedin,
+  FaUserCircle,
+  IoIosArrowBack,
+  IoIosArrowForward,
+  MdClose,
+  MdKeyboardArrowLeft,
+  MdKeyboardArrowRight,
+} from 'react-icons/all'
 import { IMember, IProject } from '../Projects'
-import React, { FunctionComponent, ReactElement, useRef, useState } from 'react'
+import React, { FunctionComponent, ReactElement, useRef } from 'react'
 import useOutsideAlerter from './outsideAlerter'
 import './styles.css'
 
@@ -13,28 +21,28 @@ interface IProps {
 const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { hideModal, isVisible, project } = props
   const modalNameForVisibility = isVisible ? '' : 'modal-display-none'
-  const [currentIndexOfImage, setImageIndex] = useState(0)
+  // const [currentIndexOfImage, setImageIndex] = useState(0)
 
   const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef, hideModal)
 
-  const viewPrevImage = (): void => {
-    const projectImageMaxIndex = project.photos.length - 1
-    if (currentIndexOfImage === 0) {
-      setImageIndex(projectImageMaxIndex)
-    } else {
-      setImageIndex(currentIndexOfImage - 1)
-    }
-  }
+  // const viewPrevImage = (): void => {
+  //   const projectImageMaxIndex = project.photos.length - 1
+  //   if (currentIndexOfImage === 0) {
+  //     setImageIndex(projectImageMaxIndex)
+  //   } else {
+  //     setImageIndex(currentIndexOfImage - 1)
+  //   }
+  // }
 
-  const viewNextImage = (): void => {
-    const projectImageMaxIndex = project.photos.length - 1
-    if (currentIndexOfImage >= projectImageMaxIndex) {
-      setImageIndex(0)
-    } else {
-      setImageIndex(currentIndexOfImage + 1)
-    }
-  }
+  // const viewNextImage = (): void => {
+  //   const projectImageMaxIndex = project.photos.length - 1
+  //   if (currentIndexOfImage >= projectImageMaxIndex) {
+  //     setImageIndex(0)
+  //   } else {
+  //     setImageIndex(currentIndexOfImage + 1)
+  //   }
+  // }
 
   const openLinkedIn = (url: string): void => {
     const win = window.open(url, '_blank')
@@ -51,11 +59,17 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
         <MdClose />
       </div>
       <div ref={wrapperRef} className='modal-container'>
+        <div className='modal-right-arrow'>
+          <IoIosArrowForward size={90} />
+        </div>
+        <div className='modal-left-arrow'>
+          <IoIosArrowBack size={90} />
+        </div>
         <div className='modal-image'>
           <div className='modal-title'>
             <h1>{project.name}</h1>
           </div>
-          <img src={project.photos[currentIndexOfImage].name} />
+          <img src={project.photos[0].name} />
         </div>
         <div className='modal-team'>
           <div className='modal-member'>
