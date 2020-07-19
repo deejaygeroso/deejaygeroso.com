@@ -44,10 +44,20 @@
 
 #project-modal > .modal-container > .modal-image > img {
   display: block;
-  height: 100%;
-  object-fit: scale-down;
+  height: 88%;
   margin: auto;
   max-width: 100%;
+  object-fit: scale-down;
+  padding: var(--spacing-size-a) 0;
+}
+
+#project-modal > .modal-container > .modal-image > .modal-title {
+  border-bottom: var(--border-grey-line);
+}
+
+#project-modal > .modal-container > .modal-image > .modal-title > h1 {
+  margin: 0;
+  padding: var(--spacing-size-b);
 }
 
 #project-modal > .modal-container > .modal-team {

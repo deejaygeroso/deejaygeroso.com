@@ -41,6 +41,10 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     win.focus()
   }
 
+  document.onkeydown = (): void => {
+    hideModal()
+  }
+
   return (
     <div id='project-modal' className={modalNameForVisibility}>
       <div className='modal-close-icon' onClick={hideModal}>
@@ -48,6 +52,9 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
       </div>
       <div ref={wrapperRef} className='modal-container'>
         <div className='modal-image'>
+          <div className='modal-title'>
+            <h1>{project.name}</h1>
+          </div>
           <img src={project.photos[currentIndexOfImage].name} />
         </div>
         <div className='modal-team'>
