@@ -32,6 +32,11 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     }
   }
 
+  const openLinkedIn = (url: string): void => {
+    const win = window.open(url, '_blank')
+    win.focus()
+  }
+
   return (
     <div id='project-modal' className={modalNameForVisibility}>
       <div className='modal-close-icon' onClick={hideModal}>
@@ -55,8 +60,8 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
                   <h1>{member.name}</h1>
                   <p>{member.position}</p>
                   {member.linkedIn && (
-                    <p className='linked-in-link'>
-                      <span>Linked</span>
+                    <p className='linked-in-link' onClick={(): void => openLinkedIn(member.linkedIn)}>
+                      <span>View Linked</span>
                       <FaLinkedin />
                     </p>
                   )}
