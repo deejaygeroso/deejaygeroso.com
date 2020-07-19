@@ -1,12 +1,4 @@
-import {
-  FaLinkedin,
-  FaUserCircle,
-  IoIosArrowBack,
-  IoIosArrowForward,
-  MdClose,
-  MdKeyboardArrowLeft,
-  MdKeyboardArrowRight,
-} from 'react-icons/all'
+import { FaLinkedin, FaUserCircle, IoIosArrowBack, IoIosArrowForward, MdClose } from 'react-icons/all'
 import { IMember, IProject } from '../Projects'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
 import useOutsideAlerter from './outsideAlerter'
@@ -16,10 +8,12 @@ interface IProps {
   hideModal(): void
   isVisible: boolean
   project: IProject
+  viewNextProject(): void
+  viewPrevProject(): void
 }
 
 const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
-  const { hideModal, isVisible, project } = props
+  const { hideModal, isVisible, project, viewNextProject, viewPrevProject } = props
   const modalNameForVisibility = isVisible ? '' : 'modal-display-none'
   // const [currentIndexOfImage, setImageIndex] = useState(0)
 
@@ -60,10 +54,10 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
       </div>
       <div ref={wrapperRef} className='modal-container'>
         <div className='modal-right-arrow'>
-          <IoIosArrowForward size={90} />
+          <IoIosArrowForward size={90} onClick={viewNextProject} />
         </div>
         <div className='modal-left-arrow'>
-          <IoIosArrowBack size={90} />
+          <IoIosArrowBack size={90} onClick={viewPrevProject} />
         </div>
         <div className='modal-image'>
           <div className='modal-title'>

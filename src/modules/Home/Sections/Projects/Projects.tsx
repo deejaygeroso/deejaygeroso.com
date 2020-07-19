@@ -43,10 +43,34 @@ const Projects: FunctionComponent = (): ReactElement => {
     toggleModal(false)
   }
 
+  const viewNextProject = (): void => {
+    const totalProjectCount = projectsData.length - 1
+    if (projectIndex < totalProjectCount) {
+      setProjedtIndex(projectIndex + 1)
+    } else {
+      setProjedtIndex(0)
+    }
+  }
+
+  const viewPrevProject = (): void => {
+    const lastIndexOfProject = projectsData.length - 1
+    if (projectIndex > 0) {
+      setProjedtIndex(projectIndex - 1)
+    } else {
+      setProjedtIndex(lastIndexOfProject)
+    }
+  }
+
   return (
     <section id='projects'>
       <h1>PROJECTS</h1>
-      <Modal isVisible={isModalVisible} hideModal={hideModal} project={projectsData[projectIndex]} />
+      <Modal
+        isVisible={isModalVisible}
+        hideModal={hideModal}
+        project={projectsData[projectIndex]}
+        viewNextProject={viewNextProject}
+        viewPrevProject={viewPrevProject}
+      />
       {projects.map(
         (project: IProject, key: number): ReactElement => {
           const fadeInDirectionInput = key % 2 === 0 ? fadeInDirection.right : fadeInDirection.left
