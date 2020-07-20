@@ -27,16 +27,16 @@ import vanessa from '../../../public/assets/images/persons/vanessa-faith-abordo.
 import vanessa250x250 from '../../../public/assets/images/persons/vanessa-faith-abordo-250x250.webp'
 
 // Projects Images
-import adally1 from '../../../public/assets/images/projects/adally/adally-1.png'
-import adally2 from '../../../public/assets/images/projects/adally/adally-2.png'
-import crypto1 from '../../../public/assets/images/projects/crypto/volume_overview.png'
-import crypto2 from '../../../public/assets/images/projects/crypto/profitability.png'
-import crypto3 from '../../../public/assets/images/projects/crypto/other_stats.png'
-import databased from '../../../public/assets/images/projects/databased/databased.png'
-import dejablog from '../../../public/assets/images/projects/dejablog/dejablog.jpg'
-import helpbert from '../../../public/assets/images/projects/helpbert/helpbert.png'
-import meegle from '../../../public/assets/images/projects/meegle/meegle.png'
-import monitoring from '../../../public/assets/images/projects/monitoring/monitoring.png'
+import adally1 from '../../../public/assets/images/projects/adally/adally-1.webp'
+import adally2 from '../../../public/assets/images/projects/adally/adally-2.webp'
+import crypto1 from '../../../public/assets/images/projects/crypto/volume_overview.webp'
+import crypto2 from '../../../public/assets/images/projects/crypto/profitability.webp'
+import crypto3 from '../../../public/assets/images/projects/crypto/other_stats.webp'
+import databased from '../../../public/assets/images/projects/databased/databased.webp'
+import dejablog from '../../../public/assets/images/projects/dejablog/dejablog.webp'
+import helpbert from '../../../public/assets/images/projects/helpbert/helpbert.webp'
+import meegle from '../../../public/assets/images/projects/meegle/meegle.webp'
+import monitoring from '../../../public/assets/images/projects/monitoring/monitoring.webp'
 
 export {
   adally1,
