@@ -19,7 +19,7 @@ Create file `.env` file then add variable:
 ```
 # Use ENV=prod for production
 ENV=dev
-PORT=8000
+PORT=3000
 ```
 
 ### Running docker in daemon
