@@ -18,3 +18,5 @@ package-lock.json
 
 # Mac files
 *.DS_Store
+
+service-account.json
