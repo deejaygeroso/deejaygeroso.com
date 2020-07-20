@@ -5,8 +5,12 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 
+# copy index.html which is configured for production
 COPY . .
 COPY ./config/html/index.html ./public/
+
+# copy prettier config for testing
+COPY ./config/prettier/.prettierrc.js ./.prettierrc.js
 
 RUN npm run build
 RUN npm install -g serve
