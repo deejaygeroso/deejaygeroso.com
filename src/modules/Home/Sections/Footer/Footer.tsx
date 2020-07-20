@@ -2,6 +2,9 @@ import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwit
 import React, { FunctionComponent, ReactElement } from 'react'
 import './styles.css'
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const version = require('../../../../../package.json').version
+
 const Footer: FunctionComponent = (): ReactElement => {
   const date = new Date()
   const year = date.getFullYear()
@@ -34,6 +37,7 @@ const Footer: FunctionComponent = (): ReactElement => {
       </div>
       <div>
         <p>Powered by ReactJS @ {year}</p>
+        <p>App Version: {version}</p>
       </div>
     </section>
   )

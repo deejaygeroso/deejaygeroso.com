@@ -26,6 +26,7 @@
 #footer h1,
 #footer p {
   color: var(--title-color);
+  text-align: center;
 }
 
 #footer > .mail-to {
