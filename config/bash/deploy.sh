@@ -5,4 +5,4 @@ docker push deejaygeroso/deejaygeroso:latest
 docker push deejaygeroso/deejaygeroso:$SHA
 kubectl apply -f config/k8s
 
-kubectl set image deployments/app-deployment client=deejaygeroso/deejaygeroso:$SHA
+kubectl set image deployments/app-deployment app=deejaygeroso/deejaygeroso:$SHA
