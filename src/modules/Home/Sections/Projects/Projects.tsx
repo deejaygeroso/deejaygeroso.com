@@ -13,6 +13,7 @@ export interface IDomain {
 
 export interface IMember {
   image: string
+  imageWebP: string
   linkedIn: string
   name: string
   position: string
@@ -25,6 +26,7 @@ export interface IProject {
   name: string
   photos: {
     name: string
+    webP: string
   }[]
   position: string
   technology: string[]

@@ -80,8 +80,6 @@
 }
 
 #project-modal > .modal-container > .modal-team {
-  display: flex;
-  flex-direction: column;
   overflow: auto;
   width: var(--modal-container-width);
 }
@@ -94,12 +92,13 @@
   font-size: var(--modal-icon-size);
   padding: var(--spacing-size-b);
 }
-#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon {
+#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon,
+#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon > picture {
   align-items: center;
   display: flex;
 }
 
-#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon > img {
+#project-modal > .modal-container > .modal-team > .modal-member > .modal-member-profile-icon > picture > img {
   border-radius: calc(var(--modal-member-image-size) / 2);
   width: var(--modal-member-image-size);
 }

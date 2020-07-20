@@ -32,21 +32,57 @@ import {
   vanessa,
 } from '../../../../common/images'
 
+import {
+  adally1WebP,
+  adally2WebP,
+  angelaWebP,
+  aryenWebP,
+  chrisWebP,
+  crypto1WebP,
+  crypto2WebP,
+  crypto3WebP,
+  databasedWebP,
+  deejayWebP,
+  dejablogWebP,
+  denmarkWebP,
+  dustinWebP,
+  erickWebP,
+  giovanniWebP,
+  hazelWebP,
+  helpbertWebP,
+  jalilWebP,
+  jasonWebP,
+  jonCesarWebP,
+  junskiWebP,
+  justinWebP,
+  marcoPapsWebP,
+  meegleWebP,
+  monitoringWebP,
+  papaRodsWebP,
+  portiaWebP,
+  richardWebP,
+  sherylWebP,
+  vanessaWebP,
+} from '../../../../common/images/webp'
+
 const deejayGerosoLinkedIn = 'https://www.linkedin.com/in/deejaygeroso'
 const memberDeejayGeroso = {
   image: deejay,
+  imageWebP: deejayWebP,
   linkedIn: deejayGerosoLinkedIn,
   name: 'Deejay Geroso',
   position: '',
 }
 const memberVanessaFaithAbordo = {
   image: vanessa,
+  imageWebP: vanessaWebP,
   linkedIn: 'https://www.linkedin.com/in/vanessa-faith-abordo-24a673131',
   name: 'Vanessa Faith Abordo',
   position: '',
 }
 const memberJunski = {
   image: junski,
+  imageWebP: junskiWebP,
   linkedIn: 'https://www.linkedin.com/in/casan-jr-mala-58b796a7',
   name: 'Casan Jr Mala',
   position: '',
@@ -68,6 +104,7 @@ const projects: IProject[] = [
     members: [
       {
         image: null,
+        imageWebP: null,
         linkedIn: null,
         name: 'Micah Uyeharam',
         position: 'Project Supervisor',
@@ -75,6 +112,7 @@ const projects: IProject[] = [
       setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
       {
         image: denmark,
+        imageWebP: denmarkWebP,
         linkedIn: 'https://www.linkedin.com/in/denmark-tabiolo-b45839a9',
         name: 'Denmark Tabiolo',
         position: 'ReactJS Developer',
@@ -84,9 +122,11 @@ const projects: IProject[] = [
     photos: [
       {
         name: adally1,
+        webP: adally1WebP,
       },
       {
         name: adally2,
+        webP: adally2WebP,
       },
     ],
     position:
@@ -104,18 +144,21 @@ const projects: IProject[] = [
     members: [
       {
         image: dustin,
+        imageWebP: dustinWebP,
         linkedIn: 'https://www.linkedin.com/in/dustintwatkins',
         name: 'Dustin Watkins',
         position: 'Co-Founder and Head of Engineering',
       },
       {
         image: chris,
+        imageWebP: chrisWebP,
         linkedIn: 'https://www.linkedin.com/in/christophergbradshaw',
         name: 'Christopher Bradshaw',
         position: 'Front-end Team Lead',
       },
       {
         image: justin,
+        imageWebP: justinWebP,
         linkedIn: 'https://www.linkedin.com/in/justin-lee-behnke-a9956b8a',
         name: 'Justin Lee Behnke',
         position: 'Founding Engineer',
@@ -126,6 +169,7 @@ const projects: IProject[] = [
     photos: [
       {
         name: databased,
+        webP: databasedWebP,
       },
     ],
     position: 'Full-stack Typescript Developer',
@@ -138,6 +182,7 @@ const projects: IProject[] = [
     members: [
       {
         image: richard,
+        imageWebP: richardWebP,
         linkedIn: 'https://www.linkedin.com/in/richardsalem',
         name: 'Richard Paul Salem',
         position: 'Project Owner',
@@ -148,12 +193,15 @@ const projects: IProject[] = [
     photos: [
       {
         name: crypto1,
+        webP: crypto1WebP,
       },
       {
         name: crypto2,
+        webP: crypto2WebP,
       },
       {
         name: crypto3,
+        webP: crypto3WebP,
       },
     ],
     position: 'Full-stack Javascript Developer',
@@ -175,6 +223,7 @@ const projects: IProject[] = [
     members: [
       {
         image: null,
+        imageWebP: null,
         linkedIn: 'https://www.linkedin.com/in/faith-hall-3096584',
         name: 'Faith Hall',
         position: 'Senior Manager',
@@ -182,6 +231,7 @@ const projects: IProject[] = [
       setMemberPosition(memberJunski, 'Senior Front-end Developer'),
       {
         image: papaRods,
+        imageWebP: papaRodsWebP,
         linkedIn: 'https://www.linkedin.com/in/roderick-gohetia',
         name: 'Roderick Gohetia',
         position: 'Senior Back-end Developer',
@@ -190,54 +240,63 @@ const projects: IProject[] = [
       setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       {
         image: giovanni,
+        imageWebP: giovanniWebP,
         linkedIn: null,
         name: 'Giovanni Lobitos',
         position: 'Front-end Developer',
       },
       {
         image: aryen,
+        imageWebP: aryenWebP,
         linkedIn: null,
         name: 'Aryen Jim Bejagan',
         position: 'Website Designer',
       },
       {
         image: jason,
+        imageWebP: jasonWebP,
         linkedIn: 'https://www.linkedin.com/in/jason-abella-b4837215a',
         name: 'Jason Abella',
         position: 'Website Designer',
       },
       {
         image: marcoPaps,
+        imageWebP: marcoPapsWebP,
         linkedIn: 'https://www.linkedin.com/in/marcopaps',
         name: 'Marco Budiongan',
         position: 'DevOps Engineer',
       },
       {
         image: jonCesar,
+        imageWebP: jonCesarWebP,
         linkedIn: 'https://www.linkedin.com/in/jon-cesar-tagsip-1129ab15b',
         name: 'Jon Cesar Tagsip',
         position: 'Quality Assurance',
       },
       {
         image: hazel,
+        imageWebP: hazelWebP,
         linkedIn: null,
         name: 'Hazel Ko Lumactod',
         position: 'Quality Assurance',
       },
       {
         image: sheryl,
+        imageWebP: sherylWebP,
         linkedIn: 'https://www.linkedin.com/in/sheryl-picante-865089176',
         name: 'Sheryl Picante',
         position: 'Quality Assurance',
       },
       {
         image: portia,
+        imageWebP: portiaWebP,
         linkedIn: 'https://www.linkedin.com/in/portia-linao',
         name: 'Portia Linao',
         position: 'Marketing Specialist',
       },
       {
         image: angela,
+        imageWebP: angelaWebP,
         linkedIn: 'https://www.linkedin.com/in/angeladoloricon',
         name: 'Angela Doloricon',
         position: 'Marketing Specialist',
@@ -247,6 +306,7 @@ const projects: IProject[] = [
     photos: [
       {
         name: meegle,
+        webP: meegleWebP,
       },
     ],
     position: 'Mobile Developer (ios & android)',
@@ -268,12 +328,14 @@ const projects: IProject[] = [
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
       {
         image: null,
+        imageWebP: null,
         linkedIn: null,
         name: 'John Crisostomo',
         position: 'Back-end Developer',
       },
       {
         image: erick,
+        imageWebP: erickWebP,
         linkedIn: 'https://www.linkedin.com/in/john-erick-madduma-300083113',
         name: 'John Erick Madduma',
         position: 'Front-end Developer',
@@ -283,6 +345,7 @@ const projects: IProject[] = [
     photos: [
       {
         name: monitoring,
+        webP: monitoringWebP,
       },
     ],
     position: 'Mobile Developer (ios & android)',
@@ -300,6 +363,7 @@ const projects: IProject[] = [
     photos: [
       {
         name: helpbert,
+        webP: helpbertWebP,
       },
     ],
     position: 'Mobile Developer (ios & android)',
@@ -316,6 +380,7 @@ const projects: IProject[] = [
     members: [
       {
         image: jalil,
+        imageWebP: jalilWebP,
         linkedIn: 'https://www.linkedin.com/in/jalil-laguindab',
         name: 'Jalil Laguindab',
         position: 'Back-end Developer',
@@ -326,6 +391,7 @@ const projects: IProject[] = [
     photos: [
       {
         name: dejablog,
+        webP: dejablogWebP,
       },
     ],
     position: 'Front-end Web Developer with semi Back-end Role',

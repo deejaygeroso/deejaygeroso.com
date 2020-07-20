@@ -77,7 +77,15 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
             (member: IMember, key: number): ReactElement => (
               <div className='modal-member' key={key}>
                 <div className='modal-member-profile-icon'>
-                  {member.image ? <img src={member.image} /> : <FaUserCircle />}
+                  {member.image ? (
+                    <picture>
+                      <source srcSet={member.imageWebP} type='image/webp' />
+                      <source srcSet={member.image} type='image/jpeg' />
+                      <img src={member.imageWebP} />
+                    </picture>
+                  ) : (
+                    <FaUserCircle />
+                  )}
                 </div>
                 <div className='modal-member-info'>
                   <h1>{member.name}</h1>
