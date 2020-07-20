@@ -1,28 +1,30 @@
 /* eslint-disable sort-imports */
-// My Profile Picture
-import profilePicture from '../../../public/assets/images/profile.jpg'
 
 // Persons
-import angela from '../../../public/assets/images/persons/angela-doloricon.jpeg'
-import aryen from '../../../public/assets/images/persons/aryen-jim-bejagan.jpg'
-import chris from '../../../public/assets/images/persons/christopher-bradshaw.png'
-import deejay from '../../../public/assets/images/persons/deejay-geroso.jpg'
-import denmark from '../../../public/assets/images/persons/denmark-tabiolo.png'
-import dustin from '../../../public/assets/images/persons/dustin-watkins.png'
-import erick from '../../../public/assets/images/persons/john-erick-madduma.jpeg'
-import giovanni from '../../../public/assets/images/persons/giovanni-lobitos.jpg'
-import hazel from '../../../public/assets/images/persons/hazel-ko-lumactod.jpg'
-import jalil from '../../../public/assets/images/persons/jalil-laguindab.jpeg'
-import jason from '../../../public/assets/images/persons/jason-abella.jpeg'
-import jonCesar from '../../../public/assets/images/persons/jon-cesar-tagsip.jpeg'
-import junski from '../../../public/assets/images/persons/casan-jr-mala.jpeg'
-import justin from '../../../public/assets/images/persons/justin-behnke.png'
-import marcoPaps from '../../../public/assets/images/persons/marco-budiongan.jpeg'
-import papaRods from '../../../public/assets/images/persons/roderick-gohetia.jpeg'
-import portia from '../../../public/assets/images/persons/portia-linao.jpeg'
-import richard from '../../../public/assets/images/persons/richard-paul-salem.jpeg'
-import sheryl from '../../../public/assets/images/persons/sheryl-picante.jpeg'
-import vanessa from '../../../public/assets/images/persons/vanessa-faith-abordo.png'
+import angela from '../../../public/assets/images/persons/angela-doloricon.webp'
+import aryen from '../../../public/assets/images/persons/aryen-jim-bejagan.webp'
+import chris from '../../../public/assets/images/persons/christopher-bradshaw.webp'
+import deejay from '../../../public/assets/images/persons/deejay-geroso.webp'
+import deejay250x250 from '../../../public/assets/images/persons/deejay-geroso-250x250.webp'
+import denmark from '../../../public/assets/images/persons/denmark-tabiolo.webp'
+import denmark250x250 from '../../../public/assets/images/persons/denmark-tabiolo-250x250.webp'
+import dustin from '../../../public/assets/images/persons/dustin-watkins.webp'
+import dustin250x250 from '../../../public/assets/images/persons/dustin-watkins-250x250.webp'
+import erick from '../../../public/assets/images/persons/john-erick-madduma.webp'
+import giovanni from '../../../public/assets/images/persons/giovanni-lobitos.webp'
+import hazel from '../../../public/assets/images/persons/hazel-ko-lumactod.webp'
+import jalil from '../../../public/assets/images/persons/jalil-laguindab.webp'
+import jason from '../../../public/assets/images/persons/jason-abella.webp'
+import jonCesar from '../../../public/assets/images/persons/jon-cesar-tagsip.webp'
+import junski from '../../../public/assets/images/persons/casan-jr-mala.webp'
+import justin from '../../../public/assets/images/persons/justin-behnke.webp'
+import marcoPaps from '../../../public/assets/images/persons/marco-budiongan.webp'
+import papaRods from '../../../public/assets/images/persons/roderick-gohetia.webp'
+import portia from '../../../public/assets/images/persons/portia-linao.webp'
+import richard from '../../../public/assets/images/persons/richard-paul-salem.webp'
+import sheryl from '../../../public/assets/images/persons/sheryl-picante.webp'
+import vanessa from '../../../public/assets/images/persons/vanessa-faith-abordo.webp'
+import vanessa250x250 from '../../../public/assets/images/persons/vanessa-faith-abordo-250x250.webp'
 
 // Projects Images
 import adally1 from '../../../public/assets/images/projects/adally/adally-1.png'
@@ -46,8 +48,11 @@ export {
   crypto2,
   crypto3,
   deejay,
+  deejay250x250,
   denmark,
+  denmark250x250,
   dustin,
+  dustin250x250,
   databased,
   dejablog,
   erick,
@@ -64,8 +69,8 @@ export {
   monitoring,
   papaRods,
   portia,
-  profilePicture,
   richard,
   sheryl,
   vanessa,
+  vanessa250x250,
 }

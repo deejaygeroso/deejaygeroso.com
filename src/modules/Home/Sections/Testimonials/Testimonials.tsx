@@ -1,5 +1,5 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import { denmark, dustin, vanessa } from '../../../../common/images'
+import { denmark250x250, dustin250x250, vanessa250x250 } from '../../../../common/images'
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {
@@ -7,7 +7,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
     <section id='testimonials'>
       <h1>Testimonials</h1>
       <div className='profile'>
-        <img src={denmark} />
+        <img src={denmark250x250} />
         <div>
           <h1>Denmark Tabiolo</h1>
           <p>ReactJS Developer @ Adally</p>
@@ -28,7 +28,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         </div>
       </div>
       <div className='profile'>
-        <img src={dustin} />
+        <img src={dustin250x250} />
         <div>
           <h1>Dustin Watkins</h1>
           <p>Co-Founder and Head of Engineering of Databased</p>
@@ -45,7 +45,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         </div>
       </div>
       <div className='profile'>
-        <img src={vanessa} />
+        <img src={vanessa250x250} />
         <div>
           <h1>Vanessa Faith Abordo</h1>
           <p>Web Developer (Previous Teammate @ Snapzio Inc.)</p>

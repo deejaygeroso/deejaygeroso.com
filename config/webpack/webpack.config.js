@@ -65,7 +65,7 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+          test: /\.(png|svg|jpg|jpeg|gif|ico|webp)$/,
           use: ['file-loader'],
         },
       ],
