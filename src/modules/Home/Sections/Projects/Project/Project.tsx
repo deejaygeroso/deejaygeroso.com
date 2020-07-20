@@ -18,7 +18,12 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
         {fadeInDirection.right === fadeInDirectionInput && (
-          <img className='card project-images' onClick={showModal} src={project.photos[defaultPhotoIndex].name} />
+          <img
+            alt={project.photos[defaultPhotoIndex].name}
+            className='card project-images'
+            onClick={showModal}
+            src={project.photos[defaultPhotoIndex].name}
+          />
         )}
         <div className='project-info'>
           <h2 className='project-title'>
@@ -55,7 +60,12 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
           )}
         </div>
         {fadeInDirection.left === fadeInDirectionInput && (
-          <img className='card project-images' onClick={showModal} src={project.photos[defaultPhotoIndex].name} />
+          <img
+            alt={project.photos[defaultPhotoIndex].name}
+            className='card project-images'
+            onClick={showModal}
+            src={project.photos[defaultPhotoIndex].name}
+          />
         )}
       </div>
     </ScrollAnimation>

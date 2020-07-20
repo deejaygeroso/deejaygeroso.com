@@ -25,7 +25,7 @@
 #projects .project-container > .project-images {
   box-sizing: border-box;
   cursor: pointer;
-  height: 100%;
+  height: auto;
   margin: var(--spacing-size-d) 0 0 0;
   width: var(--project-images-width);
 }
