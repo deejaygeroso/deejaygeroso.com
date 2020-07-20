@@ -140,3 +140,10 @@
 #project-modal .modal-member-profile-icon {
   font-size: var(--linked-in-icon-wrapper-width);
 }
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  #project-modal {
+    display: none;
+  }
+}

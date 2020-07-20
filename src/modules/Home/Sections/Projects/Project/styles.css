@@ -79,6 +79,7 @@
   }
 }
 
+/* ----------- Mobile Screens ----------- */
 @media only screen and (max-width: 420px) {
   :root {
     --project-margin: 0 0 var(--spacing-size-c) 0;
