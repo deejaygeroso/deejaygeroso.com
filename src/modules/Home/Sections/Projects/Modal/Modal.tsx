@@ -81,11 +81,11 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
             (member: IMember, key: number): ReactElement => (
               <div className='modal-member' key={key}>
                 <div className='modal-member-profile-icon'>
-                  {member.image ? (
+                  {member.photo.webP && member.photo.jpg ? (
                     <picture>
-                      <source srcSet={member.imageWebP} type='image/webp' />
-                      <source srcSet={member.image} type='image/jpeg' />
-                      <img alt={member.imageWebP} src={member.imageWebP} />
+                      <source srcSet={member.photo.webP} type='image/webp' />
+                      <source srcSet={member.photo.jpg} type='image/jpeg' />
+                      <img alt={member.photo.webP} src={member.photo.webP} />
                     </picture>
                   ) : (
                     <FaUserCircle />

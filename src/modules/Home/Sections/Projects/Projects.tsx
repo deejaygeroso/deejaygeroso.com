@@ -12,10 +12,12 @@ export interface IDomain {
 }
 
 export interface IMember {
-  image: string
-  imageWebP: string
   linkedIn: string
   name: string
+  photo: {
+    jpg: string
+    webP: string
+  }
   position: string
 }
 

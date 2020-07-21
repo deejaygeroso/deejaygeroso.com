@@ -17,7 +17,7 @@
   width: var(--profile-width);
 }
 
-#testimonials > .profile > img {
+#testimonials > .profile > picture > img {
   border-radius: calc(var(--image-size) / 2);
   height: var(--image-size);
   width: var(--image-size);

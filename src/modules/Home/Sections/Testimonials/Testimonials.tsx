@@ -1,5 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 import { denmark250x250, dustin250x250, vanessa250x250 } from '../../../../common/images'
+import { denmark250x250WebP, dustin250x250WebP, vanessa250x250WebP } from '../../../../common/images/webp'
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {
@@ -7,7 +8,11 @@ const Testimonials: FunctionComponent = (): ReactElement => {
     <section id='testimonials'>
       <h1>Testimonials</h1>
       <div className='profile'>
-        <img alt={denmark250x250} src={denmark250x250} />
+        <picture>
+          <source srcSet={denmark250x250WebP} type='image/webp' />
+          <source srcSet={denmark250x250} type='image/jpeg' />
+          <img alt={denmark250x250WebP} src={denmark250x250WebP} />
+        </picture>
         <div>
           <h1>Denmark Tabiolo</h1>
           <p>ReactJS Developer @ Adally</p>
@@ -28,7 +33,11 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         </div>
       </div>
       <div className='profile'>
-        <img alt={dustin250x250} src={dustin250x250} />
+        <picture>
+          <source srcSet={dustin250x250WebP} type='image/webp' />
+          <source srcSet={dustin250x250} type='image/jpeg' />
+          <img alt={dustin250x250WebP} src={dustin250x250WebP} />
+        </picture>
         <div>
           <h1>Dustin Watkins</h1>
           <p>Co-Founder and Head of Engineering of Databased</p>
@@ -45,7 +54,11 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         </div>
       </div>
       <div className='profile'>
-        <img alt={vanessa250x250} src={vanessa250x250} />
+        <picture>
+          <source srcSet={vanessa250x250WebP} type='image/webp' />
+          <source srcSet={vanessa250x250} type='image/jpeg' />
+          <img alt={vanessa250x250WebP} src={vanessa250x250WebP} />
+        </picture>
         <div>
           <h1>Vanessa Faith Abordo</h1>
           <p>Web Developer (Previous Teammate @ Snapzio Inc.)</p>
