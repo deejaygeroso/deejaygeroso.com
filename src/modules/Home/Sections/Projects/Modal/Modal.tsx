@@ -67,7 +67,11 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
           <div className='modal-title'>
             <h1>{project.name}</h1>
           </div>
-          <img alt={project.photos[0].name} src={project.photos[0].name} />
+          <picture>
+            <source srcSet={project.photos[0].webP} type='image/webp' />
+            <source srcSet={project.photos[0].jpg} type='image/jpeg' />
+            <img alt={project.photos[0].webP} src={project.photos[0].webP} />
+          </picture>
         </div>
         <div className='modal-team'>
           <div className='modal-member'>

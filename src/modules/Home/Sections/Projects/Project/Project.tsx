@@ -13,18 +13,30 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { fadeInDirection: fadeInDirectionInput, project, showModal } = props
   const projectId = `project-${project.name.toLowerCase()}`
   const defaultPhotoIndex = 0
+
+  const renderProjectPhoto = (projectInput: IProject, direction: string): ReactElement => {
+    if (fadeInDirection[direction] === fadeInDirectionInput) {
+      return (
+        <picture>
+          <source srcSet={projectInput.photos[defaultPhotoIndex].webP} type='image/webp' />
+          <source srcSet={projectInput.photos[defaultPhotoIndex].jpg} type='image/jpeg' />
+          <img
+            alt={projectInput.photos[defaultPhotoIndex].webP}
+            className='card project-images'
+            onClick={showModal}
+            src={projectInput.photos[defaultPhotoIndex].webP}
+          />
+        </picture>
+      )
+    }
+    return null
+  }
+
   return (
     <ScrollAnimation id={projectId} fadeInDirection={fadeInDirection[fadeInDirectionInput]}>
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
-        {fadeInDirection.right === fadeInDirectionInput && (
-          <img
-            alt={project.photos[defaultPhotoIndex].name}
-            className='card project-images'
-            onClick={showModal}
-            src={project.photos[defaultPhotoIndex].name}
-          />
-        )}
+        {renderProjectPhoto(project, 'right')}
         <div className='project-info'>
           <h2 className='project-title'>
             {project.name}
@@ -59,14 +71,7 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
             </>
           )}
         </div>
-        {fadeInDirection.left === fadeInDirectionInput && (
-          <img
-            alt={project.photos[defaultPhotoIndex].name}
-            className='card project-images'
-            onClick={showModal}
-            src={project.photos[defaultPhotoIndex].name}
-          />
-        )}
+        {renderProjectPhoto(project, 'left')}
       </div>
     </ScrollAnimation>
   )

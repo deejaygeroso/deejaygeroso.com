@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-#project-modal > .modal-container > .modal-image > img {
+#project-modal > .modal-container > .modal-image > picture > img {
   display: block;
   margin: auto;
   max-height: 88%;

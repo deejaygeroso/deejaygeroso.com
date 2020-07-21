@@ -25,7 +25,7 @@ export interface IProject {
   members: IMember[]
   name: string
   photos: {
-    name: string
+    jpg: string
     webP: string
   }[]
   position: string

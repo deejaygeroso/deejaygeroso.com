@@ -22,7 +22,7 @@
   padding: 0 var(--spacing-size-a);
 }
 
-#projects .project-container > .project-images {
+#projects .project-container > picture > img.project-images {
   box-sizing: border-box;
   cursor: pointer;
   height: auto;
@@ -66,7 +66,7 @@
     flex-direction: column;
     padding: 0 var(--spacing-size-b);
   }
-  #projects .project-container > .project-images {
+  #projects .project-container > picture > img.project-images {
     margin: 0;
   }
   #projects .project-container > .title-on-mobile {

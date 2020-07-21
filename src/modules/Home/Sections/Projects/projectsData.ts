@@ -121,11 +121,11 @@ const projects: IProject[] = [
     name: 'Adally',
     photos: [
       {
-        name: adally1,
+        jpg: adally1,
         webP: adally1WebP,
       },
       {
-        name: adally2,
+        jpg: adally2,
         webP: adally2WebP,
       },
     ],
@@ -168,7 +168,7 @@ const projects: IProject[] = [
     name: 'Databased',
     photos: [
       {
-        name: databased,
+        jpg: databased,
         webP: databasedWebP,
       },
     ],
@@ -192,15 +192,15 @@ const projects: IProject[] = [
     name: 'Crypto Asset Management',
     photos: [
       {
-        name: crypto1,
+        jpg: crypto1,
         webP: crypto1WebP,
       },
       {
-        name: crypto2,
+        jpg: crypto2,
         webP: crypto2WebP,
       },
       {
-        name: crypto3,
+        jpg: crypto3,
         webP: crypto3WebP,
       },
     ],
@@ -305,7 +305,7 @@ const projects: IProject[] = [
     name: 'Meegle',
     photos: [
       {
-        name: meegle,
+        jpg: meegle,
         webP: meegleWebP,
       },
     ],
@@ -344,7 +344,7 @@ const projects: IProject[] = [
     name: 'Meegle Monitoring',
     photos: [
       {
-        name: monitoring,
+        jpg: monitoring,
         webP: monitoringWebP,
       },
     ],
@@ -362,7 +362,7 @@ const projects: IProject[] = [
     name: 'Helpbert',
     photos: [
       {
-        name: helpbert,
+        jpg: helpbert,
         webP: helpbertWebP,
       },
     ],
@@ -390,7 +390,7 @@ const projects: IProject[] = [
     name: 'Dejablog (CMS)',
     photos: [
       {
-        name: dejablog,
+        jpg: dejablog,
         webP: dejablogWebP,
       },
     ],
