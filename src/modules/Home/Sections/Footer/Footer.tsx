@@ -1,5 +1,6 @@
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 import React, { FunctionComponent, ReactElement } from 'react'
+import { MdEmail } from 'react-icons/md'
 import './styles.css'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -16,6 +17,8 @@ const Footer: FunctionComponent = (): ReactElement => {
     <section id='footer'>
       <h1>CONTACT</h1>
       <div className='mail-to' onClick={mailTo}>
+        <MdEmail />
+        &nbsp;
         {email}
       </div>
       <div>

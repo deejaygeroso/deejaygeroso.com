@@ -30,7 +30,11 @@
 }
 
 #footer > .mail-to {
+  align-items: center;
+  color: var(--title-color);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 
 /* ----------- Desktop Screens ----------- */
