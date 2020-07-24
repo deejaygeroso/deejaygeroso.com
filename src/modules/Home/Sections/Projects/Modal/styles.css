@@ -56,9 +56,17 @@
 }
 
 #project-modal > .modal-container > .modal-image {
+  display: flex;
   border-right: var(--border-grey-line);
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
   width: 100%;
+}
+#project-modal > .modal-container > .modal-image > picture {
+  align-items: center;
+  display: flex;
+  flex: 1;
 }
 
 #project-modal > .modal-container > .modal-image > picture > img {
