@@ -10,7 +10,8 @@ metadata:
     networking.gke.io/managed-certificates: app-certificate
 spec:
   rules:
-    - http:
+    - host: deejaygeroso.com
+      http:
         paths:
           - path: /?(.*)
             backend:
