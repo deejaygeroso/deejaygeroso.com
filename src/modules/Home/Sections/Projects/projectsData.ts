@@ -203,7 +203,7 @@ const projects: IProject[] = [
           jpg: richard,
           webP: richardWebP,
         },
-        position: 'Project Owner',
+        position: 'Product Owner',
       },
       setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
     ],
