@@ -40,5 +40,5 @@ export const executeTitleTypeAnimation = (): void => {
         typeAnimation(title2Id, title2Text)
       })
     })
-  }, 1200)
+  }, 250)
 }
