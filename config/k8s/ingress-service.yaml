@@ -7,7 +7,9 @@ metadata:
     networking.gke.io/managed-certificates: app-certificate
 spec:
   rules:
-    - host: deejaygeroso.com
+    - host:
+        - deejaygeroso.com
+          www.deejaygeroso.com
       http:
         paths:
           - path: /
