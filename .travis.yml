@@ -15,11 +15,11 @@ before_install:
   - gcloud config set compute/zone asia-east1-a
   - gcloud container clusters get-credentials deejaygeroso-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  # - bash ./config/bash/setup_env.sh
+  - bash ./config/bash/setup_env.sh
   # - docker build -t deejaygeroso/deejaygeroso . --file ./config/docker/Dockerfile.prod
 script:
-  - bash ./config/bash/setup_env.sh
-# - docker run -e CI=true deejaygeroso/deejaygeroso npm run lint
+  # - bash ./config/bash/setup_env.sh
+  - docker run -e CI=true deejaygeroso/deejaygeroso npm run lint
 deploy:
   provider: script
   script: bash ./config/bash/setup_env.sh && bash ./config/bash/deploy.sh
