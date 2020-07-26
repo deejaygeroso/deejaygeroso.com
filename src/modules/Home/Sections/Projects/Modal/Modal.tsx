@@ -46,8 +46,17 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   document.onkeydown = (evtInput: any): void => {
     const evt = evtInput || window.event
+    // escape button
     if (evt.keyCode == 27) {
       hideModal()
+    }
+    // left right
+    if (evt.keyCode == 37) {
+      viewPrevProject()
+    }
+    // arrow right
+    if (evt.keyCode == 39) {
+      viewNextProject()
     }
   }
 
