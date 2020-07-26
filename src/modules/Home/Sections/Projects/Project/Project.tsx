@@ -6,7 +6,7 @@ import './styles.css'
 interface IProps {
   fadeInDirection: fadeInDirection.left | fadeInDirection.right
   project: IProject
-  showModal(): void
+  showModal: () => void
 }
 
 const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {

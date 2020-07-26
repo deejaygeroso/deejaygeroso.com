@@ -5,11 +5,11 @@ import useOutsideAlerter from './outsideAlerter'
 import './styles.css'
 
 interface IProps {
-  hideModal(): void
+  hideModal: () => void
   isVisible: boolean
   project: IProject
-  viewNextProject(): void
-  viewPrevProject(): void
+  viewNextProject: () => void
+  viewPrevProject: () => void
 }
 
 const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
