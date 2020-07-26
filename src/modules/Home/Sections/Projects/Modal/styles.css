@@ -67,6 +67,7 @@
   align-items: center;
   display: flex;
   flex: 1;
+  height: 90%;
 }
 
 #project-modal > .modal-container > .modal-image > picture > img {
