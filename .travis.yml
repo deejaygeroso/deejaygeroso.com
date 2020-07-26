@@ -19,7 +19,7 @@ before_script:
   - bash ./config/bash/setup_env.sh
   - docker build -t deejaygeroso/deejaygeroso . --file ./config/docker/Dockerfile.prod
 script:
-  - docker run -e CI=true deejaygeroso/deejaygeroso mpm install && npm run lint
+  - docker run -e CI=true deejaygeroso/deejaygeroso npm install && npm run lint
 deploy:
   provider: script
   script: bash ./config/bash/deploy.sh
