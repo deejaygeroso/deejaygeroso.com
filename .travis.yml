@@ -21,6 +21,6 @@ script:
   - echo "Success"
 deploy:
   provider: script
-  script: bash ./config/bash/deploy.sh
+  script: bash ./config/bash/setup_env.sh && bash ./config/bash/deploy.sh
   on:
     branch: master
