@@ -16,7 +16,6 @@ before_install:
   - gcloud container clusters get-credentials deejaygeroso-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - bash ./config/bash/setup_env.sh
-  - docker build -t deejaygeroso/deejaygeroso -f ./config/docker/Dockerfile.prod .
 script:
   # - docker run -e CI=true deejaygeroso/deejaygeroso npm install && npm run test
   - echo "Success"
