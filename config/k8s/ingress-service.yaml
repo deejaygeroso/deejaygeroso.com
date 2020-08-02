@@ -3,13 +3,15 @@ kind: Ingress
 metadata:
   name: ingress-service
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: 34.80.219.32
-    networking.gke.io/managed-certificates: app-certificate
+    kubernetes.io/ingress.class: argo-tunnel
+  labels:
+    ingress: argo-tunnel
 spec:
-  rules:
-    - host:
+  tls:
+    - hosts:
         - deejaygeroso.com
-          www.deejaygeroso.com
+  rules:
+    - host: deejaygeroso.com
       http:
         paths:
           - path: /
