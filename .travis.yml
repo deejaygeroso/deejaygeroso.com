@@ -15,7 +15,6 @@ before_install:
   - gcloud config set compute/zone asia-east1-a
   - gcloud container clusters get-credentials deejaygeroso-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-before_script:
   - bash ./config/bash/setup_env.sh
   - docker build -t deejaygeroso/deejaygeroso -f ./config/docker/Dockerfile.prod .
 script:
