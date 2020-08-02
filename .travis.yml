@@ -17,9 +17,9 @@ before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 before_script:
   - bash ./config/bash/setup_env.sh
-script:
   - docker build -t deejaygeroso/deejaygeroso . --file ./config/docker/Dockerfile.prod
-  - docker run -e CI=true deejaygeroso/deejaygeroso npm run test -- --coverage
+script:
+  - docker run -e CI=true deejaygeroso/deejaygeroso npm install && npm run test -- --coverage
 deploy:
   provider: script
   script: bash ./config/bash/deploy.sh
