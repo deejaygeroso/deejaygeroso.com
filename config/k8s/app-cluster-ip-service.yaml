@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: app-cluster-ip-service
 spec:
-  type: ClusterIP
+  ports:
+    - name: web-http
+      port: 3000
+      protocol: TCP
+      targetPort: 3000
   selector:
     component: web
-  ports:
-    - port: 3000
-      targetPort: 3000
+  type: NodePort
