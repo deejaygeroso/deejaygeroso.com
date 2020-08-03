@@ -3,18 +3,18 @@ kind: Ingress
 metadata:
   name: ingress-service
   annotations:
-    kubernetes.io/ingress.class: argo-tunnel
-  labels:
-    ingress: argo-tunnel
+    kubernetes.io/ingress.class: 'nginx'
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/use-regex: 'true'
 spec:
   tls:
     - hosts:
         - deejaygeroso.com
+      secretName: deejaygeroso.com
   rules:
-    - host: deejaygeroso.com
-      http:
+    - http:
         paths:
-          - path: /
-            backend:
-              serviceName: app-cluster-ip-service
-              servicePort: web-http
+          - backend:
+              serviceName: app-node-port-service
+              servicePort: http
+            path: /
