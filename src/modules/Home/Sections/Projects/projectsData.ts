@@ -100,7 +100,7 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 const projects: IProject[] = [
   {
     description:
-      'An application that runs real-time homepage and fullpage scan to find out if your webstie is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
+      'An application that runs real-time homepage and fullpage scan to find out if your website is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
     domains: [
       {
         name: 'adally.com',
