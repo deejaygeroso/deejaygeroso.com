@@ -441,7 +441,7 @@ const projects: IProject[] = [
       },
     ],
     position: 'Front-end Web Developer with semi Back-end Role',
-    technology: ['ReactJS', 'MeteorJS', 'ExpressJS', 'MongoDB'],
+    technology: ['ReactJS', 'Handlebars', 'MeteorJS', 'ExpressJS', 'MongoDB'],
   },
 ]
 
