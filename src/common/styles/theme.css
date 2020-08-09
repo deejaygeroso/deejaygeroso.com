@@ -25,6 +25,9 @@
   --modal-padding: 100px;
   --modal-zIndex: 90;
 
+  --project-modal-mobile-content-size: 18px;
+  --project-modal-mobile-title-size: 26px;
+
   --nav-background-color: #171a1c;
 
   --spacing-size-a: 5px;

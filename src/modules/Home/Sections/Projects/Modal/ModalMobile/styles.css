@@ -11,13 +11,13 @@
 }
 
 #project-modal-mobile > .modal-title {
+  border-bottom: var(--border-grey-line);
   text-align: center;
 }
 
 #project-modal-mobile > .modal-title > h1 {
-  --project-modal-mobile-title-size: 26px;
   font-size: var(--project-modal-mobile-title-size);
-  margin: var(--spacing-size-b) var(--spacing-size-b) 0 var(--spacing-size-b);
+  margin: var(--spacing-size-b);
   text-align: center;
 }
 
@@ -66,9 +66,34 @@
   width: 75px;
 }
 
+#project-modal-mobile > .project-info {
+  box-sizing: border-box;
+  padding: 0 var(--spacing-size-b);
+  width: 100%;
+}
+
+#project-modal-mobile > .project-info > .project-title {
+  display: none;
+}
+
+#project-modal-mobile > .project-info > p,
+#project-modal-mobile > .project-info > ul li {
+  font-size: var(--project-modal-mobile-content-size);
+}
+
 /* ----------- Mobile Screens ----------- */
 @media only screen and (max-width: 768px) {
   #project-modal-mobile {
     display: flex;
+  }
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  :root {
+    --project-info: 250px;
+  }
+  #project-modal-mobile > .project-info {
+    display: block;
   }
 }

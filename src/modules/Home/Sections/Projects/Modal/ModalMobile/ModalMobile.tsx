@@ -1,7 +1,8 @@
 import { FaLongArrowAltLeft, FaLongArrowAltRight, MdClose } from 'react-icons/all'
-import { IDomain, IProject } from '../../../../../../common/interfaces'
-import React, { FunctionComponent, ReactElement } from 'react'
+import React, { FunctionComponent, ReactElement, useState } from 'react'
+import { IProject } from '../../../../../../common/interfaces'
 import ModalTeam from '../ModalTeam'
+import { ProjectInfo } from '../../../../../../common/components'
 import './styles.css'
 
 interface IProps {
@@ -14,47 +15,26 @@ interface IProps {
 
 const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { isVisible, hideModal, project, viewNextProject, viewPrevProject } = props
+  const [isTeamView, toggleView] = useState(false)
   const modalNameForVisibility = isVisible ? '' : 'modal-display-none'
+
+  const handleToggleView = (): void => {
+    toggleView(!isTeamView)
+  }
+
   return (
     <div id='project-modal-mobile' className={modalNameForVisibility}>
       <div className='modal-title'>
         <h1>{project.name}</h1>
       </div>
-      <div className='project-info'>
-        <h2 className='project-title'>
-          {project.name}
-          {project.domains.length !== 0 && (
-            <span>
-              {project.domains.map(
-                (domain: IDomain, key: number): ReactElement => (
-                  <a href={domain.url} key={key} target='_blank' rel='noopener noreferrer'>
-                    {domain.name}
-                  </a>
-                ),
-              )}
-            </span>
-          )}
-        </h2>
-        <p>{project.description}</p>
-        <p>Position: {project.position}</p>
-        {project.technology.length === 0 ? (
-          <p>
-            Technology: <span className='warning'>Cannot disclose publicly!</span>
-          </p>
-        ) : (
-          <>
-            <p>Technology</p>
-            <ul>
-              {project.technology.map(
-                (tech: string, key: number): ReactElement => (
-                  <li key={key}>{tech}</li>
-                ),
-              )}
-            </ul>
-          </>
-        )}
-      </div>
-      <ModalTeam project={project} />
+      {isTeamView ? (
+        <ModalTeam project={project} />
+      ) : (
+        <>
+          {/* <h1>About</h1> */}
+          <ProjectInfo project={project} />
+        </>
+      )}
       <div id='project-modal-mobile-menu'>
         <div onClick={viewPrevProject}>
           <FaLongArrowAltLeft />
@@ -66,7 +46,9 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           <FaLongArrowAltRight />
         </div>
       </div>
-      <div id='project-modal-mobile-toggle'>View About</div>
+      <div id='project-modal-mobile-toggle' onClick={handleToggleView}>
+        {isTeamView ? 'View About' : 'View Team'}
+      </div>
     </div>
   )
 }
