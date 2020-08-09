@@ -1,0 +1,58 @@
+#project-modal-mobile {
+  background: white;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--modal-zIndex);
+}
+
+#project-modal-mobile > .modal-title {
+  text-align: center;
+}
+
+#project-modal-mobile > .modal-title > h1 {
+  --project-modal-mobile-title-size: 26px;
+  font-size: var(--project-modal-mobile-title-size);
+  margin: var(--spacing-size-b) var(--spacing-size-b) 0 var(--spacing-size-b);
+  text-align: center;
+}
+
+#project-modal-mobile > .modal-team {
+  width: 100%;
+}
+
+#project-modal-mobile-menu {
+  background: white;
+  border-top: var(--border-grey-line);
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  font-size: 50px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+
+#project-modal-mobile-menu > div {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: var(--spacing-size-a);
+}
+
+#project-modal-mobile.modal-display-none {
+  display: none;
+}
+
+/* ----------- Mobile Screens ----------- */
+@media only screen and (max-width: 768px) {
+  #project-modal-mobile {
+    display: flex;
+  }
+}

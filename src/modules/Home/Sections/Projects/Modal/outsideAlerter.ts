@@ -3,18 +3,21 @@ import { useEffect } from 'react'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const useOutsideAlerter = (ref: any, onClickOutside: () => void): void => {
+  const mq = window.matchMedia('(min-width: 768px)')
   useEffect((): (() => void) => {
-    const handleClickOutside = (event: MouseEvent): void => {
-      if (ref.current && !ref.current.contains(event.target)) {
-        onClickOutside()
+    if (mq.matches) {
+      const handleClickOutside = (event: MouseEvent): void => {
+        if (ref.current && !ref.current.contains(event.target)) {
+          onClickOutside()
+        }
+      }
+
+      document.addEventListener('mousedown', handleClickOutside)
+      return (): void => {
+        document.removeEventListener('mousedown', handleClickOutside)
       }
     }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return (): void => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [ref])
+  }, [ref, mq])
 }
 
 export default useOutsideAlerter
