@@ -1,5 +1,5 @@
 import { FaLinkedin, FaUserCircle } from 'react-icons/all'
-import { IMember, IProject } from '../../Projects'
+import { IMember, IProject } from '../../../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement } from 'react'
 import './styles.css'
 

@@ -1,4 +1,4 @@
-import { IMember, IProject } from './Projects'
+import { IMember, IProject } from '../../../../common/interfaces'
 import {
   adally1,
   adally2,

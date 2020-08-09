@@ -1,38 +1,11 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react'
+import { IProject } from '../../../../common/interfaces'
 import Modal from './Modal'
 import Project from './Project'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'
 import projects from './projectsData'
 import projectsData from './projectsData'
 import './styles.css'
-
-export interface IDomain {
-  name: string
-  url: string
-}
-
-export interface IMember {
-  linkedIn: string
-  name: string
-  photo: {
-    jpg: string
-    webP: string
-  }
-  position: string
-}
-
-export interface IProject {
-  description: string
-  domains: IDomain[]
-  members: IMember[]
-  name: string
-  photos: {
-    jpg: string
-    webP: string
-  }[]
-  position: string
-  technology: string[]
-}
 
 const Projects: FunctionComponent = (): ReactElement => {
   const [projectIndex, setProjedtIndex] = useState(0)

@@ -1,5 +1,5 @@
 import { FaLongArrowAltLeft, FaLongArrowAltRight, MdClose } from 'react-icons/all'
-import { IDomain, IProject } from '../../Projects'
+import { IDomain, IProject } from '../../../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement } from 'react'
 import ModalTeam from '../ModalTeam'
 import './styles.css'

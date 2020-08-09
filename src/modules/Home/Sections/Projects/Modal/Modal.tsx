@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward, MdClose } from 'react-icons/all'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
-import { IProject } from '../Projects'
+import { IProject } from '../../../../../common/interfaces'
 import ModalMobile from './ModalMobile'
 import ModalTeam from './ModalTeam'
 import useOutsideAlerter from './outsideAlerter'
