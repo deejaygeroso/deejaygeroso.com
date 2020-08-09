@@ -50,6 +50,22 @@
   display: none;
 }
 
+#project-modal-mobile-toggle {
+  align-items: center;
+  background: green;
+  border-radius: calc(75px / 2);
+  bottom: 75px;
+  box-shadow: 2px 2px 14px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  position: fixed;
+  right: 18px;
+  text-align: center;
+  width: 75px;
+}
+
 /* ----------- Mobile Screens ----------- */
 @media only screen and (max-width: 768px) {
   #project-modal-mobile {
