@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "build": "webpack --mode production --config ./config/webpack/webpack.config.js",
+    "cypress:open": "node_modules/.bin/cypress open",
+    "cypress:run": "node_modules/.bin/cypress run",
     "dev": "webpack-dev-server --mode development --config ./config/webpack/webpack.config.js",
     "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.js 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
     "start": "serve -l 3000 -s dist",
@@ -30,6 +32,7 @@
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.6.0",
+    "cypress": "^4.12.1",
     "dotenv": "^8.2.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -49,7 +52,6 @@
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "cypress": "^4.12.1",
     "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
