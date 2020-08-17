@@ -142,7 +142,7 @@ adally-server
 | tsconfig.json    | Typescript configuration. It's currently located in the root and not on config directory since it allows typescript mode for cypress to work |
 
 ##### Config Directory
-| Directories | Definition   |
+| Config Directory | Definition   |
 | :---------- | :----------  |
 | bash        | Script that allows docker to have access to environment variables in gitlab |
 | docker      | Docker configuration for stage and prod |
@@ -154,7 +154,7 @@ adally-server
 
 ##### Source (src) Directory
 
-| Directories | Definition  |
+| Source Directory | Definition  |
 | :---------- | :---------- |
 | common      | Contains global variables, methods, interfaces, styles and custom libraries and components used by the project. |
 | modules | react components |
