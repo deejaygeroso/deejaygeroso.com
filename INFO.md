@@ -48,3 +48,117 @@ npm run dev
 ```
 npm run build && npm run start
 ```
+
+### Open GUI for cypress using your current default browser
+
+```
+npm run cypress:open
+```
+
+### Run cypress tests
+
+```
+npm run cypress:run
+```
+
+## Project Files and Directory structure
+```
+adally-server
+    - config
+        - bash
+        - docker
+        - eslint
+        - html
+        - k8s
+        - prettier
+        - webpack
+    - cypress
+        - fixtures
+        - integration
+        - plugins
+        - screenshots
+        - support
+        - vidoes
+    - dist
+    - node_modules
+    - public
+    - src
+        - apollo
+            - local
+            - mutations
+            - queries
+        - common
+            - components
+            - images
+            - interfaces
+            - styles
+        - modules
+            ...
+            - Home
+                - Home.tsx
+                - index.ts
+                - styles.css
+            ...
+        - App.tsx
+        - declaration.d.ts
+        - index.tsx
+    - .dockerignore
+    - .env
+    - .gitignore
+    - .prettierignore
+    - .prettierrc.js
+    - .travis.yml
+    - cypress.json
+    - docker-compose.yml
+    - INFO.md
+    - package.json
+    - package-lock.json
+    - README.md
+    - service-account.json.enc
+    - tsconfig.json
+```
+
+##### Directory Structure Definition
+  
+| Core Directories | Definition  |
+| :--------------- | :---------- |
+| config           | project configuration directory |
+| cypress          | E2E testing framework |
+| dist             | Contains the build directory of the project |
+| node_modules     | Contains the libraries used by the project |
+| public           | Contains the public html file (react lib included) and assets that will be rendered to the browse |
+| src              | Contains the project source code |
+| .dockerignore    | Files that docker will ignore |
+| .env             | Environment variables needed to run the application |
+| .gitignore       | Files that git will ignore |
+| .prettierignore  | Files that prettier will ignore |
+| .prettierrc      | Prettier configuration. It was intentinally placed here instead under config directory since VSCode is configured to find prettier configuration on the project root directory | 
+| .travis.yml      | travis config |
+| INFO.md          | Contains more information about the project |
+| docker-compose.yml | Docker configuratoin to run application. Used in production application |
+| package.json     | Holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project’s dependencies |
+| README.md        | Welcome note for github profile. Moved the README information to INFO.md instead  |
+| service-account.json.enc | Allows the project to be authenticated for GCP deployment  |
+| tsconfig.json    | Typescript configuration. It's currently located in the root and not on config directory since it allows typescript mode for cypress to work |
+
+##### Config Directory
+| Directories | Definition   |
+| :---------- | :----------  |
+| bash        | Script that allows docker to have access to environment variables in gitlab |
+| docker      | Docker configuration for stage and prod |
+| eslint      | Linting rules and configuration |
+| htlm        | React's HTML entry point used and configured for production only |
+| k8s         | Kubernetes configuration |
+| prettier    | Prettier configuration |
+| webpack     | Webpack configuration |
+
+##### Source (src) Directory
+
+| Directories | Definition  |
+| :---------- | :---------- |
+| common      | Contains global variables, methods, interfaces, styles and custom libraries and components used by the project. |
+| modules | react components |
+| App.tsx     | Main parent component |
+| declaration.d.ts | Currently used to allow images to be imported without warnings and errors on VSCODE |
+| index.ts    | Application entry point |
+
