@@ -122,12 +122,12 @@ adally-server
   
 | Core Directories | Definition  |
 | :--------------- | :---------- |
-| config           | project configuration directory |
-| cypress          | E2E testing framework |
-| dist             | Contains the build directory of the project |
-| node_modules     | Contains the libraries used by the project |
-| public           | Contains the public html file (react lib included) and assets that will be rendered to the browse |
-| src              | Contains the project source code |
+| /config          | project configuration directory |
+| /cypress         | E2E testing framework |
+| /dist            | Contains the build directory of the project |
+| /node_modules    | Contains the libraries used by the project |
+| /public          | Contains the public html file (react lib included) and assets that will be rendered to the browse |
+| /src             | Contains the project source code |
 | .dockerignore    | Files that docker will ignore |
 | .env             | Environment variables needed to run the application |
 | .gitignore       | Files that git will ignore |
@@ -143,22 +143,22 @@ adally-server
 
 ##### Config Directory
 | Config Directory | Definition   |
-| :---------- | :----------  |
-| bash        | Script that allows docker to have access to environment variables in gitlab |
-| docker      | Docker configuration for stage and prod |
-| eslint      | Linting rules and configuration |
-| htlm        | React's HTML entry point used and configured for production only |
-| k8s         | Kubernetes configuration |
-| prettier    | Prettier configuration |
-| webpack     | Webpack configuration |
+| :--------------- | :----------  |
+| /bash            | Script that allows docker to have access to environment variables in gitlab |
+| /docker          | Docker configuration for stage and prod |
+| /eslint          | Linting rules and configuration |
+| /htlm            | React's HTML entry point used and configured for production only |
+| /k8s             | Kubernetes configuration |
+| /prettier        | Prettier configuration |
+| /webpack         | Webpack configuration |
 
 ##### Source (src) Directory
 
 | Source Directory | Definition  |
-| :---------- | :---------- |
-| common      | Contains global variables, methods, interfaces, styles and custom libraries and components used by the project. |
-| modules | react components |
-| App.tsx     | Main parent component |
+| :--------------- | :---------- |
+| /common          | Contains global variables, methods, interfaces, styles and custom libraries and components used by the project. |
+| /modules         | react components |
+| App.tsx          | Main parent component |
 | declaration.d.ts | Currently used to allow images to be imported without warnings and errors on VSCODE |
-| index.ts    | Application entry point |
+| index.ts         | Application entry point |
 
