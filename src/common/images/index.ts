@@ -29,6 +29,7 @@ import vanessa250x250 from '../../../public/assets/images/persons/vanessa-faith-
 // Projects Images
 import adally1 from '../../../public/assets/images/projects/adally/adally-1.jpg'
 import adally2 from '../../../public/assets/images/projects/adally/adally-2.jpg'
+import c2cToolbar from '../../../public/assets/images/projects/clinictocloud/c2c-toolbar.png'
 import crypto1 from '../../../public/assets/images/projects/crypto/volume_overview.jpg'
 import crypto2 from '../../../public/assets/images/projects/crypto/profitability.jpg'
 import crypto3 from '../../../public/assets/images/projects/crypto/other_stats.jpg'
@@ -43,6 +44,7 @@ export {
   adally2,
   angela,
   aryen,
+  c2cToolbar,
   chris,
   crypto1,
   crypto2,

@@ -29,6 +29,7 @@ import vanessa250x250WebP from '../../../public/assets/images/persons/vanessa-fa
 // Projects Images
 import adally1WebP from '../../../public/assets/images/projects/adally/adally-1.webp'
 import adally2WebP from '../../../public/assets/images/projects/adally/adally-2.webp'
+import c2cToolbarWebP from '../../../public/assets/images/projects/clinictocloud/c2c-toolbar.webp'
 import crypto1WebP from '../../../public/assets/images/projects/crypto/volume_overview.webp'
 import crypto2WebP from '../../../public/assets/images/projects/crypto/profitability.webp'
 import crypto3WebP from '../../../public/assets/images/projects/crypto/other_stats.webp'
@@ -43,6 +44,7 @@ export {
   adally2WebP,
   angelaWebP,
   aryenWebP,
+  c2cToolbarWebP,
   chrisWebP,
   crypto1WebP,
   crypto2WebP,

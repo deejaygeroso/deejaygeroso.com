@@ -4,6 +4,7 @@ import {
   adally2,
   angela,
   aryen,
+  c2cToolbar,
   chris,
   crypto1,
   crypto2,
@@ -37,6 +38,7 @@ import {
   adally2WebP,
   angelaWebP,
   aryenWebP,
+  c2cToolbarWebP,
   chrisWebP,
   crypto1WebP,
   crypto2WebP,
@@ -100,6 +102,65 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 const projects: IProject[] = [
   {
     description:
+      'Clinic to Cloud is a secure, scalable Medical Practice Management Platform that optimizes practice operations, improves financial performance, and delivers better patient experiences.',
+    domains: [
+      {
+        name: 'clinictocloud.com',
+        url: 'https://www.clinictocloud.com',
+      },
+    ],
+    members: [
+      setMemberPosition(memberDeejayGeroso, 'Front-end Lead Developer'),
+      {
+        linkedIn: '',
+        name: 'Bec Price',
+        photo: {
+          jpg: null,
+          webP: null,
+        },
+        position: 'Business Analyst',
+      },
+      {
+        linkedIn: '',
+        name: 'Mark Lalor',
+        photo: {
+          jpg: null,
+          webP: null,
+        },
+        position:
+          'CEO of ProcQ pty ltd, Head of the team & was temporarily the Backend Developer of our project under clinic to cloud',
+      },
+      {
+        linkedIn: '',
+        name: 'Sara Javan',
+        photo: {
+          jpg: null,
+          webP: null,
+        },
+        position: 'Senior Product Designer',
+      },
+      {
+        linkedIn: '',
+        name: 'Brian Alcuaz',
+        photo: {
+          jpg: null,
+          webP: null,
+        },
+        position: 'Quality Assurance',
+      },
+    ],
+    name: 'Clinic To Cloud',
+    photos: [
+      {
+        jpg: c2cToolbar,
+        webP: c2cToolbarWebP,
+      },
+    ],
+    position: 'Front-end Lead Developer',
+    technology: [],
+  },
+  {
+    description:
       'An application that runs real-time homepage and fullpage scan to find out if your website is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
     domains: [
       {
@@ -108,8 +169,9 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Micah Uyeharam',
         photo: {
           jpg: null,
@@ -117,7 +179,6 @@ const projects: IProject[] = [
         },
         position: 'Project Supervisor',
       },
-      setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/denmark-tabiolo-b45839a9',
         name: 'Denmark Tabiolo',
@@ -152,6 +213,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/dustintwatkins',
         name: 'Dustin Watkins',
@@ -179,7 +241,6 @@ const projects: IProject[] = [
         },
         position: 'Founding Engineer',
       },
-      setMemberPosition(memberDeejayGeroso, 'Full-stack Developer'),
     ],
     name: 'Databased',
     photos: [
@@ -196,6 +257,7 @@ const projects: IProject[] = [
       'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/richardsalem',
         name: 'Richard Paul Salem',
@@ -205,7 +267,6 @@ const projects: IProject[] = [
         },
         position: 'Product Owner',
       },
-      setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
     ],
     name: 'Crypto Asset Management',
     photos: [
@@ -239,6 +300,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/faith-hall-3096584',
         name: 'Faith Hall',
@@ -259,9 +321,8 @@ const projects: IProject[] = [
         position: 'Senior Back-end Developer',
       },
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
-      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Giovanni Lobitos',
         photo: {
           jpg: giovanni,
@@ -270,7 +331,7 @@ const projects: IProject[] = [
         position: 'Front-end Developer',
       },
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Aryen Jim Bejagan',
         photo: {
           jpg: aryen,
@@ -306,7 +367,7 @@ const projects: IProject[] = [
         position: 'Quality Assurance',
       },
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Hazel Ko Lumactod',
         photo: {
           jpg: hazel,
@@ -367,7 +428,7 @@ const projects: IProject[] = [
       setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'John Crisostomo',
         photo: {
           jpg: null,
@@ -399,9 +460,9 @@ const projects: IProject[] = [
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       setMemberPosition(memberJunski, 'Full-stack Developer'),
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
-      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
     ],
     name: 'Helpbert',
     photos: [
@@ -422,6 +483,7 @@ const projects: IProject[] = [
     description: `An application that can create and manage the multiple blogs, posts and user comments.`,
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Front-end Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/jalil-laguindab',
         name: 'Jalil Laguindab',
@@ -431,7 +493,6 @@ const projects: IProject[] = [
         },
         position: 'Back-end Developer',
       },
-      setMemberPosition(memberDeejayGeroso, 'Front-end Developer'),
     ],
     name: 'Dejablog (CMS)',
     photos: [
