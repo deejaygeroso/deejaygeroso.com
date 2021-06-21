@@ -101,6 +101,7 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 
 const projects: IProject[] = [
   {
+    date: 'August 2020 - April 2021',
     description:
       'Clinic to Cloud is a secure, scalable Medical Practice Management Platform that optimizes practice operations, improves financial performance, and delivers better patient experiences.',
     domains: [
@@ -160,6 +161,7 @@ const projects: IProject[] = [
     technology: [],
   },
   {
+    date: 'January 2020 - June 2020',
     description:
       'An application that runs real-time homepage and fullpage scan to find out if your website is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
     domains: [
@@ -205,6 +207,7 @@ const projects: IProject[] = [
     technology: [],
   },
   {
+    date: 'March 2019 - January 2020',
     description: `A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`,
     domains: [
       {
@@ -253,6 +256,7 @@ const projects: IProject[] = [
     technology: [],
   },
   {
+    date: '',
     description:
       'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
     domains: [],
@@ -287,6 +291,7 @@ const projects: IProject[] = [
     technology: ['ReactJS', 'Redux', 'NextJS', 'ExpressJS', 'MongoDB', 'CoinMarketCap API version 1'],
   },
   {
+    date: '',
     description:
       'A system that helps business owners manage their own website, online social engagements all in one single application.',
     domains: [
@@ -422,6 +427,7 @@ const projects: IProject[] = [
     ],
   },
   {
+    date: '',
     description: 'An application that monitors servers, domains and websites.',
     domains: [],
     members: [
@@ -457,6 +463,7 @@ const projects: IProject[] = [
     technology: ['React Native (ios & android)', 'Redux', 'Feathers JS (Client)'],
   },
   {
+    date: '',
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
     members: [
@@ -480,6 +487,7 @@ const projects: IProject[] = [
     ],
   },
   {
+    date: '',
     description: `An application that can create and manage the multiple blogs, posts and user comments.`,
     domains: [],
     members: [

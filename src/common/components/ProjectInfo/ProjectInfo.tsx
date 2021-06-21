@@ -24,15 +24,16 @@ const ProjectInfo: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           </span>
         )}
       </h2>
+      {project.date !== '' ? <p className='project-date'>{project.date}</p> : <></>}
+      <p className='project-position'>Position: {project.position}</p>
       <p>{project.description}</p>
-      <p>Position: {project.position}</p>
       {project.technology.length === 0 ? (
         <p>
-          Technology: <span className='warning'>Cannot disclose publicly!</span>
+          Technologies: <span className='warning'>Cannot disclose publicly!</span>
         </p>
       ) : (
         <>
-          <p>Technology</p>
+          <p>Technologies</p>
           <ul>
             {project.technology.map(
               (tech: string, key: number): ReactElement => (
