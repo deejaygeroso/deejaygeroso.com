@@ -22,6 +22,7 @@ import marcoPaps from '../../../public/assets/images/persons/marco-budiongan.jpg
 import papaRods from '../../../public/assets/images/persons/roderick-gohetia.jpg'
 import portia from '../../../public/assets/images/persons/portia-linao.jpg'
 import richard from '../../../public/assets/images/persons/richard-paul-salem.jpg'
+import saraJavan250x250 from '../../../public/assets/images/persons/sara-javan-250x250.jpeg'
 import sheryl from '../../../public/assets/images/persons/sheryl-picante.jpg'
 import vanessa from '../../../public/assets/images/persons/vanessa-faith-abordo.jpg'
 import vanessa250x250 from '../../../public/assets/images/persons/vanessa-faith-abordo-250x250.jpg'
@@ -72,6 +73,7 @@ export {
   papaRods,
   portia,
   richard,
+  saraJavan250x250,
   sheryl,
   vanessa,
   vanessa250x250,

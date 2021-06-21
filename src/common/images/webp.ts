@@ -22,6 +22,7 @@ import marcoPapsWebP from '../../../public/assets/images/persons/marco-budiongan
 import papaRodsWebP from '../../../public/assets/images/persons/roderick-gohetia.webp'
 import portiaWebP from '../../../public/assets/images/persons/portia-linao.webp'
 import richardWebP from '../../../public/assets/images/persons/richard-paul-salem.webp'
+import saraJavan250x250WebP from '../../../public/assets/images/persons/sara-javan-250x250.webp'
 import sherylWebP from '../../../public/assets/images/persons/sheryl-picante.webp'
 import vanessaWebP from '../../../public/assets/images/persons/vanessa-faith-abordo.webp'
 import vanessa250x250WebP from '../../../public/assets/images/persons/vanessa-faith-abordo-250x250.webp'
@@ -72,6 +73,7 @@ export {
   papaRodsWebP,
   portiaWebP,
   richardWebP,
+  saraJavan250x250WebP,
   sherylWebP,
   vanessaWebP,
   vanessa250x250WebP,
