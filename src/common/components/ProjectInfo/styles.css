@@ -9,6 +9,7 @@
 
 .project-info > .project-date,
 .project-info > .project-position {
+  color: var(--color-grey);
   font-size: var(--font-size-sm);
   font-style: italic;
   margin: 0;

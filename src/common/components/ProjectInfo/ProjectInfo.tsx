@@ -24,8 +24,8 @@ const ProjectInfo: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           </span>
         )}
       </h2>
-      {project.date !== '' ? <p className='project-date'>{project.date}</p> : <></>}
       <p className='project-position'>Position: {project.position}</p>
+      {project.date !== '' ? <p className='project-date'>{project.date}</p> : <></>}
       <p>{project.description}</p>
       {project.technology.length === 0 ? (
         <p>
