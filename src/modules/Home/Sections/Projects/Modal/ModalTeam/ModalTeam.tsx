@@ -10,8 +10,8 @@ interface IProps {
 const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { project } = props
   const openLinkedIn = (url: string): void => {
-    const win = window.open(url, '_blank')
-    win.focus()
+    const win: Window | null = window.open(url, '_blank')
+    win && win.focus()
   }
   return (
     <div className='modal-team'>
@@ -34,7 +34,7 @@ const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
             </div>
             <div className='modal-member-info'>
               <h1>{member.name}</h1>
-              <p>{member.position}</p>
+              <p className='modal-member-position'>{member.position}</p>
               {member.linkedIn && (
                 <p className='linked-in-link' onClick={(): void => openLinkedIn(member.linkedIn)}>
                   <span>View Linked</span>

@@ -140,8 +140,7 @@ const projects: IProject[] = [
           jpg: markLalor,
           webP: markLalorWebP,
         },
-        position:
-          'CEO of ProcQ pty ltd, Head of the team & serve temporarily as the Backend Developer of our project under clinic to cloud',
+        position: 'CEO of ProcQ pty ltd, Head of the team & served temporarily as the Backend Developer of our project',
       },
       {
         linkedIn: 'https://au.linkedin.com/in/sarajavan',
@@ -150,7 +149,7 @@ const projects: IProject[] = [
           jpg: saraJavan,
           webP: saraJavanWebP,
         },
-        position: 'Senior Product Designer',
+        position: 'Senior UI UX Designer',
       },
       {
         linkedIn: 'https://ph.linkedin.com/in/brian-alcuaz',
@@ -215,7 +214,7 @@ const projects: IProject[] = [
       },
     ],
     position:
-      'Lead Developer (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
+      'Tech Lead (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
     technology: [],
   },
   {

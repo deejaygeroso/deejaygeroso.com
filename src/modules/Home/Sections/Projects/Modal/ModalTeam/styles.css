@@ -32,6 +32,14 @@
 
 .modal-team > .modal-member > .modal-member-info > p {
   font-size: var(--modal-member-info-title-size);
+
+}
+
+.modal-team > .modal-member > .modal-member-info > p.modal-member-position {
+  color: var(--color-grey);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  margin: var(--spacing-size-a) 0;
 }
 
 .modal-team > .modal-member h1,
