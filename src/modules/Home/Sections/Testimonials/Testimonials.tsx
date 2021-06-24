@@ -20,7 +20,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         </picture>
         <div>
           <h1>Sara Javan</h1>
-          <p className='profile-position'>Senior Product Designer @ Clinic To Cloud</p>
+          <p className='profile-position'>Senior UX UI Designer @ Clinic To Cloud</p>
           <p className='profile-date'>January 31, 2021</p>
           <p>
             {`Deejay is one of the most hardworking and passionate developers I've ever worked with. His communication skills are his strengths.`}
