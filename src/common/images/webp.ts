@@ -3,6 +3,8 @@
 // Persons
 import angelaWebP from '../../../public/assets/images/persons/angela-doloricon.webp'
 import aryenWebP from '../../../public/assets/images/persons/aryen-jim-bejagan.webp'
+import becPriceWebP from '../../../public/assets/images/persons/bec-price.webp'
+import brianAlcuazWebP from '../../../public/assets/images/persons/brian-alcuaz.webp'
 import chrisWebP from '../../../public/assets/images/persons/christopher-bradshaw.webp'
 import deejayWebP from '../../../public/assets/images/persons/deejay-geroso.webp'
 import deejay250x250WebP from '../../../public/assets/images/persons/deejay-geroso-250x250.webp'
@@ -11,17 +13,21 @@ import denmark250x250WebP from '../../../public/assets/images/persons/denmark-ta
 import dustinWebP from '../../../public/assets/images/persons/dustin-watkins.webp'
 import dustin250x250WebP from '../../../public/assets/images/persons/dustin-watkins-250x250.webp'
 import erickWebP from '../../../public/assets/images/persons/john-erick-madduma.webp'
+import faithHallWebP from '../../../public/assets/images/persons/faith-hall.webp'
 import giovanniWebP from '../../../public/assets/images/persons/giovanni-lobitos.webp'
 import hazelWebP from '../../../public/assets/images/persons/hazel-ko-lumactod.webp'
 import jalilWebP from '../../../public/assets/images/persons/jalil-laguindab.webp'
 import jasonWebP from '../../../public/assets/images/persons/jason-abella.webp'
+import jdWebP from '../../../public/assets/images/persons/jd.webp'
 import jonCesarWebP from '../../../public/assets/images/persons/jon-cesar-tagsip.webp'
 import junskiWebP from '../../../public/assets/images/persons/casan-jr-mala.webp'
 import justinWebP from '../../../public/assets/images/persons/justin-behnke.webp'
 import marcoPapsWebP from '../../../public/assets/images/persons/marco-budiongan.webp'
+import markLalorWebP from '../../../public/assets/images/persons/mark-lalor.webp'
 import papaRodsWebP from '../../../public/assets/images/persons/roderick-gohetia.webp'
 import portiaWebP from '../../../public/assets/images/persons/portia-linao.webp'
 import richardWebP from '../../../public/assets/images/persons/richard-paul-salem.webp'
+import saraJavanWebP from '../../../public/assets/images/persons/sara-javan.webp'
 import saraJavan250x250WebP from '../../../public/assets/images/persons/sara-javan-250x250.webp'
 import sherylWebP from '../../../public/assets/images/persons/sheryl-picante.webp'
 import vanessaWebP from '../../../public/assets/images/persons/vanessa-faith-abordo.webp'
@@ -45,6 +51,8 @@ export {
   adally2WebP,
   angelaWebP,
   aryenWebP,
+  becPriceWebP,
+  brianAlcuazWebP,
   c2cToolbarWebP,
   chrisWebP,
   crypto1WebP,
@@ -59,20 +67,24 @@ export {
   databasedWebP,
   dejablogWebP,
   erickWebP,
+  faithHallWebP,
   giovanniWebP,
   hazelWebP,
   helpbertWebP,
   jalilWebP,
   jasonWebP,
+  jdWebP,
   jonCesarWebP,
   junskiWebP,
   justinWebP,
   marcoPapsWebP,
+  markLalorWebP,
   meegleWebP,
   monitoringWebP,
   papaRodsWebP,
   portiaWebP,
   richardWebP,
+  saraJavanWebP,
   saraJavan250x250WebP,
   sherylWebP,
   vanessaWebP,
