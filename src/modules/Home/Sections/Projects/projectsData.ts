@@ -183,7 +183,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
-      setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
+      setMemberPosition(memberDeejayGeroso, 'Tech Lead'),
       {
         linkedIn: '',
         name: 'Micah Uyeharam',
