@@ -215,7 +215,14 @@ const projects: IProject[] = [
     ],
     position:
       'Tech Lead (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
-    technology: [],
+    technology: [
+      'AWS (Route53, ECS with Fargate, ECS with EC2 instance, S3 etc.)',
+      'Gitlab CI/CD',
+      'Docker',
+      'Typescript, Go Lang',
+      'ReactJS (hooks), NodeJS, Express, Apollo GraphQL (Client & Server)',
+      'MongoDB',
+    ],
   },
   {
     date: 'March 2019 - January 2020',
