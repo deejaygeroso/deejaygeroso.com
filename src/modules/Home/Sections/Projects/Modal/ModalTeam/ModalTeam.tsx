@@ -1,4 +1,4 @@
-import { FaLinkedin, FaUserCircle } from 'react-icons/all'
+import { FaLinkedin, FaUserCircle } from 'react-icons/fa'
 import { IMember, IProject } from '../../../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement } from 'react'
 import './styles.css'

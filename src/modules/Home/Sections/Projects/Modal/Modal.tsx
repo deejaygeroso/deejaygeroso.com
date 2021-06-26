@@ -1,4 +1,5 @@
-import { IoIosArrowBack, IoIosArrowForward, MdClose } from 'react-icons/all'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import { MdClose } from 'react-icons/md'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
 import { IProject } from '../../../../../common/interfaces'
 import ModalMobile from './ModalMobile'

@@ -1,4 +1,5 @@
-import { FaLongArrowAltLeft, FaLongArrowAltRight, MdClose } from 'react-icons/all'
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa'
+import { MdClose } from 'react-icons/md'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { IProject } from '../../../../../../common/interfaces'
 import ModalTeam from '../ModalTeam'
