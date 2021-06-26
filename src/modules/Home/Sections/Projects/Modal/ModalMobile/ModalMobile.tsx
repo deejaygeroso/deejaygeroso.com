@@ -1,7 +1,7 @@
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from 'react-icons/fa'
-import { MdClose } from 'react-icons/md'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { IProject } from '../../../../../../common/interfaces'
+import { MdClose } from 'react-icons/md'
 import ModalTeam from '../ModalTeam'
 import { ProjectInfo } from '../../../../../../common/components'
 import './styles.css'
