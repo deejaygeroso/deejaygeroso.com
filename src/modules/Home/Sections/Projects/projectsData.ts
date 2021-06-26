@@ -123,7 +123,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
-      setMemberPosition(memberDeejayGeroso, 'Front-end Lead Developer'),
+      setMemberPosition(memberDeejayGeroso, 'Lead Front-End Developer'),
       {
         linkedIn: 'https://au.linkedin.com/in/bec-price',
         name: 'Bec Price',
