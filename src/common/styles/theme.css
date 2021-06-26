@@ -25,6 +25,7 @@
   --modal-member-info-title-size: 12px;
   --modal-padding: 100px;
   --modal-zIndex: 90;
+  --modal-mobile-zIndex: 9999999999; /* This will hide tawk.to button when modal in mobile mode is shown */
 
   --project-modal-mobile-content-size: 18px;
   --project-modal-mobile-title-size: 26px;
