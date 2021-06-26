@@ -42,7 +42,7 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
         <ModalTeam project={project} />
       ) : (
         <>
-          {/* <h1>About</h1> */}
+          <h1 className='modal-company'>About The Company</h1>
           <ProjectInfo project={project} />
         </>
       )}

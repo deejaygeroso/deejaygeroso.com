@@ -10,6 +10,16 @@
   z-index: var(--modal-mobile-zIndex);
 }
 
+#project-modal-mobile > .modal-company {
+  align-items: center;
+  border-bottom: var(--border-grey-line);
+  display: flex;
+  flex-direction: row;
+  font-size: var(--font-size-l);
+  margin: 0;
+  padding: var(--spacing-size-b);
+}
+
 #project-modal-mobile > .modal-title {
   border-bottom: var(--border-grey-line);
   text-align: center;
