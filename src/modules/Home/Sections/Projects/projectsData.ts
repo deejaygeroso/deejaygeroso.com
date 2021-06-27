@@ -219,7 +219,7 @@ const projects: IProject[] = [
       'AWS (Route53, ECS with Fargate, ECS with EC2 instance, S3 etc.)',
       'Gitlab CI/CD',
       'Docker',
-      'Typescript, Go Lang',
+      'Typescript, Go Lang (Mailing Microservice)',
       'ReactJS (hooks), NodeJS, Express, Apollo GraphQL (Client & Server)',
       'MongoDB',
     ],
