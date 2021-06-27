@@ -4,8 +4,6 @@
   "description": "",
   "scripts": {
     "build": "webpack --mode production --config ./config/webpack/webpack.config.js",
-    "cypress:open": "node_modules/.bin/cypress open",
-    "cypress:run": "node_modules/.bin/cypress run",
     "dev": "webpack serve --mode development --config ./config/webpack/webpack.config.js",
     "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.js 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
     "start": "serve -l 3000 -s dist",
