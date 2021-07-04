@@ -31,6 +31,15 @@
   margin: 0;
 }
 
+#testimonials > .profile > div > .profile-position,
+#testimonials > .profile > div > .profile-date {
+  color: var(--color-grey);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
 #testimonials > .profile > div > p:first-of-type,
 #testimonials > .profile > div > p:nth-of-type(2) {
   margin: var(--spacing-size-a) 0;

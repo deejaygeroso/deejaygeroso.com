@@ -15,7 +15,10 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const projectId = `project-${project.name.toLowerCase()}`
   const defaultPhotoIndex = 0
 
-  const renderProjectPhoto = (projectInput: IProject, direction: string): ReactElement => {
+  const renderProjectPhoto = (
+    projectInput: IProject,
+    direction: fadeInDirection.left | fadeInDirection.right,
+  ): ReactElement => {
     if (fadeInDirection[direction] === fadeInDirectionInput) {
       return (
         <picture>
@@ -30,16 +33,16 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
         </picture>
       )
     }
-    return null
+    return <></>
   }
 
   return (
     <ScrollAnimation id={projectId} fadeInDirection={fadeInDirection[fadeInDirectionInput]}>
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
-        {renderProjectPhoto(project, 'right')}
+        {renderProjectPhoto(project, fadeInDirection.right)}
         <ProjectInfo project={project} />
-        {renderProjectPhoto(project, 'left')}
+        {renderProjectPhoto(project, fadeInDirection.left)}
       </div>
     </ScrollAnimation>
   )

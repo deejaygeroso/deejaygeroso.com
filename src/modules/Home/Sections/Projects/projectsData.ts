@@ -4,6 +4,9 @@ import {
   adally2,
   angela,
   aryen,
+  becPrice,
+  brianAlcuaz,
+  c2cToolbar,
   chris,
   crypto1,
   crypto2,
@@ -14,20 +17,24 @@ import {
   denmark,
   dustin,
   erick,
+  faithHall,
   giovanni,
   hazel,
   helpbert,
   jalil,
   jason,
+  jd,
   jonCesar,
   junski,
   justin,
   marcoPaps,
+  markLalor,
   meegle,
   monitoring,
   papaRods,
   portia,
   richard,
+  saraJavan,
   sheryl,
   vanessa,
 } from '../../../../common/images'
@@ -37,6 +44,9 @@ import {
   adally2WebP,
   angelaWebP,
   aryenWebP,
+  becPriceWebP,
+  brianAlcuazWebP,
+  c2cToolbarWebP,
   chrisWebP,
   crypto1WebP,
   crypto2WebP,
@@ -47,20 +57,24 @@ import {
   denmarkWebP,
   dustinWebP,
   erickWebP,
+  faithHallWebP,
   giovanniWebP,
   hazelWebP,
   helpbertWebP,
   jalilWebP,
   jasonWebP,
+  jdWebP,
   jonCesarWebP,
   junskiWebP,
   justinWebP,
   marcoPapsWebP,
+  markLalorWebP,
   meegleWebP,
   monitoringWebP,
   papaRodsWebP,
   portiaWebP,
   richardWebP,
+  saraJavanWebP,
   sherylWebP,
   vanessaWebP,
 } from '../../../../common/images/webp'
@@ -99,6 +113,66 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 
 const projects: IProject[] = [
   {
+    date: 'August 2020 - April 2021',
+    description:
+      'Clinic to Cloud is a secure, scalable Medical Practice Management Platform that optimizes practice operations, improves financial performance, and delivers better patient experiences.',
+    domains: [
+      {
+        name: 'clinictocloud.com',
+        url: 'https://www.clinictocloud.com',
+      },
+    ],
+    members: [
+      setMemberPosition(memberDeejayGeroso, 'Lead Front-End Developer'),
+      {
+        linkedIn: 'https://au.linkedin.com/in/bec-price',
+        name: 'Bec Price',
+        photo: {
+          jpg: becPrice,
+          webP: becPriceWebP,
+        },
+        position: 'Business Analyst',
+      },
+      {
+        linkedIn: 'https://au.linkedin.com/in/mark-lalor-40a78214',
+        name: 'Mark Lalor',
+        photo: {
+          jpg: markLalor,
+          webP: markLalorWebP,
+        },
+        position: 'CEO of ProcQ pty ltd, Head of the team & served temporarily as the Backend Developer of our project',
+      },
+      {
+        linkedIn: 'https://au.linkedin.com/in/sarajavan',
+        name: 'Sara Javan',
+        photo: {
+          jpg: saraJavan,
+          webP: saraJavanWebP,
+        },
+        position: 'Senior UI UX Designer',
+      },
+      {
+        linkedIn: 'https://ph.linkedin.com/in/brian-alcuaz',
+        name: 'Brian Alcuaz',
+        photo: {
+          jpg: brianAlcuaz,
+          webP: brianAlcuazWebP,
+        },
+        position: 'Quality Assurance',
+      },
+    ],
+    name: 'Clinic To Cloud',
+    photos: [
+      {
+        jpg: c2cToolbar,
+        webP: c2cToolbarWebP,
+      },
+    ],
+    position: 'Front-end Lead Developer',
+    technology: [],
+  },
+  {
+    date: 'January 2020 - June 2020',
     description:
       'An application that runs real-time homepage and fullpage scan to find out if your website is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
     domains: [
@@ -108,8 +182,9 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Tech Lead'),
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Micah Uyeharam',
         photo: {
           jpg: null,
@@ -117,7 +192,6 @@ const projects: IProject[] = [
         },
         position: 'Project Supervisor',
       },
-      setMemberPosition(memberDeejayGeroso, 'Lead Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/denmark-tabiolo-b45839a9',
         name: 'Denmark Tabiolo',
@@ -140,10 +214,18 @@ const projects: IProject[] = [
       },
     ],
     position:
-      'Lead Developer (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
-    technology: [],
+      'Tech Lead (Sprint Planning, Designing and implementing Application Architecture, Devops, Back-end, Front-end, Quality Assurance and UI/UX)',
+    technology: [
+      'AWS (Route53, ECS with Fargate, ECS with EC2 instance, S3 etc.)',
+      'Gitlab CI/CD',
+      'Docker',
+      'Typescript, Go Lang (Mailing Microservice)',
+      'ReactJS (hooks), NodeJS, Express, Apollo GraphQL (Client & Server)',
+      'MongoDB',
+    ],
   },
   {
+    date: 'March 2019 - January 2020',
     description: `A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`,
     domains: [
       {
@@ -152,6 +234,7 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/dustintwatkins',
         name: 'Dustin Watkins',
@@ -179,7 +262,6 @@ const projects: IProject[] = [
         },
         position: 'Founding Engineer',
       },
-      setMemberPosition(memberDeejayGeroso, 'Full-stack Developer'),
     ],
     name: 'Databased',
     photos: [
@@ -192,10 +274,12 @@ const projects: IProject[] = [
     technology: [],
   },
   {
+    date: '',
     description:
       'A digital cryptocurrency tracker for managing user portfolios. It shows computation of valuation, profit/loss, buying & market price in Bitcoin, Etherium and in US Dollars, supply 24hour volume etc. App also has charts and graphs for historical data of cryptocurrencies.',
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/richardsalem',
         name: 'Richard Paul Salem',
@@ -205,7 +289,6 @@ const projects: IProject[] = [
         },
         position: 'Product Owner',
       },
-      setMemberPosition(memberDeejayGeroso, 'Full-stack Javascript Developer'),
     ],
     name: 'Crypto Asset Management',
     photos: [
@@ -226,6 +309,7 @@ const projects: IProject[] = [
     technology: ['ReactJS', 'Redux', 'NextJS', 'ExpressJS', 'MongoDB', 'CoinMarketCap API version 1'],
   },
   {
+    date: '',
     description:
       'A system that helps business owners manage their own website, online social engagements all in one single application.',
     domains: [
@@ -239,12 +323,13 @@ const projects: IProject[] = [
       },
     ],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       {
-        linkedIn: 'https://www.linkedin.com/in/faith-hall-3096584',
+        linkedIn: 'https://www.linkedin.com/in/faith-hall-35667720b',
         name: 'Faith Hall',
         photo: {
-          jpg: null,
-          webP: null,
+          jpg: faithHall,
+          webP: faithHallWebP,
         },
         position: 'Senior Manager',
       },
@@ -259,9 +344,8 @@ const projects: IProject[] = [
         position: 'Senior Back-end Developer',
       },
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
-      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       {
-        linkedIn: null,
+        linkedIn: 'https://ph.linkedin.com/in/giovanni-lobitos-208706115',
         name: 'Giovanni Lobitos',
         photo: {
           jpg: giovanni,
@@ -270,7 +354,7 @@ const projects: IProject[] = [
         position: 'Front-end Developer',
       },
       {
-        linkedIn: null,
+        linkedIn: 'https://ph.linkedin.com/in/ajbejagan',
         name: 'Aryen Jim Bejagan',
         photo: {
           jpg: aryen,
@@ -306,7 +390,7 @@ const projects: IProject[] = [
         position: 'Quality Assurance',
       },
       {
-        linkedIn: null,
+        linkedIn: '',
         name: 'Hazel Ko Lumactod',
         photo: {
           jpg: hazel,
@@ -361,19 +445,20 @@ const projects: IProject[] = [
     ],
   },
   {
+    date: '',
     description: 'An application that monitors servers, domains and websites.',
     domains: [],
     members: [
       setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
       {
-        linkedIn: null,
+        linkedIn: 'https://sg.linkedin.com/in/johncrisostomo',
         name: 'John Crisostomo',
         photo: {
-          jpg: null,
-          webP: null,
+          jpg: jd,
+          webP: jdWebP,
         },
-        position: 'Back-end Developer',
+        position: 'Tech Lead & Back-end Developer',
       },
       {
         linkedIn: 'https://www.linkedin.com/in/john-erick-madduma-300083113',
@@ -396,12 +481,13 @@ const projects: IProject[] = [
     technology: ['React Native (ios & android)', 'Redux', 'Feathers JS (Client)'],
   },
   {
+    date: '',
     description: `An online support system used internally by our company which allows live chat and receive and reply to our client's emails and tickets.`,
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
       setMemberPosition(memberJunski, 'Full-stack Developer'),
       setMemberPosition(memberVanessaFaithAbordo, 'Back-end Developer'),
-      setMemberPosition(memberDeejayGeroso, 'Mobile Developer'),
     ],
     name: 'Helpbert',
     photos: [
@@ -419,9 +505,11 @@ const projects: IProject[] = [
     ],
   },
   {
+    date: '',
     description: `An application that can create and manage the multiple blogs, posts and user comments.`,
     domains: [],
     members: [
+      setMemberPosition(memberDeejayGeroso, 'Front-end Developer'),
       {
         linkedIn: 'https://www.linkedin.com/in/jalil-laguindab',
         name: 'Jalil Laguindab',
@@ -431,7 +519,6 @@ const projects: IProject[] = [
         },
         position: 'Back-end Developer',
       },
-      setMemberPosition(memberDeejayGeroso, 'Front-end Developer'),
     ],
     name: 'Dejablog (CMS)',
     photos: [

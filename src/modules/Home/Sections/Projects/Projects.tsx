@@ -8,12 +8,12 @@ import projectsData from './projectsData'
 import './styles.css'
 
 const Projects: FunctionComponent = (): ReactElement => {
-  const [projectIndex, setProjedtIndex] = useState(0)
+  const [projectIndex, setProjectIndex] = useState(0)
   const [isModalVisible, toggleModal] = useState(false)
 
   const showModal = (selectedProjectIndex: number): void => {
     toggleModal(true)
-    setProjedtIndex(selectedProjectIndex)
+    setProjectIndex(selectedProjectIndex)
   }
 
   const hideModal = (): void => {
@@ -23,18 +23,18 @@ const Projects: FunctionComponent = (): ReactElement => {
   const viewNextProject = (): void => {
     const totalProjectCount = projectsData.length - 1
     if (projectIndex < totalProjectCount) {
-      setProjedtIndex(projectIndex + 1)
+      setProjectIndex(projectIndex + 1)
     } else {
-      setProjedtIndex(0)
+      setProjectIndex(0)
     }
   }
 
   const viewPrevProject = (): void => {
     const lastIndexOfProject = projectsData.length - 1
     if (projectIndex > 0) {
-      setProjedtIndex(projectIndex - 1)
+      setProjectIndex(projectIndex - 1)
     } else {
-      setProjedtIndex(lastIndexOfProject)
+      setProjectIndex(lastIndexOfProject)
     }
   }
 
@@ -48,19 +48,17 @@ const Projects: FunctionComponent = (): ReactElement => {
         viewNextProject={viewNextProject}
         viewPrevProject={viewPrevProject}
       />
-      {projects.map(
-        (project: IProject, key: number): ReactElement => {
-          const fadeInDirectionInput = key % 2 === 0 ? fadeInDirection.right : fadeInDirection.left
-          return (
-            <Project
-              fadeInDirection={fadeInDirectionInput}
-              key={key}
-              project={project}
-              showModal={(): void => showModal(key)}
-            />
-          )
-        },
-      )}
+      {projects.map((project: IProject, key: number): ReactElement => {
+        const fadeInDirectionInput = key % 2 === 0 ? fadeInDirection.right : fadeInDirection.left
+        return (
+          <Project
+            fadeInDirection={fadeInDirectionInput}
+            key={key}
+            project={project}
+            showModal={(): void => showModal(key)}
+          />
+        )
+      })}
     </section>
   )
 }

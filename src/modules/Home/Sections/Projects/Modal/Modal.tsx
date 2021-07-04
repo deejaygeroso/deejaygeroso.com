@@ -1,6 +1,7 @@
-import { IoIosArrowBack, IoIosArrowForward, MdClose } from 'react-icons/all'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
 import { IProject } from '../../../../../common/interfaces'
+import { IoClose } from 'react-icons/io5'
 import ModalMobile from './ModalMobile'
 import ModalTeam from './ModalTeam'
 import useOutsideAlerter from './outsideAlerter'
@@ -47,11 +48,11 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     if (evt.keyCode == 27) {
       hideModal()
     }
-    // left right
+    // left arrow button
     if (evt.keyCode == 37) {
       viewPrevProject()
     }
-    // arrow right
+    // right arrow button
     if (evt.keyCode == 39) {
       viewNextProject()
     }
@@ -61,7 +62,7 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     <>
       <div id='project-modal' className={modalNameForVisibility}>
         <div className='modal-close-icon' onClick={hideModal}>
-          <MdClose />
+          <IoClose />
         </div>
         <div ref={wrapperRef} className='modal-container'>
           <div className='modal-right-arrow'>

@@ -1,6 +1,9 @@
-import { FaLongArrowAltLeft, FaLongArrowAltRight, MdClose } from 'react-icons/all'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
+import { BsBuilding } from 'react-icons/bs'
+import { HiUserGroup } from 'react-icons/hi'
 import { IProject } from '../../../../../../common/interfaces'
+import { MdClose } from 'react-icons/md'
 import ModalTeam from '../ModalTeam'
 import { ProjectInfo } from '../../../../../../common/components'
 import './styles.css'
@@ -22,6 +25,14 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
     toggleView(!isTeamView)
   }
 
+  const renderToggleTeamButton = (): ReactElement => {
+    if (isTeamView) {
+      return <HiUserGroup />
+    }
+
+    return <BsBuilding />
+  }
+
   return (
     <div id='project-modal-mobile' className={modalNameForVisibility}>
       <div className='modal-title'>
@@ -31,23 +42,23 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
         <ModalTeam project={project} />
       ) : (
         <>
-          {/* <h1>About</h1> */}
+          <h1 className='modal-company'>About The Company</h1>
           <ProjectInfo project={project} />
         </>
       )}
       <div id='project-modal-mobile-menu'>
         <div onClick={viewPrevProject}>
-          <FaLongArrowAltLeft />
+          <IoIosArrowBack />
         </div>
         <div onClick={hideModal}>
           <MdClose />
         </div>
-        <div onClick={viewNextProject}>
-          <FaLongArrowAltRight />
+        <div onClick={handleToggleView} className='modal-toggle-team'>
+          {renderToggleTeamButton()}
         </div>
-      </div>
-      <div id='project-modal-mobile-toggle' onClick={handleToggleView}>
-        {isTeamView ? 'View About' : 'View Team'}
+        <div onClick={viewNextProject}>
+          <IoIosArrowForward />
+        </div>
       </div>
     </div>
   )

@@ -39,7 +39,7 @@ const Footer: FunctionComponent = (): ReactElement => {
         </a>
       </div>
       <div>
-        <p>Powered by Google Kubernetes Engine and ReactJS @ {year}</p>
+        <p>Powered by Amazon Elastic Compute Cloud and ReactJS @ {year}</p>
         <p>App Version: {version}</p>
       </div>
     </section>

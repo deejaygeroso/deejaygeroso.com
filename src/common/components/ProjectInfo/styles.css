@@ -3,6 +3,19 @@
   width: var(--project-info);
 }
 
+.project-info > .project-title {
+  margin: var(--spacing-size-d) 0 var(--spacing-size-a) 0;
+}
+
+.project-info > .project-date,
+.project-info > .project-position {
+  color: var(--color-grey);
+  font-size: var(--font-size-sm);
+  font-style: italic;
+  margin: var(--spacing-size-a) 0;
+  padding: 0;
+}
+
 .project-info > .project-title > span {
   font-size: var(--font-size-sm);
 }
