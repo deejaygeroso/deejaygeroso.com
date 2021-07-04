@@ -5,7 +5,7 @@ import { HiUserGroup } from 'react-icons/hi'
 import { IProject } from '../../../../../../common/interfaces'
 import { MdClose } from 'react-icons/md'
 import ModalTeam from '../ModalTeam'
-import { ProjectInfo } from '../../../../../../common/components'
+import ProjectInfo from '../../ProjectInfo'
 import './styles.css'
 
 interface IProps {

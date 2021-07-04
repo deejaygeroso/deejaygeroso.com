@@ -1,4 +1,4 @@
-import { IDomain, IProject } from '../../interfaces'
+import { IDomain, IProject } from '../../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement } from 'react'
 import './styles.css'
 
