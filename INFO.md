@@ -49,16 +49,16 @@ npm run dev
 npm run build && npm run start
 ```
 
-### Open GUI for cypress using your current default browser
+### Example command for creating a docker image and pushing it to your AWS ECS (Amazon Container Service) Repository
 
 ```
-npm run cypress:open
-```
+docker login -u AWS -p $(aws ecr get-login-password --region ap-southeast-1) 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com/deejaygeroso
+docker build --no-cache -t deejaygeroso . --file ./config/docker/Dockerfile.prod
+docker tag deejaygeroso:latest 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com/deejaygeroso:latest
+docker push 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com/deejaygeroso:latest
 
-### Run cypress tests
-
-```
-npm run cypress:run
+# updating cluster and service
+aws ecs update-service --region ap-southeast-1 --cluster deejaygeroso --service deejaygeroso --force-new-deployment
 ```
 
 ## Project Files and Directory structure
