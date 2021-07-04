@@ -1,3 +1,9 @@
+# --------------------------------------------------------------------------------------------------------
+# NOTE:
+# As of v1.1.0, travis will be no longer used since I decided to move from Google Cloud to AWS, since
+# my GCP free account is now expired.
+# I decided to move this from root to config directory since I might need this as a future reference.
+# --------------------------------------------------------------------------------------------------------
 sudo: required
 services:
   - docker
