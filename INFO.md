@@ -58,7 +58,7 @@ docker tag deejaygeroso:latest 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com
 docker push 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com/deejaygeroso:latest
 
 # updating cluster and service
-aws ecs update-service --region ap-southeast-1 --cluster deejaygeroso --service deejaygeroso --force-new-deployment
+aws ecs update-service --region ap-southeast-1 --cluster deejaygeroso-cluster --service deejaygeroso-service --force-new-deployment
 ```
 
 ## Project Files and Directory structure
@@ -72,13 +72,6 @@ adally-server
         - k8s
         - prettier
         - webpack
-    - cypress
-        - fixtures
-        - integration
-        - plugins
-        - screenshots
-        - support
-        - vidoes
     - dist
     - node_modules
     - public
@@ -108,7 +101,6 @@ adally-server
     - .prettierignore
     - .prettierrc.js
     - .travis.yml
-    - cypress.json
     - docker-compose.yml
     - INFO.md
     - package.json
@@ -123,7 +115,6 @@ adally-server
 | Core Directories | Definition  |
 | :--------------- | :---------- |
 | /config          | project configuration directory |
-| /cypress         | E2E testing framework |
 | /dist            | Contains the build directory of the project |
 | /node_modules    | Contains the libraries used by the project |
 | /public          | Contains the public html file (react lib included) and assets that will be rendered to the browse |
@@ -135,6 +126,7 @@ adally-server
 | .prettierrc      | Prettier configuration. It was intentinally placed here instead under config directory since VSCode is configured to find prettier configuration on the project root directory | 
 | .travis.yml      | travis config |
 | INFO.md          | Contains more information about the project |
+| RELEASE.md       | Release Notes |
 | docker-compose.yml | Docker configuratoin to run application. Used in production application |
 | package.json     | Holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project’s dependencies |
 | README.md        | Welcome note for github profile. Moved the README information to INFO.md instead  |
