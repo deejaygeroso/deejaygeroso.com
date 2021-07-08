@@ -43,6 +43,11 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
       ) : (
         <>
           <h1 className='modal-company'>About The Company</h1>
+          <picture className='modal-project-image-wrapper'>
+            <source srcSet={project.photos[0].webP} type='image/webp' />
+            <source srcSet={project.photos[0].jpg} type='image/jpeg' />
+            <img alt={project.photos[0].webP} className='modal-project-image' src={project.photos[0].webP} />
+          </picture>
           <ProjectInfo project={project} />
         </>
       )}
