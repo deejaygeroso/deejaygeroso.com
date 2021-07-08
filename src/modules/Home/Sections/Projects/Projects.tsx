@@ -11,12 +11,31 @@ const Projects: FunctionComponent = (): ReactElement => {
   const [projectIndex, setProjectIndex] = useState(0)
   const [isModalVisible, toggleModal] = useState(false)
 
+  const hideScrollBarFromTheBackground = (): void => {
+    const scrollY = window.scrollY
+    const app = document.getElementById('app') as HTMLElement
+    app.style.position = 'fixed'
+    app.style.top = `-${scrollY}px`
+    app.style.zIndex = '9999999999'
+  }
+
+  const showScrollBarOfThePage = (): void => {
+    const app = document.getElementById('app') as HTMLElement
+    const scrollY = app.style.top
+    app.style.position = ''
+    app.style.top = ''
+    app.style.zIndex = '1'
+    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+  }
+
   const showModal = (selectedProjectIndex: number): void => {
     toggleModal(true)
     setProjectIndex(selectedProjectIndex)
+    hideScrollBarFromTheBackground()
   }
 
   const hideModal = (): void => {
+    showScrollBarOfThePage()
     toggleModal(false)
   }
 

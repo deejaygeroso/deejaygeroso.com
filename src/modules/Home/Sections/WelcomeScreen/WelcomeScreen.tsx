@@ -1,11 +1,11 @@
-import React, { FunctionComponent, ReactElement, useEffect } from 'react'
+import React, { EffectCallback, FunctionComponent, ReactElement, useEffect } from 'react'
 import ViewMyWorkButton from './ViewMyWorkButton'
 import { deejay250x250 } from '../../../../common/images'
 import { executeTitleTypeAnimation } from './helpers'
 import './styles.css'
 
 const WelcomeScreen: FunctionComponent = (): ReactElement => {
-  useEffect((): void => {
+  useEffect((): ReturnType<EffectCallback> => {
     executeTitleTypeAnimation()
   }, [])
 

@@ -9,7 +9,7 @@ const version = require('../../../../../package.json').version
 const Footer: FunctionComponent = (): ReactElement => {
   const date = new Date()
   const year = date.getFullYear()
-  const email = 'hello@deejaygeroso.com'
+  const email = 'work@deejaygeroso.com'
   const mailTo = (): void => {
     window.location.href = `mailto:${email}?subject=Subject&body=message%20goes%20here`
   }

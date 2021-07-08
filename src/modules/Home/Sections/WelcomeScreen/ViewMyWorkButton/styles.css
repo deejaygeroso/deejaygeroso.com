@@ -8,3 +8,7 @@
   text-decoration: none;
   margin: var(--spacing-size-e);
 }
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
