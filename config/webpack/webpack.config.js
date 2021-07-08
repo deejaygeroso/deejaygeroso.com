@@ -70,7 +70,7 @@ module.exports = () => {
     },
 
     output: {
-      filename: './main.js',
+      filename: '[name].[hash].js',
       path: path.resolve(__dirname, '../../dist'),
       publicPath: '/',
     },

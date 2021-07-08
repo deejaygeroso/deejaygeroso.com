@@ -29,8 +29,11 @@
   --modal-mobile-zIndex: 9999999999; /* This will hide tawk.to button when modal in mobile mode is shown */
 
   --project-modal-mobile-content-size: 18px;
+  --project-modal-mobile-font-size: 40px;
+  --project-modal-mobile-menu-height: 60px;
   --project-modal-mobile-title-size: 26px;
   --project-modal-mobile-team-bottom-margin: 150px;
+
 
   --nav-background-color: #171a1c;
 
