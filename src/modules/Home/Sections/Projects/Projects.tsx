@@ -16,6 +16,7 @@ const Projects: FunctionComponent = (): ReactElement => {
     const app = document.getElementById('app') as HTMLElement
     app.style.position = 'fixed'
     app.style.top = `-${scrollY}px`
+    app.style.zIndex = '9999999999'
   }
 
   const showScrollBarOfThePage = (): void => {
@@ -23,6 +24,7 @@ const Projects: FunctionComponent = (): ReactElement => {
     const scrollY = app.style.top
     app.style.position = ''
     app.style.top = ''
+    app.style.zIndex = '1'
     window.scrollTo(0, parseInt(scrollY || '0') * -1)
   }
 
