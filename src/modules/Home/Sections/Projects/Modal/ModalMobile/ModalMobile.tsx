@@ -35,22 +35,25 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
 
   return (
     <div id='project-modal-mobile' className={modalNameForVisibility}>
-      <div className='modal-title'>
-        <h1>{project.name}</h1>
+      <div id='project-modal-content'>
+        <div className='modal-title'>
+          <h1>{project.name}</h1>
+        </div>
+        {isTeamView ? (
+          <ModalTeam project={project} />
+        ) : (
+          <>
+            <h1 className='modal-company'>About The Company</h1>
+            <picture className='modal-project-image-wrapper'>
+              <source srcSet={project.photos[0].webP} type='image/webp' />
+              <source srcSet={project.photos[0].jpg} type='image/jpeg' />
+              <img alt={project.photos[0].webP} className='modal-project-image' src={project.photos[0].webP} />
+            </picture>
+            <ProjectInfo project={project} />
+          </>
+        )}
       </div>
-      {isTeamView ? (
-        <ModalTeam project={project} />
-      ) : (
-        <>
-          <h1 className='modal-company'>About The Company</h1>
-          <picture className='modal-project-image-wrapper'>
-            <source srcSet={project.photos[0].webP} type='image/webp' />
-            <source srcSet={project.photos[0].jpg} type='image/jpeg' />
-            <img alt={project.photos[0].webP} className='modal-project-image' src={project.photos[0].webP} />
-          </picture>
-          <ProjectInfo project={project} />
-        </>
-      )}
+      <div id='project-modal-mobile-empty-space' />
       <div id='project-modal-mobile-menu'>
         <div onClick={viewPrevProject}>
           <IoIosArrowBack />

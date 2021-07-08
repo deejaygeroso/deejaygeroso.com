@@ -1,20 +1,23 @@
 #project-modal-mobile {
-  --project-modal-mobile-menu-height: 60px;
   background: white;
   bottom: 0;
   display: none;
   flex-direction: column;
   left: 0;
-  margin: 0 0 var(--project-modal-mobile-menu-height) 0;
-  overflow: auto;
-  padding: 0 0 var(--spacing-size-e) 0;
+  padding: 0;
   position: fixed;
   right: 0;
   top: 0;
   z-index: var(--modal-mobile-zIndex);
 }
 
-#project-modal-mobile > .modal-company {
+#project-modal-mobile  > #project-modal-content {
+  margin: 0;
+  padding: 0 0 var(--spacing-size-e) 0;
+  overflow: auto;
+}
+
+#project-modal-mobile  > #project-modal-content > .modal-company {
   align-items: center;
   border-bottom: var(--border-grey-line);
   display: flex;
@@ -24,33 +27,39 @@
   padding: var(--spacing-size-b);
 }
 
-#project-modal-mobile > picture.modal-project-image-wrapper {
+#project-modal-mobile  > #project-modal-content > picture.modal-project-image-wrapper {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-#project-modal-mobile > picture.modal-project-image-wrapper > .modal-project-image {
+#project-modal-mobile  > #project-modal-content > picture.modal-project-image-wrapper > .modal-project-image {
   margin-top: var(--spacing-size-d);
   width: 95%;
 }
 
-#project-modal-mobile > .modal-title {
+#project-modal-mobile  > #project-modal-content > .modal-title {
   background-color: var(--color-app);
   border-bottom: var(--border-grey-line);
   text-align: center;
 }
 
-#project-modal-mobile > .modal-title > h1 {
+#project-modal-mobile  > #project-modal-content > .modal-title > h1 {
   color: white;
   font-size: var(--project-modal-mobile-title-size);
-  margin: var(--spacing-size-b);
+  margin: 0;
+  padding: var(--spacing-size-b) 0;
   text-align: center;
 }
 
-#project-modal-mobile > .modal-team {
+#project-modal-mobile  > #project-modal-content > .modal-team {
   padding: 0 0 var(--project-modal-mobile-team-bottom-margin) 0;
   width: 100%;
+}
+
+#project-modal-mobile-empty-space {
+  margin: 0;
+  padding: calc(var(--project-modal-mobile-menu-height) / 2) 0;
 }
 
 #project-modal-mobile-menu {
@@ -59,9 +68,10 @@
   bottom: 0;
   display: flex;
   width: 100%;
-  font-size: 50px;
+  font-size: var(--project-modal-mobile-font-size);
   left: 0;
   position: fixed;
+  height: var(--project-modal-mobile-menu-height);
   right: 0;
 }
 
@@ -92,22 +102,22 @@
   display: none;
 }
 
-#project-modal-mobile > .project-info {
+#project-modal-mobile  > #project-modal-content > .project-info {
   box-sizing: border-box;
   padding: 0 var(--spacing-size-b);
   width: 100%;
 }
 
-#project-modal-mobile > .project-info > .project-position {
+#project-modal-mobile  > #project-modal-content > .project-info > .project-position {
   margin: var(--spacing-size-b) 0;
 }
 
-#project-modal-mobile > .project-info > .project-title {
+#project-modal-mobile  > #project-modal-content > .project-info > .project-title {
   display: none;
 }
 
-#project-modal-mobile > .project-info > p,
-#project-modal-mobile > .project-info > ul li {
+#project-modal-mobile  > #project-modal-content > .project-info > p,
+#project-modal-mobile  > #project-modal-content > .project-info > ul li {
   font-size: var(--project-modal-mobile-content-size);
 }
 
@@ -123,11 +133,11 @@
   :root {
     --project-info: 250px;
   }
-  #project-modal-mobile > .project-info {
+  #project-modal-mobile  > #project-modal-content > .project-info {
     display: block;
   }
 
-  #project-modal-mobile > #project-modal-mobile-menu > .modal-toggle-team {
+  .modal-toggle-team {
     --font-size-modal-toggle-team: 35px;
     font-size: var(--font-size-modal-toggle-team);
   }
