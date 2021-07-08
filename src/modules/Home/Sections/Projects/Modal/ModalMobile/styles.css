@@ -13,8 +13,8 @@
 
 #project-modal-mobile  > #project-modal-content {
   margin: 0;
-  padding: 0 0 var(--spacing-size-e) 0;
   overflow: auto;
+  padding: 0 0 var(--spacing-size-e) 0;
 }
 
 #project-modal-mobile  > #project-modal-content > .modal-company {
