@@ -1,9 +1,5 @@
 @import url(./theme.css);
 
-html {
-  scroll-behavior: smooth;
-}
-
 html,
 body,
 #app {

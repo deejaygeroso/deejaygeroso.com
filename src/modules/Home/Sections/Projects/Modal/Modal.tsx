@@ -21,7 +21,7 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   // const [currentIndexOfImage, setImageIndex] = useState(0)
 
   const wrapperRef = useRef(null)
-  useOutsideAlerter(wrapperRef, hideModal)
+  useOutsideAlerter(wrapperRef, hideModal, isVisible)
 
   // const viewPrevImage = (): void => {
   //   const projectImageMaxIndex = project.photos.length - 1
