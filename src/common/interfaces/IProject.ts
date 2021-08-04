@@ -2,7 +2,8 @@ import IDomain from './IDomain'
 import IMember from './IMember'
 
 interface IProject {
-  date: string
+  address?: string
+  date?: string
   description: string
   domains: IDomain[]
   members: IMember[]

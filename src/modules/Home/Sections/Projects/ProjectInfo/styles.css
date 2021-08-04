@@ -7,6 +7,7 @@
   margin: var(--spacing-size-d) 0 var(--spacing-size-a) 0;
 }
 
+.project-info > .project-address,
 .project-info > .project-date,
 .project-info > .project-position {
   color: var(--color-grey);
