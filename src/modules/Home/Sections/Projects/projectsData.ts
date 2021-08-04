@@ -113,6 +113,7 @@ const setMemberPosition = (member: IMember, position: string): IMember => {
 
 const projects: IProject[] = [
   {
+    address: 'Level 9/70 Pitt St, Sydney NSW 2000, Australia',
     date: 'August 2020 - April 2021',
     description:
       'Clinic to Cloud is a secure, scalable Medical Practice Management Platform that optimizes practice operations, improves financial performance, and delivers better patient experiences.',
@@ -168,10 +169,11 @@ const projects: IProject[] = [
         webP: c2cToolbarWebP,
       },
     ],
-    position: 'Front-end Lead Developer',
+    position: 'Senior Front-end Developer',
     technology: [],
   },
   {
+    address: 'Ponte Vedra, Florida, United States of America',
     date: 'January 2020 - June 2020',
     description:
       'An application that runs real-time homepage and fullpage scan to find out if your website is ADA (Americans with Disabilities Act Standards for Accessible) compliant.',
@@ -225,6 +227,7 @@ const projects: IProject[] = [
     ],
   },
   {
+    address: 'American Fork, Utah, United States of America',
     date: 'March 2019 - January 2020',
     description: `A CRM (Content Relationship Management System) that helps companies improve sales productivity by tracking progress based on actual data and gives a better perspective for companies on which effort provides the greatest return.`,
     domains: [
