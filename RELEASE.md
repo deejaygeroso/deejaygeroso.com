@@ -1,5 +1,6 @@
 ### v1.1.4
-- Added Address on recent Projects  
+- Added Address on recent Projects.  
+- Updated Clinic to cloud position.  
 
 ### v1.1.3
 
