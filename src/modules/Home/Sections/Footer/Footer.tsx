@@ -1,46 +1,66 @@
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
-import React, { FunctionComponent, ReactElement } from 'react'
+import { IContext, ISocialMedia } from '../../../../common/interfaces'
+import React, { FunctionComponent, ReactElement, useContext } from 'react'
+import AppContext from '../../../../AppContext'
 import { MdEmail } from 'react-icons/md'
 import './styles.css'
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const version = require('../../../../../package.json').version
-
 const Footer: FunctionComponent = (): ReactElement => {
+  const data: IContext = useContext(AppContext)
+  const { appVersion, contacts } = data
+
   const date = new Date()
   const year = date.getFullYear()
-  const email = 'work@deejaygeroso.com'
   const mailTo = (): void => {
-    window.location.href = `mailto:${email}?subject=Subject&body=message%20goes%20here`
+    window.location.href = `mailto:${contacts.email}?subject=Subject&body=message%20goes%20here`
   }
+
+  const renderSocialMediaIcon = (socialMediaLink: string): ReactElement => {
+    switch (socialMediaLink) {
+      case contacts.socialMedias[0].link: {
+        return <FaFacebookSquare />
+      }
+      case contacts.socialMedias[1].link: {
+        return <FaGithubSquare />
+      }
+      case contacts.socialMedias[2].link: {
+        return <FaInstagramSquare />
+      }
+      case contacts.socialMedias[3].link: {
+        return <FaLinkedin />
+      }
+      case contacts.socialMedias[4].link: {
+        return <FaTwitterSquare />
+      }
+    }
+    return <></>
+  }
+
   return (
     <section id='footer'>
       <h1>CONTACT</h1>
       <div className='mail-to' onClick={mailTo}>
         <MdEmail />
         &nbsp;
-        {email}
+        {contacts.email}
       </div>
       <div>
-        <a href='https://www.facebook.com/deejaygeroso' target='_blank' rel='noopener noreferrer'>
-          <FaFacebookSquare />
-        </a>
-        <a href='https://github.com/deejaygeroso' target='_blank' rel='noopener noreferrer'>
-          <FaGithubSquare />
-        </a>
-        <a href='https://www.instagram.com/deejaygeroso' target='_blank' rel='noopener noreferrer'>
-          <FaInstagramSquare />
-        </a>
-        <a href='https://www.linkedin.com/in/deejaygeroso/' target='_blank' rel='noopener noreferrer'>
-          <FaLinkedin />
-        </a>
-        <a href='https://twitter.com/deejaygeroso' target='_blank' rel='noopener noreferrer'>
-          <FaTwitterSquare />
-        </a>
+        {contacts.socialMedias.map(
+          (socialMedia: ISocialMedia): ReactElement => (
+            <a
+              data-testid={socialMedia.id}
+              href={socialMedia.link}
+              key={socialMedia.id}
+              target='_blank'
+              rel='noopener noreferrer'>
+              {renderSocialMediaIcon(socialMedia.link)}
+            </a>
+          ),
+        )}
       </div>
       <div>
         <p>Powered by Amazon Elastic Compute Cloud and ReactJS @ {year}</p>
-        <p>App Version: {version}</p>
+        <p>App Version: {appVersion}</p>
       </div>
     </section>
   )

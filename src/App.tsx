@@ -3,14 +3,14 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import AppContext from './AppContext'
 import Blog from './modules/Blog'
 import Home from './modules/Home'
-import projects from './data/projects'
+import data from './data'
 import './common/styles/app.css'
 
 const App = (): ReactElement => {
   return (
     <Router>
       <Switch>
-        <AppContext.Provider value={projects}>
+        <AppContext.Provider value={data}>
           <Route path='/'>
             <Home />
           </Route>

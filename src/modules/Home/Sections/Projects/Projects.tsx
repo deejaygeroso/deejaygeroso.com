@@ -1,6 +1,6 @@
+import { IContext, IProject } from '../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
 import AppContext from '../../../../AppContext'
-import { IProject } from '../../../../common/interfaces'
 import Modal from './Modal'
 import Project from './Project'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'
@@ -10,7 +10,8 @@ import './styles.css'
 const Projects: FunctionComponent = (): ReactElement => {
   const [projectIndex, setProjectIndex] = useState(0)
   const [isModalVisible, toggleModal] = useState(false)
-  const projects = useContext(AppContext)
+  const data: IContext = useContext(AppContext)
+  const { projects } = data
 
   const hideScrollBarFromTheBackground = (): void => {
     const scrollY = window.scrollY
