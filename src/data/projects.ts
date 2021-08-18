@@ -1,4 +1,4 @@
-import { IMember, IProject } from '../../../../common/interfaces'
+import { IMember, IProject } from '../common/interfaces'
 import {
   adally1,
   adally2,
@@ -37,7 +37,7 @@ import {
   saraJavan,
   sheryl,
   vanessa,
-} from '../../../../common/images'
+} from '../common/images'
 
 import {
   adally1WebP,
@@ -77,7 +77,7 @@ import {
   saraJavanWebP,
   sherylWebP,
   vanessaWebP,
-} from '../../../../common/images/webp'
+} from '../common/images/webp'
 
 const deejayGerosoLinkedIn = 'https://www.linkedin.com/in/deejaygeroso'
 const memberDeejayGeroso = {
