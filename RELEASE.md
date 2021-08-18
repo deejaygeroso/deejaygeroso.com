@@ -1,7 +1,8 @@
 ### v1.2.0  
 
-- Configured Jest and React Test Library  
+- Configured Jest and React Test Library.  
 - Created AppContext for projects, contacts and etc to be used in Home Page.  
+- Added 6 seconds delay before showing chat UI. This allows typing animation for author's name to be finished first without interruption.  
 
 ### v1.1.4
 - Added Address on recent Projects.  
