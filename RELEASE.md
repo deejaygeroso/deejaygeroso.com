@@ -1,3 +1,8 @@
+### v1.2.0  
+
+- Configured Jest and React Test Library  
+- Created AppContext for projects, contacts and etc to be used in Home Page.  
+
 ### v1.1.4
 - Added Address on recent Projects.  
 - Updated Clinic to cloud position.  
