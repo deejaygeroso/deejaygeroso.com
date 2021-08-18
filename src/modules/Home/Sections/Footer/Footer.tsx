@@ -39,11 +39,13 @@ const Footer: FunctionComponent = (): ReactElement => {
   return (
     <section id='footer'>
       <h1>CONTACT</h1>
-      <div className='mail-to' onClick={mailTo}>
-        <MdEmail />
-        &nbsp;
-        {contacts.email}
-      </div>
+      {contacts.email && (
+        <div className='mail-to' onClick={mailTo}>
+          <MdEmail />
+          &nbsp;
+          {contacts.email}
+        </div>
+      )}
       <div>
         {contacts.socialMedias.map(
           (socialMedia: ISocialMedia): ReactElement => (

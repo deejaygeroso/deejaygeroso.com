@@ -1,5 +1,5 @@
 const contacts = {
-  email: 'work@deejaygeroso.com',
+  email: '', //work@deejaygeroso.com
   socialMedias: [
     {
       id: 'facebook-link',
