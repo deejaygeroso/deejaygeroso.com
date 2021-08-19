@@ -1,4 +1,6 @@
-const contacts = {
+import { IContact } from '../common/interfaces'
+
+const contacts: IContact = {
   email: '', //work@deejaygeroso.com
   socialMedias: [
     {
