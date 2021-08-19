@@ -3,6 +3,7 @@
 - Configured Jest and React Test Library.  
 - Created AppContext for projects, contacts and etc to be used in Home Page.  
 - Added 6 seconds delay before showing chat UI. This allows typing animation for author's name to be finished first without interruption.  
+- Temporarily hide email on contacts section of the page.  
 
 ### v1.1.4
 - Added Address on recent Projects.  
