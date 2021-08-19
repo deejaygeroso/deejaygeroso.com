@@ -7,8 +7,9 @@
     "dev": "webpack serve --mode development --config ./config/webpack/webpack.config.js",
     "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.js 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
     "start": "serve -l 3000 -s dist",
-    "test": "jest --config ./config/jest/jest.config.json",
-    "test:watch": "npm run test -- --watch"
+    "jest": "jest --config ./config/jest/jest.config.json",
+    "jest:watch": "npm run test -- --watch",
+    "test": "npm run lint && npm run jest"
   },
   "repository": {
     "type": "git",
