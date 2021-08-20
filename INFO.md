@@ -61,6 +61,11 @@ docker push 873301793325.dkr.ecr.ap-southeast-1.amazonaws.com/deejaygeroso:lates
 aws ecs update-service --region ap-southeast-1 --cluster deejaygeroso-cluster --service deejaygeroso-service --force-new-deployment
 ```
 
+### Running Linting and tests
+```
+npm run test
+```
+
 ## Project Files and Directory structure
 ```
 adally-server
