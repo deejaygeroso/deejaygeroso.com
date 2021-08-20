@@ -5,12 +5,15 @@ Application is configured with **docker** and is setup ready for production use.
 
 ### Setup includes:
 
-- React Router
-- Webpack
-- Typescript
-- Eslint
-- Prettier
-- Docker
+- React v17
+- React Router Dom v17
+- Webpack v5
+- Typescript v4
+- Eslint v7
+- Prettier v2
+- Docker 
+- Jest v27
+- React Testing Library v12
 
 ### Required Setup
 
