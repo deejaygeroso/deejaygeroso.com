@@ -4,7 +4,8 @@ const typeAnimation = (elementId: string, text: string, cb?: () => void): void =
 
   const typeWriter = (): void => {
     if (counter < text.length) {
-      document.getElementById(elementId).innerHTML += text.charAt(counter)
+      const elementToBeTyped = document.getElementById(elementId) as HTMLElement
+      elementToBeTyped.innerHTML += text.charAt(counter)
       counter++
       setTimeout(typeWriter, speedInMilliSeconds)
     } else {
@@ -16,16 +17,17 @@ const typeAnimation = (elementId: string, text: string, cb?: () => void): void =
   typeWriter()
 }
 
-const typeAnimationForSpanElement = (cb: () => void): void => {
-  const titleName = `Deejay Geroso`
+const typeAnimationForAuthorName = (cb: () => void): void => {
+  const author = `Deejay Geroso`
   const spanElementId = 'title1-author-name'
 
   const spanElement = document.createElement('SPAN')
   spanElement.setAttribute('id', spanElementId)
 
-  document.getElementById('title1').appendChild(spanElement)
+  const title1Element = document.getElementById('title1') as HTMLElement
+  title1Element.appendChild(spanElement)
 
-  typeAnimation(spanElementId, titleName, cb)
+  typeAnimation(spanElementId, author, cb)
 }
 
 export const executeTitleTypeAnimation = (): void => {
@@ -36,7 +38,7 @@ export const executeTitleTypeAnimation = (): void => {
 
   setTimeout((): void => {
     typeAnimation(title1Id, title1Text, (): void => {
-      typeAnimationForSpanElement((): void => {
+      typeAnimationForAuthorName((): void => {
         typeAnimation(title2Id, title2Text)
       })
     })

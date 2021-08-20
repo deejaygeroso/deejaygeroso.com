@@ -1,3 +1,10 @@
+### v1.2.0  
+
+- Configured Jest and React Test Library.  
+- Created AppContext for data's like projects, contacts, and testimonials to be used in Home Page. Data can be found on `src/data`.  
+- Added 6 seconds delay before showing chat UI. This allows typing animation for author's name to be finished first without interruption.  
+- Temporarily hide email on contacts section of the page.  
+
 ### v1.1.4
 - Added Address on recent Projects.  
 - Updated Clinic to cloud position.  

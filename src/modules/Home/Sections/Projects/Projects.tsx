@@ -1,15 +1,17 @@
+import { IContext, IProject } from '../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
-import { IProject } from '../../../../common/interfaces'
+import AppContext from '../../../../AppContext'
 import Modal from './Modal'
 import Project from './Project'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'
-import projects from './projectsData'
-import projectsData from './projectsData'
+import { useContext } from 'react'
 import './styles.css'
 
 const Projects: FunctionComponent = (): ReactElement => {
   const [projectIndex, setProjectIndex] = useState(0)
   const [isModalVisible, toggleModal] = useState(false)
+  const data: IContext = useContext(AppContext)
+  const { projects } = data
 
   const hideScrollBarFromTheBackground = (): void => {
     const scrollY = window.scrollY
@@ -40,7 +42,7 @@ const Projects: FunctionComponent = (): ReactElement => {
   }
 
   const viewNextProject = (): void => {
-    const totalProjectCount = projectsData.length - 1
+    const totalProjectCount = projects.length - 1
     if (projectIndex < totalProjectCount) {
       setProjectIndex(projectIndex + 1)
     } else {
@@ -49,7 +51,7 @@ const Projects: FunctionComponent = (): ReactElement => {
   }
 
   const viewPrevProject = (): void => {
-    const lastIndexOfProject = projectsData.length - 1
+    const lastIndexOfProject = projects.length - 1
     if (projectIndex > 0) {
       setProjectIndex(projectIndex - 1)
     } else {
@@ -63,7 +65,7 @@ const Projects: FunctionComponent = (): ReactElement => {
       <Modal
         isVisible={isModalVisible}
         hideModal={hideModal}
-        project={projectsData[projectIndex]}
+        project={projects[projectIndex]}
         viewNextProject={viewNextProject}
         viewPrevProject={viewPrevProject}
       />
