@@ -1,5 +1,7 @@
 import App from './App'
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOMClient from 'react-dom/client'
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const container = document.getElementById('app') as HTMLElement
+const root = ReactDOMClient.createRoot(container!)
+root.render(<App />)
