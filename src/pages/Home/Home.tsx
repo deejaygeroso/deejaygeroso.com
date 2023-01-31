@@ -5,10 +5,12 @@ import Testimonials from './Testimonials'
 import WelcomeScreen from './WelcomeScreen'
 import { RouteComponentProps } from '@reach/router'
 import './styles.css'
+import Example from '@/common/components/Example'
 
 const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
   return (
     <>
+      <Example/>
       <WelcomeScreen />
       <Projects />
       <Testimonials />

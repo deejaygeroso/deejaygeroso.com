@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const dotenv = require('dotenv')
 const path = require('path')
 const webpack = require('webpack')
+const fs = require('fs')
 
 module.exports = () => {
   // call dotenv and it will return an Object with a parsed key
@@ -16,6 +17,20 @@ module.exports = () => {
     prev[`process.env.${next}`] = JSON.stringify(env[next])
     return prev
   }, {})
+
+  const srcPath = (subdir) => {
+    const srcPathRelativeToWebpackConfig = '../../src'
+    return path.join(__dirname, srcPathRelativeToWebpackConfig, subdir)
+  }
+
+  const getFilesAndDirectories = (source) =>
+      fs.readdirSync(source, { withFileTypes: true }).map((dirent) => dirent.name)
+
+  let absoluteImports = {}
+  getFilesAndDirectories('src').forEach((fileName) => {
+      const fileNameWithoutExtension = path.parse(fileName).name
+      absoluteImports[`@/${fileNameWithoutExtension}`] = srcPath(fileName)
+  })
 
   return {
     devServer: {
@@ -92,6 +107,9 @@ module.exports = () => {
 
     resolve: {
       extensions: ['.ts', '.tsx', '.js', 'jsx'],
+      alias: {
+        ...absoluteImports,
+      },
     },
     // IMPORTANT: Adding watchOptions after updating from webpack version 4 to 5 allows
     // HMR & LiveReload to work. We have also updated webpack-dev-server from v3.11.2 to v4.0.0-beta.1.
