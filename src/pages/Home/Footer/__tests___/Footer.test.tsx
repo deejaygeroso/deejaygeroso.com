@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import Footer from '..'
-import { ISocialMedia } from '../../../../../common/interfaces'
+import { ISocialMedia } from '../../../../common/interfaces'
 import React from 'react'
-import data from '../../../../../data'
+import data from '../../../../data'
 import '@testing-library/jest-dom' // Allows the use of additional matchers for testing components.
 
 describe('Footer', () => {

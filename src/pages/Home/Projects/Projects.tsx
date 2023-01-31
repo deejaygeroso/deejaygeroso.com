@@ -1,6 +1,6 @@
-import { IContext, IProject } from '../../../../common/interfaces'
+import { IContext, IProject } from '../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
-import AppContext from '../../../../AppContext'
+import AppContext from '../../../AppContext'
 import Modal from './Modal'
 import Project from './Project'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'

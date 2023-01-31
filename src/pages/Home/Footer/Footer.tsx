@@ -1,7 +1,7 @@
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
-import { IContext, ISocialMedia } from '../../../../common/interfaces'
+import { IContext, ISocialMedia } from '../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useContext } from 'react'
-import AppContext from '../../../../AppContext'
+import AppContext from '../../../AppContext'
 import { MdEmail } from 'react-icons/md'
 import './styles.css'
 

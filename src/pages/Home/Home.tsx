@@ -1,5 +1,8 @@
-import { Footer, Projects, Testimonials, WelcomeScreen } from './Sections'
 import React, { FunctionComponent, ReactElement } from 'react'
+import Footer from './Footer'
+import Projects from './Projects'
+import Testimonials from './Testimonials'
+import WelcomeScreen from './WelcomeScreen'
 import { RouteComponentProps } from '@reach/router'
 import './styles.css'
 

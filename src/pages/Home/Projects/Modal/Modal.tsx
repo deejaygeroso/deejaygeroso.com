@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
-import { IProject } from '../../../../../common/interfaces'
+import { IProject } from '../../../../common/interfaces'
 import { IoClose } from 'react-icons/io5'
 import ModalMobile from './ModalMobile'
 import ModalTeam from './ModalTeam'

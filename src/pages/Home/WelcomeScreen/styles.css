@@ -13,7 +13,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
-  background-image: url('../../../../../public/assets/images/main-wallpaper.webp');
+  background-image: url('../../../../public/assets/images/main-wallpaper.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
