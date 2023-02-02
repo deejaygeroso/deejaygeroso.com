@@ -28,4 +28,9 @@
     "Geroso",
   ],
   "cSpell.languageSettings": [],
+  "eslint.options": {
+    "configFile": "config/eslint/.eslintrc.js"
+  },
+  "cSpell.words": [
+  ]
 }
