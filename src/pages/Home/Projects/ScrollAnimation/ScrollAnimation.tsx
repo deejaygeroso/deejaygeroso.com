@@ -13,7 +13,7 @@ interface IProps {
 
 const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { id, children, fadeInDirection } = props
-  const inputElement = useRef(null)
+  const inputElement = useRef<HTMLDivElement>(null)
   const fadeIn = {
     left: 'animate__fadeInLeft',
     right: 'animate__fadeInRight',
@@ -31,14 +31,17 @@ const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement
     'scroll',
     (): void => {
       if (isInViewport()) {
-        document.getElementById(id).classList.add(fadeIn[fadeInDirection])
+        const divElement = document.getElementById(id)
+        if (divElement) {
+          divElement.classList.add(fadeIn[fadeInDirection])
+        }
       }
     },
     false,
   )
 
   return (
-    <div id={id} className='animate__animated ' ref={inputElement}>
+    <div className='animate__animated ' id={id} ref={inputElement}>
       {children}
     </div>
   )

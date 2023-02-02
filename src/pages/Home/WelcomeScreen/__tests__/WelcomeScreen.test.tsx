@@ -1,7 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
+
+import '@testing-library/jest-dom'
+
 import WelcomeScreen from '..'
-import '@testing-library/jest-dom' // Allows the use of additional matchers for testing components.
+
+// Allows the use of additional matchers for testing components.
 
 describe('Welcome Screen', () => {
   // it("Should show Author's full name and occupation not more than 5 seconds upon loading the page", async () => {

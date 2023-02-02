@@ -1,4 +1,5 @@
 import React, { FunctionComponent, ReactElement } from 'react'
+
 import './styles.css'
 
 const ViewMyWorkButton: FunctionComponent = (): ReactElement => {
@@ -10,7 +11,7 @@ const ViewMyWorkButton: FunctionComponent = (): ReactElement => {
   }
 
   return (
-    <a href='#projects' className='view-my-work-button' onClick={temporarilyAddSmoothScroll}>
+    <a className='view-my-work-button' href='#projects' onClick={temporarilyAddSmoothScroll}>
       View My Work
     </a>
   )

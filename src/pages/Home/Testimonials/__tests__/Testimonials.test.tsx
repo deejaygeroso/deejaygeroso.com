@@ -1,9 +1,15 @@
 import { render, screen } from '@testing-library/react'
-import { ITestimonial } from '@/common/interfaces'
 import React from 'react'
-import Testimonials from '..'
+
+import '@testing-library/jest-dom'
+
+import { ITestimonial } from '@/common/interfaces'
+
 import testimonials from '@/data/testimonials'
-import '@testing-library/jest-dom' // Allows the use of additional matchers for testing components.
+
+import Testimonials from '..'
+
+// Allows the use of additional matchers for testing components.
 
 describe('Testimonials', () => {
   it('Should show the title Testimonials', () => {

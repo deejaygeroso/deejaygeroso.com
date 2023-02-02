@@ -1,8 +1,9 @@
-import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
-import { IContext, ISocialMedia } from '../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useContext } from 'react'
-import AppContext from '../../../AppContext'
+import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+
+import AppContext from '../../../AppContext'
+import { IContext, ISocialMedia } from '../../../common/interfaces'
 import './styles.css'
 
 const Footer: FunctionComponent = (): ReactElement => {
@@ -53,8 +54,8 @@ const Footer: FunctionComponent = (): ReactElement => {
               data-testid={socialMedia.id}
               href={socialMedia.link}
               key={socialMedia.id}
-              target='_blank'
-              rel='noopener noreferrer'>
+              rel='noopener noreferrer'
+              target='_blank'>
               {renderSocialMediaIcon(socialMedia.link)}
             </a>
           ),

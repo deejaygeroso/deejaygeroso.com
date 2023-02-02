@@ -1,10 +1,11 @@
-import { IContext, IProject } from '../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useState } from 'react'
+import { useContext } from 'react'
+
 import AppContext from '../../../AppContext'
+import { IContext, IProject } from '../../../common/interfaces'
 import Modal from './Modal'
 import Project from './Project'
 import { fadeInDirection } from './ScrollAnimation/ScrollAnimation'
-import { useContext } from 'react'
 import './styles.css'
 
 const Projects: FunctionComponent = (): ReactElement => {
@@ -63,8 +64,8 @@ const Projects: FunctionComponent = (): ReactElement => {
     <section id='projects'>
       <h1>PROJECTS</h1>
       <Modal
-        isVisible={isModalVisible}
         hideModal={hideModal}
+        isVisible={isModalVisible}
         project={projects[projectIndex]}
         viewNextProject={viewNextProject}
         viewPrevProject={viewPrevProject}

@@ -1,5 +1,7 @@
-import { IDomain, IProject } from '../../../../../common/interfaces'
 import React, { FunctionComponent, ReactElement } from 'react'
+
+import { IDomain, IProject } from '@/common/interfaces'
+
 import './styles.css'
 
 interface IProps {
@@ -16,7 +18,7 @@ const ProjectInfo: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           <span>
             {project.domains.map(
               (domain: IDomain, key: number): ReactElement => (
-                <a href={domain.url} key={key} target='_blank' rel='noopener noreferrer'>
+                <a href={domain.url} key={key} rel='noopener noreferrer' target='_blank'>
                   {domain.name}
                 </a>
               ),

@@ -1,6 +1,7 @@
-import { IContext, ITestimonial } from '../../../common/interfaces'
 import React, { FunctionComponent, ReactElement, useContext } from 'react'
+
 import AppContext from '../../../AppContext'
+import { IContext, ITestimonial } from '../../../common/interfaces'
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {

@@ -1,24 +1,28 @@
 import React, { ReactElement } from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import AppContext from './AppContext'
-import Blog from './pages/Blog'
-import Home from './pages/Home'
-import data from './data'
-import './common/styles/app.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+
+import appData from '@/data'
+
+import '@/common/styles/app.css'
+
+import { AppContext } from '@/context/useAppContext'
+
+import Blog from '@/pages/Blog'
+import Home from '@/pages/Home'
 
 const App = (): ReactElement => {
   const router = createBrowserRouter([
     {
-      path: '/',
       element: (
-        <AppContext.Provider value={data}>
+        <AppContext.Provider value={appData}>
           <Home />
         </AppContext.Provider>
       ),
+      path: '/',
     },
     {
-      path: 'blog',
       element: <Blog />,
+      path: 'blog',
     },
   ])
 

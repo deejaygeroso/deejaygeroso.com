@@ -1,7 +1,8 @@
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import React, { FunctionComponent, ReactElement, useRef } from 'react'
-import { IProject } from '../../../../common/interfaces'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { IoClose } from 'react-icons/io5'
+
+import { IProject } from '../../../../common/interfaces'
 import ModalMobile from './ModalMobile'
 import ModalTeam from './ModalTeam'
 import useOutsideAlerter from './outsideAlerter'
@@ -60,11 +61,11 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
 
   return (
     <>
-      <div id='project-modal' className={modalNameForVisibility}>
+      <div className={modalNameForVisibility} id='project-modal'>
         <div className='modal-close-icon' onClick={hideModal}>
           <IoClose />
         </div>
-        <div ref={wrapperRef} className='modal-container'>
+        <div className='modal-container' ref={wrapperRef}>
           <div className='modal-right-arrow'>
             <IoIosArrowForward size={90} onClick={viewNextProject} />
           </div>
@@ -85,8 +86,8 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
         </div>
       </div>
       <ModalMobile
-        isVisible={isVisible}
         hideModal={hideModal}
+        isVisible={isVisible}
         project={project}
         viewNextProject={viewNextProject}
         viewPrevProject={viewPrevProject}

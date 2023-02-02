@@ -1,6 +1,7 @@
 import React, { EffectCallback, FunctionComponent, ReactElement, useEffect } from 'react'
-import ViewMyWorkButton from './ViewMyWorkButton'
+
 import { deejay250x250 } from '../../../common/images'
+import ViewMyWorkButton from './ViewMyWorkButton'
 import { executeTitleTypeAnimation } from './helpers'
 import './styles.css'
 

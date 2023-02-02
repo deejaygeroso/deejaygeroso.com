@@ -1,7 +1,9 @@
 import React, { FunctionComponent, ReactElement } from 'react'
-import ScrollAnimation, { fadeInDirection } from '../ScrollAnimation/ScrollAnimation'
-import { IProject } from '../../../../../common/interfaces'
+
+import { IProject } from '@/common/interfaces'
+
 import ProjectInfo from '../ProjectInfo'
+import ScrollAnimation, { fadeInDirection } from '../ScrollAnimation/ScrollAnimation'
 import './styles.css'
 
 interface IProps {
@@ -27,8 +29,8 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
           <img
             alt={projectInput.photos[defaultPhotoIndex].webP}
             className='card project-images'
-            onClick={showModal}
             src={projectInput.photos[defaultPhotoIndex].webP}
+            onClick={showModal}
           />
         </picture>
       )
@@ -37,7 +39,7 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   }
 
   return (
-    <ScrollAnimation id={projectId} fadeInDirection={fadeInDirection[fadeInDirectionInput]}>
+    <ScrollAnimation fadeInDirection={fadeInDirection[fadeInDirectionInput]} id={projectId}>
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
         {renderProjectPhoto(project, fadeInDirection.right)}
