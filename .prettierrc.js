@@ -12,6 +12,7 @@ module.exports = {
     '^@/context/(.*)$',
     '^@/data/(.*)$',
     '^@/pages/(.*)$',
+    '^@/styles/(.*)$',
     '^[./]',
   ],
   importOrderSeparation: true,
