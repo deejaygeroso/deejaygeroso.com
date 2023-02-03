@@ -1,16 +1,16 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import AppContext from '@/AppContext'
+import Footer from '@/components/HomePage/Footer'
+import WelcomeScreen from '@/components/HomePage/WelcomeScreen'
 import data from '@/data'
-import { RouteComponentProps } from '@reach/router'
 
-import Footer from './Footer'
+import { AppContext } from '@/context/useAppContext'
+
 import Projects from './Projects'
 import Testimonials from './Testimonials'
-import WelcomeScreen from './WelcomeScreen'
 import './styles.css'
 
-const Home: FunctionComponent<RouteComponentProps> = (): ReactElement => {
+const Home: FunctionComponent = (): ReactElement => {
   return (
     <AppContext.Provider value={data}>
       <WelcomeScreen />

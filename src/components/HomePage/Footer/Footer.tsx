@@ -2,8 +2,10 @@ import React, { FunctionComponent, ReactElement, useContext } from 'react'
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
-import AppContext from '../../../AppContext'
-import { IContext, ISocialMedia } from '../../../common/interfaces'
+import { IContext, ISocialMedia } from '@/common/interfaces'
+
+import { AppContext } from '@/context/useAppContext'
+
 import './styles.css'
 
 const Footer: FunctionComponent = (): ReactElement => {
