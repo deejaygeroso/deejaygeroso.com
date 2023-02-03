@@ -1,4 +1,4 @@
-import { IContact } from '@/common/interfaces'
+import { IContact } from '@/interfaces'
 
 import appVersion from './appVersion'
 import projects from './projects'

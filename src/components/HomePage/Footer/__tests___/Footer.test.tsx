@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 
+import { ISocialMedia } from '@/interfaces'
 import '@testing-library/jest-dom'
 
 import Footer from '..'
-import { ISocialMedia } from '../../../../common/interfaces'
 import data from '../../../../data'
 
 // Allows the use of additional matchers for testing components.

@@ -4,8 +4,7 @@ import { IoClose } from 'react-icons/io5'
 
 import ModalMobile from '@/components/HomePage/ModalMobile'
 import ModalTeam from '@/components/HomePage/ModalTeam'
-
-import { IProject } from '@/common/interfaces'
+import { IProject } from '@/interfaces'
 
 import useOutsideAlerter from './outsideAlerter'
 import './styles.css'

@@ -6,8 +6,7 @@ import { MdClose } from 'react-icons/md'
 
 import ModalTeam from '@/components/HomePage/ModalTeam'
 import ProjectInfo from '@/components/HomePage/ProjectInfo'
-
-import { IProject } from '@/common/interfaces'
+import { IProject } from '@/interfaces'
 
 import './styles.css'
 

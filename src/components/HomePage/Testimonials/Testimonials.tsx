@@ -1,13 +1,13 @@
 import React, { FunctionComponent, ReactElement, useContext } from 'react'
 
-import { IContext, ITestimonial } from '@/common/interfaces'
+import { IAppContext, ITestimonial } from '@/interfaces'
 
 import { AppContext } from '@/context/useAppContext'
 
 import './styles.css'
 
 const Testimonials: FunctionComponent = (): ReactElement => {
-  const data: IContext = useContext(AppContext)
+  const data: IAppContext = useContext(AppContext)
   const { testimonials } = data
   return (
     <section id='testimonials'>

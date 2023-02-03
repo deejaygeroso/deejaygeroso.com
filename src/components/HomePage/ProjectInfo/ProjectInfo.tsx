@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import { IDomain, IProject } from '@/common/interfaces'
+import { IDomain, IProject } from '@/interfaces'
 
 import './styles.css'
 

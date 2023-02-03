@@ -11,6 +11,7 @@ module.exports = {
     '^@/common/(.*)$',
     '^@/context/(.*)$',
     '^@/data/(.*)$',
+    '^@/interfaces/(.*)$',
     '^@/pages/(.*)$',
     '^@/styles/(.*)$',
     '^[./]',

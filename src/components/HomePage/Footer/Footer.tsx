@@ -2,14 +2,14 @@ import React, { FunctionComponent, ReactElement, useContext } from 'react'
 import { FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 
-import { IContext, ISocialMedia } from '@/common/interfaces'
+import { IAppContext, ISocialMedia } from '@/interfaces'
 
 import { AppContext } from '@/context/useAppContext'
 
 import './styles.css'
 
 const Footer: FunctionComponent = (): ReactElement => {
-  const data: IContext = useContext(AppContext)
+  const data: IAppContext = useContext(AppContext)
   const { appVersion, contacts } = data
 
   const date = new Date()
