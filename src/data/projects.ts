@@ -38,7 +38,7 @@ import {
   saraJavan,
   sheryl,
   vanessa,
-} from '../common/images'
+} from '../assets/images'
 import {
   adally1WebP,
   adally2WebP,
@@ -77,7 +77,7 @@ import {
   saraJavanWebP,
   sherylWebP,
   vanessaWebP,
-} from '../common/images/webp'
+} from '../assets/images/webp'
 
 const deejayGerosoLinkedIn = 'https://www.linkedin.com/in/deejaygeroso'
 const memberDeejayGeroso = {
