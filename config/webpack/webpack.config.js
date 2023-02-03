@@ -18,9 +18,9 @@ module.exports = () => {
     return prev
   }, {})
 
-  const srcPath = subdir => {
+  const srcPath = subDirectory => {
     const srcPathRelativeToWebpackConfig = '../../src'
-    return path.join(__dirname, srcPathRelativeToWebpackConfig, subdir)
+    return path.join(__dirname, srcPathRelativeToWebpackConfig, subDirectory)
   }
 
   const getFilesAndDirectories = source => fs.readdirSync(source, { withFileTypes: true }).map(dirent => dirent.name)
