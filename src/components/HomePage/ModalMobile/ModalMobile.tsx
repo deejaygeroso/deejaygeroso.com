@@ -4,9 +4,11 @@ import { HiUserGroup } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 
-import { IProject } from '../../../../common/interfaces'
-import ProjectInfo from '../../ProjectInfo'
-import ModalTeam from '../ModalTeam'
+import ModalTeam from '@/components/HomePage/ModalTeam'
+import ProjectInfo from '@/components/HomePage/ProjectInfo'
+
+import { IProject } from '@/common/interfaces'
+
 import './styles.css'
 
 interface IProps {
