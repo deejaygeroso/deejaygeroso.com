@@ -1,15 +1,11 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import { RouteComponentProps } from '@reach/router'
+import BlogPage from '@/components/BlogPage/BlogPage'
 
 import './styles.css'
 
-const Blog: FunctionComponent<RouteComponentProps> = (): ReactElement => {
-  return (
-    <>
-      <h1>My Blog</h1>
-    </>
-  )
+const Blog: FunctionComponent = (): ReactElement => {
+  return <BlogPage />
 }
 
 export default Blog
