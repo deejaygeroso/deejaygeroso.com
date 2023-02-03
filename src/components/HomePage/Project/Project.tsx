@@ -1,9 +1,10 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
+import ProjectInfo from '@/components/HomePage/ProjectInfo'
+import ScrollAnimation, { fadeInDirection } from '@/components/HomePage/ScrollAnimation/ScrollAnimation'
+
 import { IProject } from '@/common/interfaces'
 
-import ProjectInfo from '../ProjectInfo'
-import ScrollAnimation, { fadeInDirection } from '../ScrollAnimation/ScrollAnimation'
 import './styles.css'
 
 interface IProps {
