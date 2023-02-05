@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const appVersion: string = require('../../package.json').version
+import appVersion from '../../package.json'
 
-export default appVersion
+export default appVersion.version as string
