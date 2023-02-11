@@ -1,8 +1,9 @@
 import { Context, createContext } from 'react'
 
-import { IContext } from './common/interfaces'
+import { IAppContext } from '@/interfaces'
+
 import data from './data'
 
-const AppContext: Context<IContext> = createContext(data)
+const AppContext: Context<IAppContext> = createContext(data)
 
 export default AppContext

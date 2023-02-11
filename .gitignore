@@ -16,6 +16,9 @@ node_modules/
 # Mac files
 *.DS_Store
 
+#vitest
+coverage
+
 service-account.json
 
 cypress/fixtures/*

@@ -1,6 +1,7 @@
-import { denmark250x250, dustin250x250, saraJavan250x250, vanessa250x250 } from '../common/images'
-import { denmark250x250WebP, dustin250x250WebP, saraJavan250x250WebP, vanessa250x250WebP } from '../common/images/webp'
-import { ITestimonial } from '../common/interfaces'
+import { ITestimonial } from '@/interfaces'
+
+import { denmark250x250, dustin250x250, saraJavan250x250, vanessa250x250 } from '../assets/images'
+import { denmark250x250WebP, dustin250x250WebP, saraJavan250x250WebP, vanessa250x250WebP } from '../assets/images/webp'
 
 const testimonials: ITestimonial[] = [
   {
