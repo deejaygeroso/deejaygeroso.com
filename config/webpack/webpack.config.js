@@ -1,19 +1,3 @@
-/* ------------------------------------------------------------------------- */
-/* This is deprecated. As of v2.0.0 we have migrated into using vite v4.1.1 
- * dependency packages that we removed:
- *    "babel-loader": "^8.0.6"
- *    "copy-webpack-plugin": "^9.0.1"
- *    "css-loader": "^5.2.6"
- *    "file-loader": "^6.0.0"
- *    "html-loader": "^2.1.2"
- *    "html-webpack-plugin": "^5.3.2"
- *    "source-map-loader": "^3.0.0"
- *    "style-loader": "^3.0.0"
- *    "ts-loader": "^9.2.3"
- *    "webpack": "^5.40.0"
- *    "webpack-cli": "^4.7.2"
- *    "webpack-dev-server": "^4.0.0-beta.1"
- * ------------------------------------------------------------------------- */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const CopyPlugin = require('copy-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
