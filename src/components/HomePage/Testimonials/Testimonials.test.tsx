@@ -6,7 +6,7 @@ import '@testing-library/jest-dom'
 
 import testimonials from '@/data/testimonials'
 
-import Testimonials from '..'
+import Testimonials from './Testimonials'
 
 // Allows the use of additional matchers for testing components.
 

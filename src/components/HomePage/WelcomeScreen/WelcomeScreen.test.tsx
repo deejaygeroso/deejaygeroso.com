@@ -3,7 +3,7 @@ import React from 'react'
 
 import '@testing-library/jest-dom'
 
-import WelcomeScreen from '..'
+import WelcomeScreen from './WelcomeScreen'
 
 // Allows the use of additional matchers for testing components.
 

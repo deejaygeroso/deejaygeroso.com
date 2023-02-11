@@ -1,13 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 
+import data from '@/data'
 import { ISocialMedia } from '@/interfaces'
 import '@testing-library/jest-dom'
 
-import Footer from '..'
-import data from '../../../../data'
-
-// Allows the use of additional matchers for testing components.
+import Footer from '.'
 
 describe('Footer', () => {
   it('Should show title CONTACT', () => {
