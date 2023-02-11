@@ -1,0 +1,35 @@
+name: Release Pipeline
+
+on:
+  push:
+    branches:
+      - feature-**
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.14.x, 19.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install pNPM
+      shell: bash
+      run: npm install -g pnpm
+
+    - name: Cache pNPM
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+
+    - run: pnpm ci
+    - run: pnpm test
