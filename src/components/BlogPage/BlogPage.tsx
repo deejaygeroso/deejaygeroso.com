@@ -3,7 +3,7 @@ import React, { FunctionComponent, ReactElement } from 'react'
 const BlogPage: FunctionComponent = (): ReactElement => {
   return (
     <>
-      <h1>My Blog</h1>
+      <h1>Blog</h1>
     </>
   )
 }
