@@ -9,6 +9,7 @@
     "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.js 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
     "start": "serve -l 3000 -s dist",
     "test": "vitest --config ./config/vite/test.config.js",
+    "test:coverage": "vitest --config ./config/vite/test.config.js --coverage",
     "prettier:write": "prettier --write ./src"
   },
   "repository": {
