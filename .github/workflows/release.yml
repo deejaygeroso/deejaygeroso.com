@@ -1,0 +1,33 @@
+name: Release Pipeline
+
+on:
+  push:
+    branches:
+      - feature-**
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build Feature Branch
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 18.14.0
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.14.0
+
+    - name: Install pNPM
+      shell: bash
+      run: npm install -g pnpm
+
+    - name: Cache pNPM
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.14.0
+        cache: 'pnpm'
+
+    - run: pnpm install
+    - run: pnpm test
