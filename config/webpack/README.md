@@ -1,7 +1,7 @@
 # Webpack Not In Use
-Usage of webpack is no longer supported. 
-As of `app v2.0.0` we have migrated into using `vite v4.1.1` 
-Configuration files has been preserved for future reference.
+Usage of webpack is no longer supported.  
+As of `app v2.0.0` we have migrated into using `vite v4.1.1`  
+Configuration files has been preserved for future reference.  
 --------------------------------------------------------------------------------
 List of dependency packages that have been removed:
 - "babel-loader": "^8.0.6"
