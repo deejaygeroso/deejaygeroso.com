@@ -29,4 +29,5 @@ jobs:
         node-version: 18.14.0
         cache: 'pnpm'
 
+    - run: pnpm install
     - run: pnpm test
