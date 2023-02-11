@@ -1,9 +1,9 @@
 import React, { FunctionComponent, ReactElement, useState } from 'react'
 import { useContext } from 'react'
 
-import Modal from '@/components/HomePage/Modal'
-import Project from '@/components/HomePage/Project'
-import { fadeInDirection } from '@/components/HomePage/ScrollAnimation/ScrollAnimation'
+import Modal from '@/components/Home/Modal'
+import Project from '@/components/Home/Project'
+import { fadeInDirection } from '@/components/Home/ScrollAnimation/ScrollAnimation'
 import { IAppContext, IProject } from '@/interfaces'
 
 import { AppContext } from '@/context/useAppContext'

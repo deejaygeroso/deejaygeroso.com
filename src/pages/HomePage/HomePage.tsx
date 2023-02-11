@@ -1,16 +1,17 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import Footer from '@/components/HomePage/Footer'
-import Projects from '@/components/HomePage/Projects'
-import Testimonials from '@/components/HomePage/Testimonials'
-import WelcomeScreen from '@/components/HomePage/WelcomeScreen'
 import data from '@/data'
+
+import Footer from '@/components/Home/Footer'
+import Projects from '@/components/Home/Projects'
+import Testimonials from '@/components/Home/Testimonials'
+import WelcomeScreen from '@/components/Home/WelcomeScreen'
 
 import { AppContext } from '@/context/useAppContext'
 
 import './styles.css'
 
-const Home: FunctionComponent = (): ReactElement => {
+const HomePage: FunctionComponent = (): ReactElement => {
   return (
     <AppContext.Provider value={data}>
       <WelcomeScreen />
@@ -21,4 +22,4 @@ const Home: FunctionComponent = (): ReactElement => {
   )
 }
 
-export default Home
+export default HomePage

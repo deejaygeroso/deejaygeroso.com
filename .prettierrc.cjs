@@ -8,7 +8,7 @@ module.exports = {
   importOrder: [
     'react(.*)$',
     '<THIRD_PARTY_MODULES>',
-    '^@/common/(.*)$',
+    '^@/components/(.*)$',
     '^@/context/(.*)$',
     '^@/data/(.*)$',
     '^@/interfaces/(.*)$',

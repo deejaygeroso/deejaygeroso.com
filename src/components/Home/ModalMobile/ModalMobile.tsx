@@ -4,8 +4,8 @@ import { HiUserGroup } from 'react-icons/hi'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { MdClose } from 'react-icons/md'
 
-import ModalTeam from '@/components/HomePage/ModalTeam'
-import ProjectInfo from '@/components/HomePage/ProjectInfo'
+import ModalTeam from '@/components/Home/ModalTeam'
+import ProjectInfo from '@/components/Home/ProjectInfo'
 import { IProject } from '@/interfaces'
 
 import './styles.css'

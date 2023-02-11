@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
-import ProjectInfo from '@/components/HomePage/ProjectInfo'
-import ScrollAnimation, { fadeInDirection } from '@/components/HomePage/ScrollAnimation/ScrollAnimation'
+import ProjectInfo from '@/components/Home/ProjectInfo'
+import ScrollAnimation, { fadeInDirection } from '@/components/Home/ScrollAnimation/ScrollAnimation'
 import { IProject } from '@/interfaces'
 
 import './styles.css'

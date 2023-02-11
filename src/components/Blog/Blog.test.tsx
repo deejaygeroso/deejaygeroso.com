@@ -3,7 +3,7 @@ import React from 'react'
 
 import { describe, expect, test } from 'vitest'
 
-import BlogPage from './BlogPage'
+import BlogPage from './Blog'
 
 describe('BlogPage test', () => {
   test('should show title all the time', () => {

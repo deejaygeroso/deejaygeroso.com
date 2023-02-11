@@ -1,19 +1,19 @@
 import React, { ReactElement } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import Blog from '@/pages/Blog'
-import Home from '@/pages/Home'
+import BlogPage from '@/pages/BlogPage'
+import HomePage from '@/pages/HomePage'
 
 import '@/styles/app.css'
 
 const App = (): ReactElement => {
   const router = createBrowserRouter([
     {
-      element: <Home />,
+      element: <HomePage />,
       path: '/',
     },
     {
-      element: <Blog />,
+      element: <BlogPage />,
       path: 'blog',
     },
   ])
