@@ -5,7 +5,7 @@ import data from '@/data'
 import { ISocialMedia } from '@/interfaces'
 import '@testing-library/jest-dom'
 
-import Footer from '.'
+import Footer from './Footer'
 
 describe('Footer', () => {
   it('Should show title CONTACT', () => {

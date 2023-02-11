@@ -20,7 +20,7 @@ export default defineConfig(() => {
       }),
     ],
     preview: {
-      port: 4040,
+      port: 4000,
     },
     publicDir: '../../public',
     resolve: {
@@ -30,7 +30,7 @@ export default defineConfig(() => {
     },
     root: '../../src',
     server: {
-      port: 3030,
+      port: 3000,
     },
   }
 })
