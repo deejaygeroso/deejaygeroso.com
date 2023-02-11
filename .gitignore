@@ -10,9 +10,6 @@ dist
 # Dependency directories
 node_modules/
 
-# package locks
-package-lock.json
-
 # Environment
 .env
 

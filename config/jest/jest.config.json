@@ -1,7 +1,8 @@
 {
   "rootDir": "../../",
   "moduleNameMapper": {
-    "\\.(css|less|jpg|jpeg|png|webp)$": "<rootDir>/config/jest/mockStyle.js"
+    "\\.(css|less|jpg|jpeg|png|webp)$": "<rootDir>/config/jest/mockStyle.js",
+    "^@/(.*)$": "<rootDir>/src/$1"
   },
   "testEnvironment": "jsdom",
   "testMatch": [

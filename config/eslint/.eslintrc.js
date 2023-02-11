@@ -13,21 +13,30 @@ module.exports = {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', '@typescript-eslint', 'typescript-sort-keys'],
+  root: true,
   rules: {
-    // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
-    'prettier/prettier': 'error',
-    semi: ['error', 'never'],
-    'sort-imports': [
+    'no-console': ['warn', { allow: ['info', 'error'] }],
+    'prettier/prettier': [
       'error',
       {
-        ignoreCase: false,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ['multiple', 'single', 'all', 'none'],
+        endOfLine: 'auto',
       },
     ],
+    'react/jsx-sort-props': [
+      'error',
+      {
+        callbacksLast: true,
+        ignoreCase: true,
+        noSortAlphabetically: false,
+        shorthandFirst: false,
+        shorthandLast: true,
+      },
+    ],
+    semi: ['error', 'never'],
     'sort-keys': ['error', 'asc', { caseSensitive: false }],
+    'typescript-sort-keys/interface': 'error',
+    'typescript-sort-keys/string-enum': 'error',
   },
   settings: {
     react: {
