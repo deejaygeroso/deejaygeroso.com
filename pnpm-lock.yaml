@@ -12,7 +12,6 @@ specifiers:
   '@vitejs/plugin-react': ^3.1.0
   '@vitest/coverage-c8': ^0.28.4
   eslint: ^8.34.0
-  eslint-config-prettier: ^8.6.0
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-react: ^7.32.2
   eslint-plugin-typescript-sort-keys: ^2.1.0
@@ -47,8 +46,7 @@ devDependencies:
   '@vitejs/plugin-react': 3.1.0_vite@4.1.1
   '@vitest/coverage-c8': 0.28.4_jsdom@21.1.0
   eslint: 8.34.0
-  eslint-config-prettier: 8.6.0_eslint@8.34.0
-  eslint-plugin-prettier: 4.2.1_u5wnrdwibbfomslmnramz52buy
+  eslint-plugin-prettier: 4.2.1_yrlhudqyxg2l7qvwle5bdpmrli
   eslint-plugin-react: 7.32.2_eslint@8.34.0
   eslint-plugin-typescript-sort-keys: 2.1.0_z4swst3wuuqk4hlme4ajzslgh4
   jsdom: 21.1.0
@@ -1657,16 +1655,7 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-prettier/8.6.0_eslint@8.34.0:
-    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 8.34.0
-    dev: true
-
-  /eslint-plugin-prettier/4.2.1_u5wnrdwibbfomslmnramz52buy:
+  /eslint-plugin-prettier/4.2.1_yrlhudqyxg2l7qvwle5bdpmrli:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1678,7 +1667,6 @@ packages:
         optional: true
     dependencies:
       eslint: 8.34.0
-      eslint-config-prettier: 8.6.0_eslint@8.34.0
       prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
     dev: true
