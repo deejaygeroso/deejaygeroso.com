@@ -1,0 +1,26 @@
+name: Security Scan
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - master
+
+jobs:
+  trivy-scan:
+    name: Trivy Scan
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Vulnerability & Security Scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          format: 'table'
+          exit-code: '1'
+          ignore-unfixed: false
+          severity: 'CRITICAL,HIGH,MEDIUM'
+          security-checks: 'secret,vuln'
+          vuln-type: 'library'
