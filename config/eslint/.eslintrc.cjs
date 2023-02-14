@@ -2,8 +2,12 @@ module.exports = {
   extends: [
     'plugin:react/recommended', // Uses the recommended rules from @eslint-plugin-react
     'plugin:@typescript-eslint/recommended', // Uses the recommended rules from @typescript-eslint/eslint-plugin
-    'plugin:prettier/recommended', // Enables eslint-plugin-prettier and displays prettier errors as ESLint errors. Make sure this is always the last configuration in the extends array.
-    'prettier',
+    /* -----------------------------------------------------------------------------------------------------------------
+     * Enables eslint-plugin-prettier and displays prettier errors as ESLint errors.
+     * THe plugin:prettier/recommended config sets up both eslint-plugin-prettier and eslint-config-prettier in one go
+     * Make sure this is always the last configuration in the extends array.
+     * ----------------------------------------------------------------------------------------------------------------- */
+    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   parserOptions: {
@@ -13,16 +17,10 @@ module.exports = {
     ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
   },
-  plugins: ['prettier', '@typescript-eslint', 'typescript-sort-keys'],
+  plugins: ['@typescript-eslint', 'typescript-sort-keys'],
   root: true,
   rules: {
     'no-console': ['warn', { allow: ['info', 'error'] }],
-    'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-      },
-    ],
     'react/jsx-sort-props': [
       'error',
       {
