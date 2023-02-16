@@ -7,7 +7,7 @@ module.exports = {
      * THe plugin:prettier/recommended config sets up both eslint-plugin-prettier and eslint-config-prettier in one go
      * Make sure this is always the last configuration in the extends array.
      * ----------------------------------------------------------------------------------------------------------------- */
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser', // Specifies the ESLint parser
   parserOptions: {

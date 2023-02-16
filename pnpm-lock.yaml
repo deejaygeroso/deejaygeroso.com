@@ -12,7 +12,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.1.0
   '@vitest/coverage-c8': ^0.28.4
   eslint: ^8.34.0
-  eslint-plugin-prettier: ^4.2.1
+  eslint-config-prettier: ^8.6.0
   eslint-plugin-react: ^7.32.2
   eslint-plugin-typescript-sort-keys: ^2.1.0
   jsdom: ^21.1.0
@@ -46,7 +46,7 @@ devDependencies:
   '@vitejs/plugin-react': 3.1.0_vite@4.1.1
   '@vitest/coverage-c8': 0.28.4_jsdom@21.1.0
   eslint: 8.34.0
-  eslint-plugin-prettier: 4.2.1_yrlhudqyxg2l7qvwle5bdpmrli
+  eslint-config-prettier: 8.6.0_eslint@8.34.0
   eslint-plugin-react: 7.32.2_eslint@8.34.0
   eslint-plugin-typescript-sort-keys: 2.1.0_z4swst3wuuqk4hlme4ajzslgh4
   jsdom: 21.1.0
@@ -1655,20 +1655,13 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_yrlhudqyxg2l7qvwle5bdpmrli:
-    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
-    engines: {node: '>=12.0.0'}
+  /eslint-config-prettier/8.6.0_eslint@8.34.0:
+    resolution: {integrity: sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==}
+    hasBin: true
     peerDependencies:
-      eslint: '>=7.28.0'
-      eslint-config-prettier: '*'
-      prettier: '>=2.0.0'
-    peerDependenciesMeta:
-      eslint-config-prettier:
-        optional: true
+      eslint: '>=7.0.0'
     dependencies:
       eslint: 8.34.0
-      prettier: 2.8.4
-      prettier-linter-helpers: 1.0.0
     dev: true
 
   /eslint-plugin-react/7.32.2_eslint@8.34.0:
@@ -1843,10 +1836,6 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
-    dev: true
-
-  /fast-diff/1.2.0:
-    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
   /fast-glob/3.2.12:
@@ -2851,13 +2840,6 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
-    dev: true
-
-  /prettier-linter-helpers/1.0.0:
-    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      fast-diff: 1.2.0
     dev: true
 
   /prettier/2.8.4:
