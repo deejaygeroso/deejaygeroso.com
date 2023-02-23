@@ -1,8 +1,9 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 
+import { IProject } from '@/interfaces'
+
 import ProjectInfo from '@/components/Home/ProjectInfo'
 import ScrollAnimation, { fadeInDirection } from '@/components/Home/ScrollAnimation/ScrollAnimation'
-import { IProject } from '@/interfaces'
 
 import './styles.css'
 

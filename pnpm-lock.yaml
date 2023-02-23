@@ -1,21 +1,17 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@react-helper/eslint-config': ^1.0.0
+  '@react-helper/prettier-config': ^1.0.0
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
   '@trivago/prettier-plugin-sort-imports': ^4.0.0
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
   '@types/react-router-dom': ^5.3.3
-  '@typescript-eslint/eslint-plugin': ^5.51.0
-  '@typescript-eslint/parser': ^5.51.0
   '@vitejs/plugin-react': ^3.1.0
   '@vitest/coverage-c8': ^0.28.4
   eslint: ^8.34.0
-  eslint-config-prettier: ^8.6.0
-  eslint-plugin-prettier: ^4.2.1
-  eslint-plugin-react: ^7.32.2
-  eslint-plugin-typescript-sort-keys: ^2.1.0
   jsdom: ^21.1.0
   path: ^0.12.7
   prettier: ^2.8.4
@@ -23,7 +19,6 @@ specifiers:
   react-dom: ^18.2.0
   react-icons: ^4.7.1
   react-router-dom: ^6.8.1
-  react-test-renderer: ^18.2.0
   typescript: ^4.9.5
   vite: ^4.1.1
   vitest: ^0.28.4
@@ -36,24 +31,19 @@ dependencies:
   react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
+  '@react-helper/eslint-config': 1.0.0_typescript@4.9.5
+  '@react-helper/prettier-config': 1.0.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.4
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   '@types/react-router-dom': 5.3.3
-  '@typescript-eslint/eslint-plugin': 5.51.0_z4swst3wuuqk4hlme4ajzslgh4
-  '@typescript-eslint/parser': 5.51.0_7kw3g6rralp5ps6mg3uyzz6azm
   '@vitejs/plugin-react': 3.1.0_vite@4.1.1
   '@vitest/coverage-c8': 0.28.4_jsdom@21.1.0
   eslint: 8.34.0
-  eslint-config-prettier: 8.6.0_eslint@8.34.0
-  eslint-plugin-prettier: 4.2.1_u5wnrdwibbfomslmnramz52buy
-  eslint-plugin-react: 7.32.2_eslint@8.34.0
-  eslint-plugin-typescript-sort-keys: 2.1.0_z4swst3wuuqk4hlme4ajzslgh4
   jsdom: 21.1.0
   prettier: 2.8.4
-  react-test-renderer: 18.2.0_react@18.2.0
   typescript: 4.9.5
   vite: 4.1.1
   vitest: 0.28.4_jsdom@21.1.0
@@ -679,6 +669,30 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@react-helper/eslint-config/1.0.0_typescript@4.9.5:
+    resolution: {integrity: sha512-YzmL6zan7P0NsLN/ptZe2HJmH3VgHrvn34jgu07EurDkUhPgw0rxUV0p644sj7tu4UKXapjnyJtBbyZusBTh/Q==}
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.51.0_z4swst3wuuqk4hlme4ajzslgh4
+      '@typescript-eslint/parser': 5.51.0_7kw3g6rralp5ps6mg3uyzz6azm
+      eslint: 8.34.0
+      eslint-config-prettier: 8.6.0_eslint@8.34.0
+      eslint-plugin-react: 7.32.2_eslint@8.34.0
+      eslint-plugin-typescript-sort-keys: 2.1.0_z4swst3wuuqk4hlme4ajzslgh4
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: true
+
+  /@react-helper/prettier-config/1.0.0:
+    resolution: {integrity: sha512-8IFYaq327N1WumICzNqCXcqsEZwqs6UahFq9VlqQvvfkJ3YDgCIglzgjZhG3C8eDUZgnD68+4bln0Pkl2xkjZA==}
+    dependencies:
+      '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.4
+      prettier: 2.8.4
+    transitivePeerDependencies:
+      - '@vue/compiler-sfc'
+      - supports-color
     dev: true
 
   /@remix-run/router/1.3.2:
@@ -1666,23 +1680,6 @@ packages:
       eslint: 8.34.0
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_u5wnrdwibbfomslmnramz52buy:
-    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      eslint: '>=7.28.0'
-      eslint-config-prettier: '*'
-      prettier: '>=2.0.0'
-    peerDependenciesMeta:
-      eslint-config-prettier:
-        optional: true
-    dependencies:
-      eslint: 8.34.0
-      eslint-config-prettier: 8.6.0_eslint@8.34.0
-      prettier: 2.8.4
-      prettier-linter-helpers: 1.0.0
-    dev: true
-
   /eslint-plugin-react/7.32.2_eslint@8.34.0:
     resolution: {integrity: sha512-t2fBMa+XzonrrNkyVirzKlvn5RXzzPwRHtMvLAtVZrt8oxgnTQaYbU6SXTOO1mwQgp1y5+toMSKInnzGr0Knqg==}
     engines: {node: '>=4'}
@@ -1855,10 +1852,6 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
-    dev: true
-
-  /fast-diff/1.2.0:
-    resolution: {integrity: sha512-xJuoT5+L99XlZ8twedaRf6Ax2TgQVxvgZOYoPKqZufmJib0tL2tegPBOZb1pVNgIhlqDlA0eO0c3wBvQcmzx4w==}
     dev: true
 
   /fast-glob/3.2.12:
@@ -2865,13 +2858,6 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-linter-helpers/1.0.0:
-    resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
-    engines: {node: '>=6.0.0'}
-    dependencies:
-      fast-diff: 1.2.0
-    dev: true
-
   /prettier/2.8.4:
     resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
@@ -2942,10 +2928,6 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
 
-  /react-is/18.2.0:
-    resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
-    dev: true
-
   /react-refresh/0.14.0:
     resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
@@ -2973,27 +2955,6 @@ packages:
       '@remix-run/router': 1.3.2
       react: 18.2.0
     dev: false
-
-  /react-shallow-renderer/16.15.0_react@18.2.0:
-    resolution: {integrity: sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA==}
-    peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      object-assign: 4.1.1
-      react: 18.2.0
-      react-is: 18.2.0
-    dev: true
-
-  /react-test-renderer/18.2.0_react@18.2.0:
-    resolution: {integrity: sha512-JWD+aQ0lh2gvh4NM3bBM42Kx+XybOxCpgYK7F8ugAlpaTSnWsX+39Z4XkOykGZAHrjwwTZT3x3KxswVWxHPUqA==}
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      react: 18.2.0
-      react-is: 18.2.0
-      react-shallow-renderer: 16.15.0_react@18.2.0
-      scheduler: 0.23.0
-    dev: true
 
   /react/18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}

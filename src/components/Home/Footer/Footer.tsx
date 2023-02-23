@@ -57,7 +57,8 @@ const Footer: FunctionComponent = (): ReactElement => {
               href={socialMedia.link}
               key={socialMedia.id}
               rel='noopener noreferrer'
-              target='_blank'>
+              target='_blank'
+            >
               {renderSocialMediaIcon(socialMedia.link)}
             </a>
           ),
