@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@react-helper/eslint-config': ^1.0.0
+  '@react-helper/prettier-config': ^1.0.0
   '@testing-library/jest-dom': ^5.16.5
   '@testing-library/react': ^13.4.0
   '@trivago/prettier-plugin-sort-imports': ^4.0.0
@@ -31,6 +32,7 @@ dependencies:
 
 devDependencies:
   '@react-helper/eslint-config': 1.0.0_typescript@4.9.5
+  '@react-helper/prettier-config': 1.0.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.4
@@ -681,6 +683,16 @@ packages:
     transitivePeerDependencies:
       - supports-color
       - typescript
+    dev: true
+
+  /@react-helper/prettier-config/1.0.0:
+    resolution: {integrity: sha512-8IFYaq327N1WumICzNqCXcqsEZwqs6UahFq9VlqQvvfkJ3YDgCIglzgjZhG3C8eDUZgnD68+4bln0Pkl2xkjZA==}
+    dependencies:
+      '@trivago/prettier-plugin-sort-imports': 4.0.0_prettier@2.8.4
+      prettier: 2.8.4
+    transitivePeerDependencies:
+      - '@vue/compiler-sfc'
+      - supports-color
     dev: true
 
   /@remix-run/router/1.3.2:

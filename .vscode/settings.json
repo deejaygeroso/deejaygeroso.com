@@ -3,6 +3,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+  "prettier.configPath": "./config/prettier/.prettierrc",
+  "prettier.ignorePath": "./config/prettier/.prettierignore",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
