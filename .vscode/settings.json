@@ -1,38 +1,44 @@
 {
-  "files.eol": "\n",
+  "cSpell.languageSettings": [],
+  "cSpell.userWords": [
+    "Geroso"
+  ],
+  "cSpell.words": [
+  ],
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "prettier.configPath": "./config/prettier/.prettierrc",
-  "prettier.ignorePath": "./config/prettier/.prettierignore",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "overrideConfigFile": "config/eslint/.eslintrc.cjs"
+  },
+  "eslint.validate": ["htmlm", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "files.eol": "\n",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.configPath": "./config/prettier/.prettierrc",
+  "prettier.ignorePath": "./config/prettier/.prettierignore",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.formatOnSave": true
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.userWords": [
-    "Geroso",
-  ],
-  "cSpell.languageSettings": [],
-  "eslint.options": {
-    "configFile": "config/eslint/.eslintrc.js"
-  },
-  "cSpell.words": [
-  ]
+    "editor.formatOnSave": true
+  }
 }

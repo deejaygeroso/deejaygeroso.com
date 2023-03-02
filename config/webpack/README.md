@@ -1,4 +1,4 @@
-# Webpack Not In Use  
+# Webpack Deprecated
   
 Usage of webpack is no longer supported.  
 As of `app v2.0.0` we have migrated into using `vite v4.1.1`  

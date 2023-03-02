@@ -18,7 +18,11 @@ const ProjectInfo: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           <span>
             {project.domains.map(
               (domain: IDomain, key: number): ReactElement => (
-                <a href={domain.url} key={key} rel='noopener noreferrer' target='_blank'>
+                <a
+                  href={domain.url}
+                  key={key}
+                  rel='noopener noreferrer'
+                  target='_blank'>
                   {domain.name}
                 </a>
               ),
