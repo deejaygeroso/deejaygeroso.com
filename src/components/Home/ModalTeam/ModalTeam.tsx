@@ -1,7 +1,8 @@
 import React, { FunctionComponent, ReactElement } from 'react'
 import { FaLinkedin, FaUserCircle } from 'react-icons/fa'
 
-import { IMember, IProject } from '../../../../../../common/interfaces'
+import { IMember, IProject } from '@/interfaces'
+
 import './styles.css'
 
 interface IProps {
