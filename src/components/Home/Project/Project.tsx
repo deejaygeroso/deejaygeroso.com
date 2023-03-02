@@ -25,8 +25,14 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     if (fadeInDirection[direction] === fadeInDirectionInput) {
       return (
         <picture>
-          <source srcSet={projectInput.photos[defaultPhotoIndex].webP} type='image/webp' />
-          <source srcSet={projectInput.photos[defaultPhotoIndex].jpg} type='image/jpeg' />
+          <source
+            srcSet={projectInput.photos[defaultPhotoIndex].webP}
+            type='image/webp'
+          />
+          <source
+            srcSet={projectInput.photos[defaultPhotoIndex].jpg}
+            type='image/jpeg'
+          />
           <img
             alt={projectInput.photos[defaultPhotoIndex].webP}
             className='card project-images'
@@ -40,7 +46,10 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   }
 
   return (
-    <ScrollAnimation fadeInDirection={fadeInDirection[fadeInDirectionInput]} id={projectId}>
+    <ScrollAnimation
+      fadeInDirection={fadeInDirection[fadeInDirectionInput]}
+      id={projectId}
+    >
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
         {renderProjectPhoto(project, fadeInDirection.right)}

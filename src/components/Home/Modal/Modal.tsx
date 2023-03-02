@@ -63,25 +63,49 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
 
   return (
     <>
-      <div className={modalNameForVisibility} id='project-modal'>
-        <div className='modal-close-icon' onClick={hideModal}>
+      <div
+        className={modalNameForVisibility}
+        id='project-modal'
+      >
+        <div
+          className='modal-close-icon'
+          onClick={hideModal}
+        >
           <IoClose />
         </div>
-        <div className='modal-container' ref={wrapperRef}>
+        <div
+          className='modal-container'
+          ref={wrapperRef}
+        >
           <div className='modal-right-arrow'>
-            <IoIosArrowForward size={90} onClick={viewNextProject} />
+            <IoIosArrowForward
+              size={90}
+              onClick={viewNextProject}
+            />
           </div>
           <div className='modal-left-arrow'>
-            <IoIosArrowBack size={90} onClick={viewPrevProject} />
+            <IoIosArrowBack
+              size={90}
+              onClick={viewPrevProject}
+            />
           </div>
           <div className='modal-image'>
             <div className='modal-title'>
               <h1>{project.name}</h1>
             </div>
             <picture>
-              <source srcSet={project.photos[0].webP} type='image/webp' />
-              <source srcSet={project.photos[0].jpg} type='image/jpeg' />
-              <img alt={project.photos[0].webP} src={project.photos[0].webP} />
+              <source
+                srcSet={project.photos[0].webP}
+                type='image/webp'
+              />
+              <source
+                srcSet={project.photos[0].jpg}
+                type='image/jpeg'
+              />
+              <img
+                alt={project.photos[0].webP}
+                src={project.photos[0].webP}
+              />
             </picture>
           </div>
           <ModalTeam project={project} />

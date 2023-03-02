@@ -15,7 +15,11 @@ const WelcomeScreen: FunctionComponent = (): ReactElement => {
   return (
     <section id='main-section'>
       <div>
-        <img alt={deejay250x250} id='profile-picture' src={deejay250x250} />
+        <img
+          alt={deejay250x250}
+          id='profile-picture'
+          src={deejay250x250}
+        />
         <p id='demo'></p>
         <h1 id='title1'></h1>
         <h1 id='title2'></h1>

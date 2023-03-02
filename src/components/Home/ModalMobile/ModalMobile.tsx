@@ -37,7 +37,10 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
   }
 
   return (
-    <div className={modalNameForVisibility} id='project-modal-mobile'>
+    <div
+      className={modalNameForVisibility}
+      id='project-modal-mobile'
+    >
       <div id='project-modal-content'>
         <div className='modal-title'>
           <h1>{project.name}</h1>
@@ -48,9 +51,19 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
           <>
             <h1 className='modal-company'>About The Company</h1>
             <picture className='modal-project-image-wrapper'>
-              <source srcSet={project.photos[0].webP} type='image/webp' />
-              <source srcSet={project.photos[0].jpg} type='image/jpeg' />
-              <img alt={project.photos[0].webP} className='modal-project-image' src={project.photos[0].webP} />
+              <source
+                srcSet={project.photos[0].webP}
+                type='image/webp'
+              />
+              <source
+                srcSet={project.photos[0].jpg}
+                type='image/jpeg'
+              />
+              <img
+                alt={project.photos[0].webP}
+                className='modal-project-image'
+                src={project.photos[0].webP}
+              />
             </picture>
             <ProjectInfo project={project} />
           </>
@@ -64,7 +77,10 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
         <div onClick={hideModal}>
           <MdClose />
         </div>
-        <div className='modal-toggle-team' onClick={handleToggleView}>
+        <div
+          className='modal-toggle-team'
+          onClick={handleToggleView}
+        >
           {renderToggleTeamButton()}
         </div>
         <div onClick={viewNextProject}>

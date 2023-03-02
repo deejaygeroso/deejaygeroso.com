@@ -41,7 +41,11 @@ const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement
   )
 
   return (
-    <div className='animate__animated ' id={id} ref={inputElement}>
+    <div
+      className='animate__animated '
+      id={id}
+      ref={inputElement}
+    >
       {children}
     </div>
   )

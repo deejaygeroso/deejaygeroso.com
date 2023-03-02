@@ -14,11 +14,23 @@ const Testimonials: FunctionComponent = (): ReactElement => {
       <h1>Testimonials</h1>
       {testimonials.map(
         (testimonial: ITestimonial, key: number): ReactElement => (
-          <div className='profile' key={key}>
+          <div
+            className='profile'
+            key={key}
+          >
             <picture>
-              <source srcSet={testimonial.photo.webp} type='image/webp' />
-              <source srcSet={testimonial.photo.default} type='image/jpeg' />
-              <img alt={testimonial.photo.webp} src={testimonial.photo.webp} />
+              <source
+                srcSet={testimonial.photo.webp}
+                type='image/webp'
+              />
+              <source
+                srcSet={testimonial.photo.default}
+                type='image/jpeg'
+              />
+              <img
+                alt={testimonial.photo.webp}
+                src={testimonial.photo.webp}
+              />
             </picture>
             <div>
               <h1>{testimonial.name}</h1>

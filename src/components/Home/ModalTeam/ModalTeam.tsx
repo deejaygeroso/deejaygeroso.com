@@ -22,13 +22,25 @@ const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
       </div>
       {project.members.map(
         (member: IMember, key: number): ReactElement => (
-          <div className='modal-member' key={key}>
+          <div
+            className='modal-member'
+            key={key}
+          >
             <div className='modal-member-profile-icon'>
               {member.photo.webP && member.photo.jpg ? (
                 <picture>
-                  <source srcSet={member.photo.webP} type='image/webp' />
-                  <source srcSet={member.photo.jpg} type='image/jpeg' />
-                  <img alt={member.photo.webP} src={member.photo.webP} />
+                  <source
+                    srcSet={member.photo.webP}
+                    type='image/webp'
+                  />
+                  <source
+                    srcSet={member.photo.jpg}
+                    type='image/jpeg'
+                  />
+                  <img
+                    alt={member.photo.webP}
+                    src={member.photo.webP}
+                  />
                 </picture>
               ) : (
                 <FaUserCircle />
@@ -38,7 +50,10 @@ const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
               <h1>{member.name}</h1>
               <p className='modal-member-position'>{member.position}</p>
               {member.linkedIn && (
-                <p className='linked-in-link' onClick={(): void => openLinkedIn(member.linkedIn)}>
+                <p
+                  className='linked-in-link'
+                  onClick={(): void => openLinkedIn(member.linkedIn)}
+                >
                   <span>View Linked</span>
                   &nbsp;
                   <FaLinkedin />
