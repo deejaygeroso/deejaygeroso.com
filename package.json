@@ -6,13 +6,13 @@
     "build": "vite build src --config ./config/vite/vite.config.js",
     "dev": "vite src --config ./config/vite/vite.config.js",
     "preview": "vite preview dist --config ./config/vite/vite.config.js",
-    "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
-    "lint:fix": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*' --fix",
+    "lint": "eslint -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
+    "lint:fix": "eslint -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*' --fix",
     "start": "serve -l 3000 -s dist",
     "test": "vitest --config ./config/vite/test.config.js",
     "test:coverage": "vitest --config ./config/vite/test.config.js --coverage",
-    "check": "pnpm lint && pnpm test",
-    "prettier:write": "prettier --write ./src"
+    "prettier": "prettier --config ./config/prettier/.prettierrc --check './src/**/*.{ts,tsx}'",
+    "prettier:fix": "prettier --config ./config/prettier/.prettierrc --write './src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
