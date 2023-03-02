@@ -9,7 +9,7 @@
     "source.fixAll": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "eslint.options": {
     "overrideConfigFile": "config/eslint/.eslintrc.cjs"
@@ -37,8 +37,7 @@
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   }
 }
