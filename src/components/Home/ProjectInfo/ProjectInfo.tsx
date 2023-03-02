@@ -22,8 +22,7 @@ const ProjectInfo: FunctionComponent<IProps> = (props: IProps): ReactElement => 
                   href={domain.url}
                   key={key}
                   rel='noopener noreferrer'
-                  target='_blank'
-                >
+                  target='_blank'>
                   {domain.name}
                 </a>
               ),

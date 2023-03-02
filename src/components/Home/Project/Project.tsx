@@ -48,8 +48,7 @@ const Project: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   return (
     <ScrollAnimation
       fadeInDirection={fadeInDirection[fadeInDirectionInput]}
-      id={projectId}
-    >
+      id={projectId}>
       <div className='project-container'>
         <h1 className='title-on-mobile'>{project.name}</h1>
         {renderProjectPhoto(project, fadeInDirection.right)}

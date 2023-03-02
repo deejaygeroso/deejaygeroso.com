@@ -17,6 +17,8 @@ const useOutsideAlerter = (ref: any, onClickOutside: () => void, isVisible: bool
         document.removeEventListener('mousedown', handleClickOutside)
       }
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref, mq])
 }
 

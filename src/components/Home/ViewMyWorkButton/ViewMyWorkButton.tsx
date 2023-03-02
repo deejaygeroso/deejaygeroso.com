@@ -14,8 +14,7 @@ const ViewMyWorkButton: FunctionComponent = (): ReactElement => {
     <a
       className='view-my-work-button'
       href='#projects'
-      onClick={temporarilyAddSmoothScroll}
-    >
+      onClick={temporarilyAddSmoothScroll}>
       View My Work
     </a>
   )

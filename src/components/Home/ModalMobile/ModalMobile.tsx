@@ -39,8 +39,7 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
   return (
     <div
       className={modalNameForVisibility}
-      id='project-modal-mobile'
-    >
+      id='project-modal-mobile'>
       <div id='project-modal-content'>
         <div className='modal-title'>
           <h1>{project.name}</h1>
@@ -79,8 +78,7 @@ const ModalMobile: FunctionComponent<IProps> = (props: IProps): ReactElement => 
         </div>
         <div
           className='modal-toggle-team'
-          onClick={handleToggleView}
-        >
+          onClick={handleToggleView}>
           {renderToggleTeamButton()}
         </div>
         <div onClick={viewNextProject}>

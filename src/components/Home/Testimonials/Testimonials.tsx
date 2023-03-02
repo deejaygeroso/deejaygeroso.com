@@ -16,8 +16,7 @@ const Testimonials: FunctionComponent = (): ReactElement => {
         (testimonial: ITestimonial, key: number): ReactElement => (
           <div
             className='profile'
-            key={key}
-          >
+            key={key}>
             <picture>
               <source
                 srcSet={testimonial.photo.webp}

@@ -24,8 +24,7 @@ const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
         (member: IMember, key: number): ReactElement => (
           <div
             className='modal-member'
-            key={key}
-          >
+            key={key}>
             <div className='modal-member-profile-icon'>
               {member.photo.webP && member.photo.jpg ? (
                 <picture>
@@ -52,8 +51,7 @@ const ModalTeam: FunctionComponent<IProps> = (props: IProps): ReactElement => {
               {member.linkedIn && (
                 <p
                   className='linked-in-link'
-                  onClick={(): void => openLinkedIn(member.linkedIn)}
-                >
+                  onClick={(): void => openLinkedIn(member.linkedIn)}>
                   <span>View Linked</span>
                   &nbsp;
                   <FaLinkedin />

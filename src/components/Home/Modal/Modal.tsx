@@ -65,18 +65,15 @@ const Modal: FunctionComponent<IProps> = (props: IProps): ReactElement => {
     <>
       <div
         className={modalNameForVisibility}
-        id='project-modal'
-      >
+        id='project-modal'>
         <div
           className='modal-close-icon'
-          onClick={hideModal}
-        >
+          onClick={hideModal}>
           <IoClose />
         </div>
         <div
           className='modal-container'
-          ref={wrapperRef}
-        >
+          ref={wrapperRef}>
           <div className='modal-right-arrow'>
             <IoIosArrowForward
               size={90}
