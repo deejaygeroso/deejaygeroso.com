@@ -7,6 +7,7 @@
     "dev": "vite src --config ./config/vite/vite.config.js",
     "preview": "vite preview dist --config ./config/vite/vite.config.js",
     "lint": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*'",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js -c ./config/eslint/.eslintrc.cjs 'src/**/*.{ts,tsx}' --ignore-pattern '*.test.*' --fix",
     "start": "serve -l 3000 -s dist",
     "test": "vitest --config ./config/vite/test.config.js",
     "test:coverage": "vitest --config ./config/vite/test.config.js --coverage",
