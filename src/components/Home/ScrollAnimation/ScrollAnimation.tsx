@@ -14,12 +14,13 @@ interface IProps {
 const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement => {
   const { id, children, fadeInDirection } = props
   const inputElement = useRef<HTMLDivElement>(null)
+
   const fadeIn = {
     left: 'animate__fadeInLeft',
     right: 'animate__fadeInRight',
   }
 
-  const isInViewport = (offset = 0): boolean => {
+  const isInViewport = (offset: number = 0): boolean => {
     if (!inputElement.current) {
       return false
     }
@@ -27,6 +28,7 @@ const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement
     return top + offset >= 0 && top - offset <= window.innerHeight
   }
 
+  // This is BAD CODE. REFACTOR THIS!
   window.addEventListener(
     'scroll',
     (): void => {
@@ -44,8 +46,7 @@ const ScrollAnimation: FunctionComponent<IProps> = (props: IProps): ReactElement
     <div
       className='animate__animated '
       id={id}
-      ref={inputElement}
-    >
+      ref={inputElement}>
       {children}
     </div>
   )
