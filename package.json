@@ -1,6 +1,6 @@
 {
   "name": "deejaygeroso.com",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "",
   "scripts": {
     "build": "vite build src --config ./config/vite/vite.config.js",
