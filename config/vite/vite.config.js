@@ -58,12 +58,12 @@ const shared = {
    */
   publicDir: path.resolve(__dirname, '../../public'),
 
-  resolve: {
-    // Will be passed to @rollup/plugin-alias as its entries option.
-    alias: {
-      '@': path.resolve(__dirname, '../../src'),
-    },
-  },
+  // resolve: {
+  //   // Will be passed to @rollup/plugin-alias as its entries option.
+  //   alias: {
+  //     '@': path.resolve(__dirname, '../../src'),
+  //   },
+  // },
 
   // Project root directory (where index.html is located)
   root: path.resolve(__dirname, '../../src'),
